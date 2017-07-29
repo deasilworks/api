@@ -25,10 +25,6 @@
 
 namespace deasilworks\api;
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\HttpKernelInterface;
-
 /**
  * Class CEF.
  *
@@ -39,11 +35,9 @@ class API
 {
     /**
      * CEF constructor.
-     *
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -51,8 +45,8 @@ class API
      */
     public function getMessage()
     {
-        error_log("got here ");
-        return "This is a message";
-    }
+        error_log('got here ');
 
+        return 'This is a message';
+    }
 }
