@@ -6,6 +6,9 @@ API - 4klift Component
     <img src="https://raw.githubusercontent.com/deasilworks/4klift/master/assets/4KLIFT_Component_API.png">
 </a></p>
 
+[![Latest Stable Version](https://poser.pugx.org/deasilworks/api/v/stable)](https://packagist.org/packages/deasilworks/api)
+[![Latest Unstable Version](https://poser.pugx.org/deasilworks/api/v/unstable)](https://packagist.org/packages/deasilworks/api)
+[![License](https://poser.pugx.org/deasilworks/api/license)](https://packagist.org/packages/deasilworks/api)
 
 The API component to 4klift.
 
