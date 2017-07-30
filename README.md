@@ -10,9 +10,8 @@ API - 4klift Component
 [![Latest Unstable Version](https://poser.pugx.org/deasilworks/api/v/unstable)](https://packagist.org/packages/deasilworks/api)
 [![License](https://poser.pugx.org/deasilworks/api/license)](https://packagist.org/packages/deasilworks/api)
 
-The API component to 4klift.
+The API component to [4klift](https://github.com/deasilworks/4klift).
 
-##Warning: This component is Alpha and NOT ready for production.
-
+## Warning: This component is Alpha and NOT ready for production.
 
 ##### This open-source project is brought to you by [Deasil Works, Inc.](http://deasil.works/) Copyright &copy; 2017 Deasil Works, Inc.
