@@ -52,11 +52,13 @@ class ParamModel
 
     /**
      * @param string $name
+     *
      * @return ParamModel
      */
     public function setName($name)
     {
         $this->name = $name;
+
         return $this;
     }
 
@@ -70,11 +72,13 @@ class ParamModel
 
     /**
      * @param string $type
+     *
      * @return ParamModel
      */
     public function setType($type)
     {
         $this->type = $type;
+
         return $this;
     }
 }

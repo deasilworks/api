@@ -151,11 +151,13 @@ class AckModel
 
     /**
      * @param string $serverCode
+     *
      * @return AckModel
      */
     public function setServerCode($serverCode)
     {
         $this->serverCode = $serverCode;
+
         return $this;
     }
 
@@ -169,11 +171,13 @@ class AckModel
 
     /**
      * @param bool $success
+     *
      * @return AckModel
      */
     public function setSuccess($success)
     {
         $this->success = $success;
+
         return $this;
     }
 
@@ -187,11 +191,13 @@ class AckModel
 
     /**
      * @param string $errorCode
+     *
      * @return AckModel
      */
     public function setErrorCode($errorCode)
     {
         $this->errorCode = $errorCode;
+
         return $this;
     }
 
@@ -205,11 +211,13 @@ class AckModel
 
     /**
      * @param string $errorClass
+     *
      * @return AckModel
      */
     public function setErrorClass($errorClass)
     {
         $this->errorClass = $errorClass;
+
         return $this;
     }
 
@@ -223,11 +231,13 @@ class AckModel
 
     /**
      * @param mixed $errorPayload
+     *
      * @return AckModel
      */
     public function setErrorPayload($errorPayload)
     {
         $this->errorPayload = $errorPayload;
+
         return $this;
     }
 
@@ -241,11 +251,13 @@ class AckModel
 
     /**
      * @param string $errorMessage
+     *
      * @return AckModel
      */
     public function setErrorMessage($errorMessage)
     {
         $this->errorMessage = $errorMessage;
+
         return $this;
     }
 
@@ -259,11 +271,13 @@ class AckModel
 
     /**
      * @param string $apiLevel
+     *
      * @return AckModel
      */
     public function setApiLevel($apiLevel)
     {
         $this->apiLevel = $apiLevel;
+
         return $this;
     }
 
@@ -277,11 +291,13 @@ class AckModel
 
     /**
      * @param string $location
+     *
      * @return AckModel
      */
     public function setLocation($location)
     {
         $this->location = $location;
+
         return $this;
     }
 
@@ -295,11 +311,13 @@ class AckModel
 
     /**
      * @param array $locationParams
+     *
      * @return AckModel
      */
     public function setLocationParams($locationParams)
     {
         $this->locationParams = $locationParams;
+
         return $this;
     }
 
@@ -313,11 +331,13 @@ class AckModel
 
     /**
      * @param array $requestArgs
+     *
      * @return AckModel
      */
     public function setRequestArgs($requestArgs)
     {
         $this->requestArgs = $requestArgs;
+
         return $this;
     }
 
@@ -331,11 +351,13 @@ class AckModel
 
     /**
      * @param string $payloadClass
+     *
      * @return AckModel
      */
     public function setPayloadClass($payloadClass)
     {
         $this->payloadClass = $payloadClass;
+
         return $this;
     }
 
@@ -349,11 +371,13 @@ class AckModel
 
     /**
      * @param mixed $payload
+     *
      * @return AckModel
      */
     public function setPayload($payload)
     {
         $this->payload = $payload;
+
         return $this;
     }
 }

@@ -49,11 +49,13 @@ final class ApiAction
 
     /**
      * @param bool $routable
+     *
      * @return ApiAction
      */
     public function setRoutable($routable)
     {
         $this->routable = $routable;
+
         return $this;
     }
 }

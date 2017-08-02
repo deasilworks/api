@@ -26,12 +26,10 @@
 namespace deasilworks\api\model;
 
 /**
- * Class ActionResponseModel
- *
+ * Class ActionResponseModel.
  */
 class ActionResponseModel
 {
-
     /**
      * @var mixed
      */
@@ -57,11 +55,13 @@ class ActionResponseModel
 
     /**
      * @param mixed $response
+     *
      * @return ActionResponseModel
      */
     public function setResponse($response)
     {
         $this->response = $response;
+
         return $this;
     }
 
@@ -75,11 +75,13 @@ class ActionResponseModel
 
     /**
      * @param array $params
+     *
      * @return ActionResponseModel
      */
     public function setParams($params)
     {
         $this->params = $params;
+
         return $this;
     }
 
@@ -93,11 +95,13 @@ class ActionResponseModel
 
     /**
      * @param array $args
+     *
      * @return ActionResponseModel
      */
     public function setArgs($args)
     {
         $this->args = $args;
+
         return $this;
     }
 }

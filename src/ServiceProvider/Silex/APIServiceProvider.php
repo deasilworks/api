@@ -31,10 +31,9 @@ use deasilworks\api\model\HttpRequestModel;
 use deasilworks\cfg\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\JsonResponse;
-
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class APIServiceProvider.
@@ -65,32 +64,32 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
             // if no controller factory is specified see if we have a CEF
             // controller_factory at this namespace to use as default
             //
-            if (!isset($container[$this->namespace .'.api.controller_factory'])) {
-                $controllerFactory = $container[$this->namespace .'.cef.controller_factory'];
+            if (!isset($container[$this->namespace.'.api.controller_factory'])) {
+                $controllerFactory = $container[$this->namespace.'.cef.controller_factory'];
 
                 if (isset($controllerFactory)) {
-                    $container[$this->namespace .'.api.controller_factory'] = $controllerFactory;
+                    $container[$this->namespace.'.api.controller_factory'] = $controllerFactory;
                 }
             }
 
             // if no seralizer is specified use CEF
             //
-            if (!isset($container[$this->namespace .'.api.serializer']) ) {
-                $seralizer = $container[$this->namespace .'.cef.serializer'];
+            if (!isset($container[$this->namespace.'.api.serializer'])) {
+                $seralizer = $container[$this->namespace.'.cef.serializer'];
 
                 if (isset($seralizer)) {
-                    $container[$this->namespace .'.api.serializer'] = $seralizer;
+                    $container[$this->namespace.'.api.serializer'] = $seralizer;
                 }
             }
 
             $this->populateConfig('api', $container);
+
             return $api;
         };
 
         // api responder
         $container[$this->namespace.'.api.responder'] = function (Application $app) {
             return function (Request $request, $path) use ($app) {
-
                 $apiRequest = new HttpRequestModel();
                 $apiRequest
                     ->setMethod($request->getMethod())
@@ -101,12 +100,11 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
                     ->setSession($request->getSession());
 
                 $response = new JsonResponse(
-                    $app[$this->namespace.'.api']->execute($apiRequest),200, [], true
+                    $app[$this->namespace.'.api']->execute($apiRequest), 200, [], true
                 );
 
                 return $response;
             };
         };
-
     }
 }

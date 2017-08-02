@@ -24,7 +24,6 @@
  */
 
 namespace deasilworks\api\Annotation;
-use Doctrine\Common\Annotations\Reader;
 
 /**
  * @Annotation
@@ -50,11 +49,13 @@ final class ApiController
 
     /**
      * @param bool $routable
+     *
      * @return ApiController
      */
     public function setRoutable($routable)
     {
         $this->routable = $routable;
+
         return $this;
     }
 }

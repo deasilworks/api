@@ -57,6 +57,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
 
     /**
      * @param array $collection
+     *
      * @return Collection
      */
     public function setCollection($collection)
@@ -71,7 +72,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * Iterator
+     * Iterator.
      *
      * @return mixed
      */
@@ -81,7 +82,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * Iterator next
+     * Iterator next.
      */
     public function next()
     {
@@ -89,7 +90,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * Iterator key
+     * Iterator key.
      *
      * @return int
      */
@@ -99,7 +100,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * Iterator valid
+     * Iterator valid.
      *
      * @return bool
      */
@@ -109,7 +110,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * Iterator rewind
+     * Iterator rewind.
      */
     public function rewind()
     {
@@ -117,9 +118,10 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * ArrayAccess Offset Exists
+     * ArrayAccess Offset Exists.
      *
      * @param mixed $offset
+     *
      * @return bool
      */
     public function offsetExists($offset)
@@ -128,9 +130,10 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * ArrayAccess Offset Get
+     * ArrayAccess Offset Get.
      *
      * @param mixed $offset
+     *
      * @return mixed|null
      */
     public function offsetGet($offset)
@@ -139,9 +142,9 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * ArrayAccess Offset Set
+     * ArrayAccess Offset Set.
      *
-     * @param mixed $offset
+     * @param mixed      $offset
      * @param ParamModel $argModel
      */
     public function offsetSet($offset, $argModel)
@@ -149,6 +152,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
         if (is_null($offset)) {
             $this->hashContainer[$argModel->getName()] = $argModel;
             $this->arrayContainer[] = $argModel;
+
             return;
         }
 
@@ -157,7 +161,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
     }
 
     /**
-     * ArrayAccess Offset Unset
+     * ArrayAccess Offset Unset.
      *
      * @param mixed $offset
      */
@@ -166,5 +170,4 @@ class ApiCollection implements \Iterator, \ArrayAccess
         unset($this->hashContainer[$offset]);
         unset($this->arrayContainer[$offset]);
     }
-
 }

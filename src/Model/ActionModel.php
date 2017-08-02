@@ -62,11 +62,13 @@ class ActionModel
 
     /**
      * @param string $classMethod
+     *
      * @return ActionModel
      */
     public function setClassMethod($classMethod)
     {
         $this->classMethod = $classMethod;
+
         return $this;
     }
 
@@ -80,11 +82,13 @@ class ActionModel
 
     /**
      * @param string $routeName
+     *
      * @return ActionModel
      */
     public function setRouteName($routeName)
     {
         $this->routeName = $routeName;
+
         return $this;
     }
 
@@ -98,11 +102,13 @@ class ActionModel
 
     /**
      * @param string $restMethod
+     *
      * @return ActionModel
      */
     public function setRestMethod($restMethod)
     {
         $this->restMethod = $restMethod;
+
         return $this;
     }
 
@@ -116,12 +122,13 @@ class ActionModel
 
     /**
      * @param ParamCollection $paramCollection
+     *
      * @return ActionModel
      */
     public function setParamCollection($paramCollection)
     {
         $this->paramCollection = $paramCollection;
+
         return $this;
     }
-
 }

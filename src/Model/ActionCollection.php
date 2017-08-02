@@ -32,7 +32,6 @@ namespace deasilworks\api\model;
  */
 final class ActionCollection extends ApiCollection
 {
-
     /**
      * @param ActionModel $actionModel
      */

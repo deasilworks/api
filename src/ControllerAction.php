@@ -30,11 +30,11 @@ use deasilworks\api\Annotation\ApiController;
 use deasilworks\api\model\ActionCollection;
 use deasilworks\api\model\ActionModel;
 use deasilworks\api\model\ActionResponseModel;
+use deasilworks\api\model\HttpRequestModel;
 use deasilworks\api\model\ParamCollection;
 use deasilworks\api\model\ParamModel;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\Reader;
-use deasilworks\api\model\HttpRequestModel;
 
 /**
  * Class ControllerAction.
@@ -61,6 +61,7 @@ class ControllerAction
 
     /**
      * Resolver constructor.
+     *
      * @param $controller
      */
     public function __construct($controller)
@@ -75,8 +76,10 @@ class ControllerAction
      * @param HttpRequestModel $apiRequest
      * @param $action
      * @param $args
-     * @return $response
+     *
      * @throws \Exception
+     *
+     * @return $response
      */
     public function call(HttpRequestModel $apiRequest, $action, $args)
     {
@@ -86,7 +89,7 @@ class ControllerAction
         $expAction = $this->actionCollection[$action][$apiRequest->getMethod()];
 
         if (!isset($expAction)) {
-            throw new \Exception('Unknown action "'. $action .'" for this controller.');
+            throw new \Exception('Unknown action "'.$action.'" for this controller.');
         }
 
         $query = [];
@@ -112,7 +115,7 @@ class ControllerAction
             $paramIndex++;
         }
 
-        $callResponse = call_user_func_array( [ $this->controller, $expAction->getClassMethod()], $preparedArgs );
+        $callResponse = call_user_func_array([$this->controller, $expAction->getClassMethod()], $preparedArgs);
 
         if ($callResponse) {
             $response
@@ -126,6 +129,7 @@ class ControllerAction
 
     /**
      * @param $preparedArgs
+     *
      * @return array
      */
     private function sanitizeArgs($preparedArgs)
@@ -192,7 +196,6 @@ class ControllerAction
             $ApiMethodAno = $this->reader->getMethodAnnotation($reflectionMethod, ApiAction::class);
 
             if ($ApiMethodAno && $ApiMethodAno->isRoutable()) {
-
                 $actionTypeName = $this->parseActionMethod($reflectionMethod->getName());
 
                 $actionModel = new ActionModel();
@@ -204,12 +207,12 @@ class ControllerAction
 
                 $this->actionCollection->addModel($actionModel);
             }
-
         }
     }
 
     /**
      * @param $methodName
+     *
      * @return array
      */
     private function parseActionMethod($methodName)
@@ -238,6 +241,7 @@ class ControllerAction
 
     /**
      * @param \ReflectionMethod $reflectionMethod
+     *
      * @return ParamCollection
      */
     private function resolveActionParams(\ReflectionMethod $reflectionMethod)
@@ -246,7 +250,6 @@ class ControllerAction
         $params = $reflectionMethod->getParameters();
 
         foreach ($params as $param) {
-
             $paramModel = new ParamModel();
             $paramModel->setName($param->getName());
 

@@ -60,11 +60,13 @@ final class APIConfig
 
     /**
      * @param array $classPath
+     *
      * @return APIConfig
      */
     public function setClassPath($classPath)
     {
         $this->classPath = $classPath;
+
         return $this;
     }
 
@@ -78,11 +80,13 @@ final class APIConfig
 
     /**
      * @param array $aliases
+     *
      * @return APIConfig
      */
     public function setAliases($aliases)
     {
         $this->aliases = $aliases;
+
         return $this;
     }
 
@@ -96,11 +100,13 @@ final class APIConfig
 
     /**
      * @param callable $controllerFactory
+     *
      * @return APIConfig
      */
     public function setControllerFactory($controllerFactory)
     {
         $this->controllerFactory = $controllerFactory;
+
         return $this;
     }
 
@@ -114,12 +120,13 @@ final class APIConfig
 
     /**
      * @param callable $serializer
+     *
      * @return APIConfig
      */
     public function setSerializer($serializer)
     {
         $this->serializer = $serializer;
+
         return $this;
     }
-
 }

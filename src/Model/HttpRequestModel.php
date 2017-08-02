@@ -32,7 +32,6 @@ namespace deasilworks\api\model;
  */
 final class HttpRequestModel
 {
-
     /**
      * @var string
      */
@@ -73,11 +72,13 @@ final class HttpRequestModel
 
     /**
      * @param string $method
+     *
      * @return HttpRequestModel
      */
     public function setMethod($method)
     {
         $this->method = $method;
+
         return $this;
     }
 
@@ -91,11 +92,13 @@ final class HttpRequestModel
 
     /**
      * @param string $path
+     *
      * @return HttpRequestModel
      */
     public function setPath($path)
     {
         $this->path = $path;
+
         return $this;
     }
 
@@ -109,11 +112,13 @@ final class HttpRequestModel
 
     /**
      * @param string $content
+     *
      * @return HttpRequestModel
      */
     public function setContent($content)
     {
         $this->content = $content;
+
         return $this;
     }
 
@@ -127,11 +132,13 @@ final class HttpRequestModel
 
     /**
      * @param string $contentType
+     *
      * @return HttpRequestModel
      */
     public function setContentType($contentType)
     {
         $this->contentType = $contentType;
+
         return $this;
     }
 
@@ -145,11 +152,13 @@ final class HttpRequestModel
 
     /**
      * @param string $queryString
+     *
      * @return HttpRequestModel
      */
     public function setQueryString($queryString)
     {
         $this->queryString = $queryString;
+
         return $this;
     }
 
@@ -163,11 +172,13 @@ final class HttpRequestModel
 
     /**
      * @param string $session
+     *
      * @return HttpRequestModel
      */
     public function setSession($session)
     {
         $this->session = $session;
+
         return $this;
     }
 }

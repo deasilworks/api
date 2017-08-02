@@ -25,10 +25,10 @@
 
 namespace deasilworks\api;
 
+use deasilworks\api\model\AckModel;
 use deasilworks\api\model\ActionResponseModel;
 use deasilworks\api\model\HttpRequestModel;
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use deasilworks\api\model\AckModel;
 use JMS\Serializer\SerializationContext;
 use JMS\Serializer\SerializerBuilder;
 
@@ -58,11 +58,13 @@ class API
     }
 
     /**
-     * Execute API call
+     * Execute API call.
      *
      * @param HttpRequestModel $apiRequest
-     * @return mixed
+     *
      * @throws \Exception
+     *
+     * @return mixed
      */
     public function execute(HttpRequestModel $apiRequest)
     {
@@ -77,7 +79,7 @@ class API
 
         $ack
             ->setSuccess(true)
-            ->setServerCode("200")
+            ->setServerCode('200')
             ->setLocation($apiRequest->getPath())
             ->setLocationParams($actionResponse->getParams())
             ->setRequestArgs($actionResponse->getArgs())
@@ -88,6 +90,7 @@ class API
         $context->setSerializeNull(true);
 
         $serializer = SerializerBuilder::create()->build();
+
         return $serializer->serialize($ack, 'json', $context);
     }
 
@@ -95,8 +98,10 @@ class API
      * Resolves controller to object and remaining args.
      *
      * @param $path
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
     private function resolveController($path)
     {
@@ -114,13 +119,12 @@ class API
         while ($pathComponents) {
             $pathComponent = array_shift($pathComponents);
 
-            $class = $class . '\\' . ucfirst($pathComponent);
+            $class = $class.'\\'.ucfirst($pathComponent);
             $classAlias .= ucfirst($pathComponent);
 
             // check for an alias first
             if (isset($aliases[strtolower($classAlias)])) {
-
-                $aliasClass = $baseClassPath . '\\' . $aliases[strtolower($classAlias)];
+                $aliasClass = $baseClassPath.'\\'.$aliases[strtolower($classAlias)];
 
                 if (class_exists($aliasClass)) {
                     $classObject = $controllerFactory($aliasClass);
@@ -145,5 +149,4 @@ class API
 
         return [$classObject, array_shift($pathArgs), $pathArgs];
     }
-
 }
