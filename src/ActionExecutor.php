@@ -83,16 +83,7 @@ class ActionExecutor
         $query = [];
         parse_str($apiRequest->getQueryString(), $query);
 
-        $content = [];
-
-        if ($apiRequest->getContentType() == 'form') {
-            parse_str($apiRequest->getContent(), $content);
-        }
-
-        // TODO: hydrate class based on json object
-        if ($apiRequest->getContentType() == 'json') {
-            parse_str($apiRequest->getContent(), $content);
-        }
+        $content = $this->contentParser($apiRequest);
 
         list($preparedArgs, $params) = $this->prepareArgs($targetAction, $args, $query, $content);
 
@@ -107,6 +98,25 @@ class ActionExecutor
         }
 
         return $response;
+    }
+
+    /**
+     * @param HttpRequestModel $apiRequest
+     * @return mixed
+     */
+    private function contentParser(HttpRequestModel $apiRequest)
+    {
+        $content = [];
+
+        if ($apiRequest->getContentType() == 'form') {
+            parse_str($apiRequest->getContent(), $content);
+        }
+
+        if ($apiRequest->getContentType() == 'json') {
+            $content = json_decode($apiRequest->getContent());
+        }
+
+        return $content;
     }
 
     /**
