@@ -27,7 +27,6 @@ namespace deasilworks\api\model;
 
 /**
  * Class HttpRequestModel.
- *
  */
 final class HttpRequestModel
 {
