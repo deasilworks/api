@@ -85,8 +85,12 @@ class ActionExecutor
 
         $content = [];
 
-        // assume txt to be json
         if ($apiRequest->getContentType() == 'form') {
+            parse_str($apiRequest->getContent(), $content);
+        }
+
+        // TODO: hydrate class based on json object
+        if ($apiRequest->getContentType() == 'json') {
             parse_str($apiRequest->getContent(), $content);
         }
 

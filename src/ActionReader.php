@@ -110,9 +110,9 @@ class ActionReader
         foreach ($reflectionObject->getMethods() as $reflectionMethod) {
 
             /** @var ApiAction $methodAnnotation */
-            $ApiMethodAno = $this->reader->getMethodAnnotation($reflectionMethod, ApiAction::class);
+            $apiMethodAno = $this->reader->getMethodAnnotation($reflectionMethod, ApiAction::class);
 
-            if ($ApiMethodAno && $ApiMethodAno->isRoutable()) {
+            if ($apiMethodAno && $apiMethodAno->isRoutable()) {
                 $actionTypeName = $this->parseActionMethod($reflectionMethod->getName());
 
                 $actionModel = new ActionModel();

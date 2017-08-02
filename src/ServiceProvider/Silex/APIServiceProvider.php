@@ -91,11 +91,19 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
         // api responder
         $container[$this->namespace.'.api.responder'] = function (Application $app) {
             return function (Request $request, $path) use ($app) {
+                $contentType = $request->getContentType();
+
+                // should also be looking at headers however
+                // this is good until decide that should be a restriction
+                if ($contentType == 'txt') {
+                    $contentType = 'json';
+                }
+
                 $apiRequest = new HttpRequestModel();
                 $apiRequest
                     ->setMethod($request->getMethod())
                     ->setPath($path)
-                    ->setContentType($request->getContentType())
+                    ->setContentType($contentType)
                     ->setQueryString($request->getQueryString())
                     ->setContent($request->getContent())
                     ->setSession($request->getSession());
