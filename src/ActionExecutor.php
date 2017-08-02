@@ -120,7 +120,6 @@ class ActionExecutor
             $content = json_decode($apiRequest->getContent());
 
             // TODO: check for REQ style object to pull out payload
-
         }
 
         return $content;
@@ -130,8 +129,8 @@ class ActionExecutor
      * Prepare Args.
      *
      * @param ActionModel $targetAction
-     * @param array $indexedArgs indexed array of args
-     * @param array $searchHashedArgs array of hashes to search
+     * @param array       $indexedArgs      indexed array of args
+     * @param array       $searchHashedArgs array of hashes to search
      *
      * @return array
      */
@@ -152,7 +151,6 @@ class ActionExecutor
             $paramName = $param->getName();
 
             foreach ($searchHashedArgs as $searchHashedArg) {
-
                 if (is_object($searchHashedArg) && $searchHashedArg->$paramName) {
                     $preparedArgs[$paramIndex] = $searchHashedArg->$paramName;
                     continue;
@@ -161,7 +159,6 @@ class ActionExecutor
                 if (isset($searchHashedArg[$paramName])) {
                     $preparedArgs[$paramIndex] = $searchHashedArg[$paramName];
                 }
-
             }
 
             $paramIndex++;

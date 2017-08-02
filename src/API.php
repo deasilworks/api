@@ -94,10 +94,10 @@ class API
     }
 
     /**
-     * Ack Options
+     * Ack Options.
      *
      * @param ActionReader $actionReader
-     * @param string $action
+     * @param string       $action
      *
      * @return AckModel
      */
@@ -143,7 +143,6 @@ class API
      */
     private function callAction($actionReader, $apiRequest, $action, $args)
     {
-
         $actionExecutor = new ActionExecutor($actionReader);
 
         /** @var ActionResponseModel $actionResponse */

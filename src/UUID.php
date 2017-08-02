@@ -27,16 +27,16 @@ namespace deasilworks\api;
 
 /**
  * Class UUID.
- *
  */
 class UUID
 {
     /**
-     * V4
+     * V4.
      *
      * @return string
      */
-    public static function v4() {
+    public static function v4()
+    {
         return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
             mt_rand(0, 0xffff), mt_rand(0, 0xffff),
             mt_rand(0, 0xffff),
@@ -47,12 +47,14 @@ class UUID
     }
 
     /**
-     * Is Valid
+     * Is Valid.
      *
      * @param $uuid
+     *
      * @return bool
      */
-    public static function isValid($uuid) {
+    public static function isValid($uuid)
+    {
         return preg_match('/^\{?[0-9a-f]{8}\-?[0-9a-f]{4}\-?[0-9a-f]{4}\-?'.
                 '[0-9a-f]{4}\-?[0-9a-f]{12}\}?$/i', $uuid) === 1;
     }
