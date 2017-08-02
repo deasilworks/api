@@ -26,9 +26,8 @@
 namespace deasilworks\api\model;
 
 /**
- * Class ActionModel.
+ * Class HttpRequestModel.
  *
- * Stores attributes of an action
  */
 final class HttpRequestModel
 {
