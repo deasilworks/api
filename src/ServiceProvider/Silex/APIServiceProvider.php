@@ -27,6 +27,7 @@ namespace deasilworks\api\ServiceProvider\Silex;
 
 use deasilworks\api\API;
 use deasilworks\api\APIConfig;
+use deasilworks\api\model\ApiResultModel;
 use deasilworks\api\model\HttpRequestModel;
 use deasilworks\cfg\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
@@ -99,8 +100,14 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
                     ->setContent($request->getContent())
                     ->setSession($request->getSession());
 
+                /** @var ApiResultModel $apiResult */
+                $apiResult = $app[$this->namespace.'.api']->execute($apiRequest);
+
                 $response = new JsonResponse(
-                    $app[$this->namespace.'.api']->execute($apiRequest), 200, [], true
+                   $apiResult->getResponse(),
+                   $apiResult->getStatusCode(),
+                   $apiResult->getHeaders(),
+                   $apiResult->isJson()
                 );
 
                 return $response;

@@ -40,19 +40,19 @@ class ApiCollection implements \Iterator, \ArrayAccess
     /**
      * @var array
      */
-    protected $arrayContainer = [];
+    protected $indexedContainer = [];
 
     /**
      * @var array
      */
-    protected $hashContainer = [];
+    protected $hashedContainer = [];
 
     /**
      * @return array
      */
     public function getCollection()
     {
-        return $this->arrayContainer;
+        return $this->indexedContainer;
     }
 
     /**
@@ -62,10 +62,10 @@ class ApiCollection implements \Iterator, \ArrayAccess
      */
     public function setCollection($collection)
     {
-        $this->arrayContainer = $collection;
+        $this->indexedContainer = $collection;
 
         foreach ($collection as $argModel) {
-            $this->hashContainer[$argModel->getName()] = $argModel;
+            $this->hashedContainer[$argModel->getName()] = $argModel;
         }
 
         return $this;
@@ -78,7 +78,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
      */
     public function current()
     {
-        return $this->arrayContainer[$this->position];
+        return $this->indexedContainer[$this->position];
     }
 
     /**
@@ -106,7 +106,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
      */
     public function valid()
     {
-        return isset($this->arrayContainer[$this->position]);
+        return isset($this->indexedContainer[$this->position]);
     }
 
     /**
@@ -126,7 +126,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
      */
     public function offsetExists($offset)
     {
-        return isset($this->hashContainer[$offset]);
+        return isset($this->hashedContainer[$offset]);
     }
 
     /**
@@ -138,7 +138,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
      */
     public function offsetGet($offset)
     {
-        return isset($this->hashContainer[$offset]) ? $this->hashContainer[$offset] : null;
+        return isset($this->hashedContainer[$offset]) ? $this->hashedContainer[$offset] : null;
     }
 
     /**
@@ -150,14 +150,14 @@ class ApiCollection implements \Iterator, \ArrayAccess
     public function offsetSet($offset, $argModel)
     {
         if (is_null($offset)) {
-            $this->hashContainer[$argModel->getName()] = $argModel;
-            $this->arrayContainer[] = $argModel;
+            $this->hashedContainer[$argModel->getName()] = $argModel;
+            $this->indexedContainer[] = $argModel;
 
             return;
         }
 
-        $this->hashContainer[$offset] = $argModel;
-        $this->arrayContainer[$offset] = $argModel;
+        $this->hashedContainer[$offset] = $argModel;
+        $this->indexedContainer[$offset] = $argModel;
     }
 
     /**
@@ -167,7 +167,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
      */
     public function offsetUnset($offset)
     {
-        unset($this->hashContainer[$offset]);
-        unset($this->arrayContainer[$offset]);
+        unset($this->hashedContainer[$offset]);
+        unset($this->indexedContainer[$offset]);
     }
 }

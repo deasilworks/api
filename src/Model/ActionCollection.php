@@ -37,7 +37,7 @@ final class ActionCollection extends ApiCollection
      */
     public function addModel(ActionModel $actionModel)
     {
-        $this->hashContainer[$actionModel->getRouteName()][$actionModel->getRestMethod()] = $actionModel;
-        $this->arrayContainer[] = $actionModel;
+        $this->hashedContainer[$actionModel->getRouteName()][$actionModel->getRestMethod()] = $actionModel;
+        $this->indexedContainer[] = $actionModel;
     }
 }

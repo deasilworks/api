@@ -27,6 +27,7 @@ namespace deasilworks\api;
 
 use deasilworks\api\model\AckModel;
 use deasilworks\api\model\ActionResponseModel;
+use deasilworks\api\model\ApiResultModel;
 use deasilworks\api\model\HttpRequestModel;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use JMS\Serializer\SerializationContext;
@@ -68,12 +69,59 @@ class API
      */
     public function execute(HttpRequestModel $apiRequest)
     {
+        $result = new ApiResultModel();
+
         list($controller, $action, $args) = $this->resolveController($apiRequest->getPath());
 
-        $controllerAction = new ControllerAction($controller);
+        $actionReader = new ActionReader($controller);
+
+        if ($apiRequest->getMethod() == 'OPTIONS') {
+            return $result
+                ->setResponse($this->serialize($actionReader->getActionCollection()[$action]))
+                ->setJson(true)
+                ->setHeaders(['Allow' => 'OPTIONS, GET, POST'])
+                ->setStatusCode(200);
+        }
+
+        $ack = $this->callAction($actionReader, $apiRequest, $action, $args);
+        return $result
+            ->setResponse($this->serialize($ack))
+            ->setJson(true)
+            ->setStatusCode(200);
+
+    }
+
+    /**
+     * Serialize
+     *
+     * @param $object
+     * @return string
+     */
+    private function serialize($object)
+    {
+        $context = new SerializationContext();
+        $context->setSerializeNull(true);
+
+        $serializer = SerializerBuilder::create()->build();
+        return $serializer->serialize($object, 'json', $context);
+    }
+
+    /**
+     * Call Action
+     *
+     * @param ActionReader $actionReader
+     * @param HttpRequestModel $apiRequest
+     * @param $action
+     * @param $args
+     *
+     * @return AckModel
+     */
+    private function callAction($actionReader, $apiRequest, $action, $args) {
+
+        $actionExecutor = new ActionExecutor($actionReader);
 
         /** @var ActionResponseModel $actionResponse */
-        $actionResponse = $controllerAction->call($apiRequest, $action, $args);
+        $actionResponse = $actionExecutor->execute($apiRequest, $action, $args);
 
         $ack = new AckModel();
 
@@ -83,15 +131,10 @@ class API
             ->setLocation($apiRequest->getPath())
             ->setLocationParams($actionResponse->getParams())
             ->setRequestArgs($actionResponse->getArgs())
-            ->setPayloadClass(get_class($actionResponse))
+            ->setPayloadClass(get_class($actionResponse->getResponse()))
             ->setPayload($actionResponse->getResponse());
 
-        $context = new SerializationContext();
-        $context->setSerializeNull(true);
-
-        $serializer = SerializerBuilder::create()->build();
-
-        return $serializer->serialize($ack, 'json', $context);
+        return $ack;
     }
 
     /**

@@ -29,8 +29,6 @@ use deasilworks\api\Annotation\ApiAction;
 use deasilworks\api\Annotation\ApiController;
 use deasilworks\api\model\ActionCollection;
 use deasilworks\api\model\ActionModel;
-use deasilworks\api\model\ActionResponseModel;
-use deasilworks\api\model\HttpRequestModel;
 use deasilworks\api\model\ParamCollection;
 use deasilworks\api\model\ParamModel;
 use Doctrine\Common\Annotations\AnnotationReader;
@@ -42,7 +40,7 @@ use Doctrine\Common\Annotations\Reader;
  * Responsible resolving a controller based
  * on a name and returning ActionModels
  */
-class ControllerAction
+class ActionReader
 {
     /**
      * @var Reader
@@ -70,87 +68,6 @@ class ControllerAction
         $this->actionCollection = new ActionCollection();
         $this->reader = new AnnotationReader();
         $this->resolve();
-    }
-
-    /**
-     * @param HttpRequestModel $apiRequest
-     * @param $action
-     * @param $args
-     *
-     * @throws \Exception
-     *
-     * @return $response
-     */
-    public function call(HttpRequestModel $apiRequest, $action, $args)
-    {
-        $response = new ActionResponseModel();
-
-        /** @var ActionModel $expAction */
-        $expAction = $this->actionCollection[$action][$apiRequest->getMethod()];
-
-        if (!isset($expAction)) {
-            throw new \Exception('Unknown action "'.$action.'" for this controller.');
-        }
-
-        $query = [];
-        parse_str($apiRequest->getQueryString(), $query);
-
-        $preparedArgs = [];
-        $paramIndex = 0;
-        $params = [];
-
-        /** @var ParamModel $param */
-        foreach ($expAction->getParamCollection() as $param) {
-            $params[$paramIndex] = $param;
-
-            // first get param from $args
-            if (isset($args[$paramIndex])) {
-                $preparedArgs[$paramIndex] = $args[$paramIndex];
-            }
-
-            if (isset($query[$param->getName()])) {
-                $preparedArgs[$paramIndex] = $query[$param->getName()];
-            }
-
-            $paramIndex++;
-        }
-
-        $callResponse = call_user_func_array([$this->controller, $expAction->getClassMethod()], $preparedArgs);
-
-        if ($callResponse) {
-            $response
-                ->setArgs($this->sanitizeArgs($preparedArgs))
-                ->setParams($params)
-                ->setResponse($callResponse);
-        }
-
-        return $response;
-    }
-
-    /**
-     * @param $preparedArgs
-     *
-     * @return array
-     */
-    private function sanitizeArgs($preparedArgs)
-    {
-        $args = [];
-
-        foreach ($preparedArgs as $preparedArg) {
-            $arg = $preparedArg;
-
-            if (is_object($preparedArg)) {
-                $arg = 'object';
-            }
-
-            if (is_object($preparedArg) && get_class($preparedArg)) {
-                $arg = get_class($preparedArg);
-            }
-
-            $args[] = $arg;
-        }
-
-        return $args;
     }
 
     /**

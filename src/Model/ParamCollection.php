@@ -37,7 +37,7 @@ final class ParamCollection extends ApiCollection
      */
     public function addModel(ParamModel $argModel)
     {
-        $this->hashContainer[$argModel->getName()] = $argModel;
-        $this->arrayContainer[] = $argModel;
+        $this->hashedContainer[$argModel->getName()] = $argModel;
+        $this->indexedContainer[] = $argModel;
     }
 }
