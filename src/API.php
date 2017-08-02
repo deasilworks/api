@@ -76,8 +76,10 @@ class API
         $actionReader = new ActionReader($controller);
 
         if ($apiRequest->getMethod() == 'OPTIONS') {
+            $ack = $this->optionsAck($actionReader, $action);
+
             return $result
-                ->setResponse($this->serialize($actionReader->getActionCollection()[$action]))
+                ->setResponse($this->serialize($ack))
                 ->setJson(true)
                 ->setHeaders(['Allow' => 'OPTIONS, GET, POST'])
                 ->setStatusCode(200);
@@ -87,8 +89,29 @@ class API
 
         return $result
             ->setResponse($this->serialize($ack))
-            ->setJson(true)
-            ->setStatusCode(200);
+            ->setJson(true) // serialized ^
+            ->setStatusCode($ack->getServerCode());
+    }
+
+    /**
+     * Ack Options
+     *
+     * @param ActionReader $actionReader
+     * @param string $action
+     *
+     * @return AckModel
+     */
+    private function optionsAck($actionReader, $action)
+    {
+        $actionMeta = $actionReader->getActionCollection()[$action];
+
+        $ack = new AckModel();
+        $ack
+            ->setServerCode(200)
+            ->setSuccess(true)
+            ->setPayload($actionMeta);
+
+        return $ack;
     }
 
     /**
@@ -120,12 +143,20 @@ class API
      */
     private function callAction($actionReader, $apiRequest, $action, $args)
     {
+
         $actionExecutor = new ActionExecutor($actionReader);
 
         /** @var ActionResponseModel $actionResponse */
         $actionResponse = $actionExecutor->execute($apiRequest, $action, $args);
 
+        // TODO: if this is empty set header to 404
+
         $ack = new AckModel();
+
+        $class = '';
+        if (is_object($actionResponse->getResponse())) {
+            $class = get_class($actionResponse->getResponse());
+        }
 
         $ack
             ->setSuccess(true)
@@ -133,7 +164,7 @@ class API
             ->setLocation($apiRequest->getPath())
             ->setLocationParams($actionResponse->getParams())
             ->setRequestArgs($actionResponse->getArgs())
-            ->setPayloadClass(get_class($actionResponse->getResponse()))
+            ->setPayloadClass($class)
             ->setPayload($actionResponse->getResponse());
 
         return $ack;

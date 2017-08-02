@@ -56,13 +56,13 @@ class ActionExecutor
     /**
      * @param HttpRequestModel $apiRequest
      * @param $action
-     * @param $args
+     * @param $indexedArgs
      *
      * @throws \Exception
      *
      * @return $response
      */
-    public function execute(HttpRequestModel $apiRequest, $action, $args)
+    public function execute(HttpRequestModel $apiRequest, $action, $indexedArgs)
     {
         $actionReader = $this->actionReader;
         $response = new ActionResponseModel();
@@ -85,7 +85,10 @@ class ActionExecutor
 
         $content = $this->contentParser($apiRequest);
 
-        list($preparedArgs, $params) = $this->prepareArgs($targetAction, $args, $query, $content);
+        // array of hashed based args
+        $searchHashedArgs = [$query, $content];
+
+        list($preparedArgs, $params) = $this->prepareArgs($targetAction, $indexedArgs, $searchHashedArgs);
 
         $callAction = [$actionReader->getController(), $targetAction->getClassMethod()];
         $callResponse = call_user_func_array($callAction, $preparedArgs);
@@ -115,6 +118,9 @@ class ActionExecutor
 
         if ($apiRequest->getContentType() == 'json') {
             $content = json_decode($apiRequest->getContent());
+
+            // TODO: check for REQ style object to pull out payload
+
         }
 
         return $content;
@@ -124,12 +130,12 @@ class ActionExecutor
      * Prepare Args.
      *
      * @param ActionModel $targetAction
-     * @param $args
-     * @param $query
+     * @param array $indexedArgs indexed array of args
+     * @param array $searchHashedArgs array of hashes to search
      *
      * @return array
      */
-    private function prepareArgs(ActionModel $targetAction, $args, $query, $content)
+    private function prepareArgs(ActionModel $targetAction, $indexedArgs, $searchHashedArgs)
     {
         $preparedArgs = [];
         $paramIndex = 0;
@@ -139,16 +145,23 @@ class ActionExecutor
         foreach ($targetAction->getParamCollection() as $param) {
             $params[$paramIndex] = $param;
 
-            if (isset($args[$paramIndex])) {
-                $preparedArgs[$paramIndex] = $args[$paramIndex];
+            if (isset($indexedArgs[$paramIndex])) {
+                $preparedArgs[$paramIndex] = $indexedArgs[$paramIndex];
             }
 
-            if (isset($query[$param->getName()])) {
-                $preparedArgs[$paramIndex] = $query[$param->getName()];
-            }
+            $paramName = $param->getName();
 
-            if (isset($content[$param->getName()])) {
-                $preparedArgs[$paramIndex] = $content[$param->getName()];
+            foreach ($searchHashedArgs as $searchHashedArg) {
+
+                if (is_object($searchHashedArg) && $searchHashedArg->$paramName) {
+                    $preparedArgs[$paramIndex] = $searchHashedArg->$paramName;
+                    continue;
+                }
+
+                if (isset($searchHashedArg[$paramName])) {
+                    $preparedArgs[$paramIndex] = $searchHashedArg[$paramName];
+                }
+
             }
 
             $paramIndex++;

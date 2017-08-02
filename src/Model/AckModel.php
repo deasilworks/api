@@ -25,6 +25,8 @@
 
 namespace deasilworks\api\model;
 
+use deasilworks\api\UUID;
+
 /**
  * Class AckModel.
  *
@@ -112,7 +114,7 @@ class AckModel
      */
     public function __construct()
     {
-        $this->ackUuid = '1231231231231';
+        $this->ackUuid = UUID::v4();
         $this->apiLevel = 1;
         $this->dateTime = new \DateTime();
     }
