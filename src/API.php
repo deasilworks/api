@@ -84,17 +84,18 @@ class API
         }
 
         $ack = $this->callAction($actionReader, $apiRequest, $action, $args);
+
         return $result
             ->setResponse($this->serialize($ack))
             ->setJson(true)
             ->setStatusCode(200);
-
     }
 
     /**
-     * Serialize
+     * Serialize.
      *
      * @param $object
+     *
      * @return string
      */
     private function serialize($object)
@@ -103,21 +104,22 @@ class API
         $context->setSerializeNull(true);
 
         $serializer = SerializerBuilder::create()->build();
+
         return $serializer->serialize($object, 'json', $context);
     }
 
     /**
-     * Call Action
+     * Call Action.
      *
-     * @param ActionReader $actionReader
+     * @param ActionReader     $actionReader
      * @param HttpRequestModel $apiRequest
      * @param $action
      * @param $args
      *
      * @return AckModel
      */
-    private function callAction($actionReader, $apiRequest, $action, $args) {
-
+    private function callAction($actionReader, $apiRequest, $action, $args)
+    {
         $actionExecutor = new ActionExecutor($actionReader);
 
         /** @var ActionResponseModel $actionResponse */

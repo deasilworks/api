@@ -69,9 +69,9 @@ class ActionExecutor
 
         $actionCollection = $actionReader->getActionCollection();
 
-        /** @var ActionModel $targetAction */
+        /* @var ActionModel $targetAction */
         if (!isset($actionCollection[$action][$apiRequest->getMethod()])) {
-            throw new \Exception('Method ' . $apiRequest->getMethod() . ' not supported by ' . $action . ' action.');
+            throw new \Exception('Method '.$apiRequest->getMethod().' not supported by '.$action.' action.');
         }
 
         $targetAction = $actionCollection[$action][$apiRequest->getMethod()];
@@ -90,7 +90,7 @@ class ActionExecutor
             parse_str($apiRequest->getContent(), $content);
         }
 
-        list ($preparedArgs, $params) = $this->prepareArgs($targetAction, $args, $query, $content);
+        list($preparedArgs, $params) = $this->prepareArgs($targetAction, $args, $query, $content);
 
         $callAction = [$actionReader->getController(), $targetAction->getClassMethod()];
         $callResponse = call_user_func_array($callAction, $preparedArgs);
@@ -106,11 +106,12 @@ class ActionExecutor
     }
 
     /**
-     * Prepare Args
+     * Prepare Args.
      *
      * @param ActionModel $targetAction
      * @param $args
      * @param $query
+     *
      * @return array
      */
     private function prepareArgs(ActionModel $targetAction, $args, $query, $content)
@@ -166,5 +167,4 @@ class ActionExecutor
 
         return $args;
     }
-
 }

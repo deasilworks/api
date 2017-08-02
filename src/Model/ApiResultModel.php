@@ -27,7 +27,6 @@ namespace deasilworks\api\model;
 
 /**
  * Class ExecutorResultModel.
- *
  */
 class ApiResultModel
 {
@@ -61,11 +60,13 @@ class ApiResultModel
 
     /**
      * @param mixed $response
+     *
      * @return ApiResultModel
      */
     public function setResponse($response)
     {
         $this->response = $response;
+
         return $this;
     }
 
@@ -79,11 +80,13 @@ class ApiResultModel
 
     /**
      * @param bool $json
+     *
      * @return ApiResultModel
      */
     public function setJson($json)
     {
         $this->json = $json;
+
         return $this;
     }
 
@@ -97,11 +100,13 @@ class ApiResultModel
 
     /**
      * @param int $statusCode
+     *
      * @return ApiResultModel
      */
     public function setStatusCode($statusCode)
     {
         $this->statusCode = $statusCode;
+
         return $this;
     }
 
@@ -115,11 +120,13 @@ class ApiResultModel
 
     /**
      * @param array $headers
+     *
      * @return ApiResultModel
      */
     public function setHeaders($headers)
     {
         $this->headers = $headers;
+
         return $this;
     }
 }
