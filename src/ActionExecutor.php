@@ -102,6 +102,7 @@ class ActionExecutor
 
     /**
      * @param HttpRequestModel $apiRequest
+     *
      * @return mixed
      */
     private function contentParser(HttpRequestModel $apiRequest)
