@@ -73,11 +73,13 @@ class PkgModel
 
     /**
      * @param string $pkgUuid
+     *
      * @return PkgModel
      */
     public function setPkgUuid($pkgUuid)
     {
         $this->pkgUuid = $pkgUuid;
+
         return $this;
     }
 
@@ -91,11 +93,13 @@ class PkgModel
 
     /**
      * @param \DateTime $pkgDateTime
+     *
      * @return PkgModel
      */
     public function setPkgDateTime($pkgDateTime)
     {
         $this->pkgDateTime = $pkgDateTime;
+
         return $this;
     }
 
@@ -109,11 +113,13 @@ class PkgModel
 
     /**
      * @param mixed $client
+     *
      * @return PkgModel
      */
     public function setClient($client)
     {
         $this->client = $client;
+
         return $this;
     }
 
@@ -127,11 +133,13 @@ class PkgModel
 
     /**
      * @param string $payload
+     *
      * @return PkgModel
      */
     public function setPayload($payload)
     {
         $this->payload = $payload;
+
         return $this;
     }
 }

@@ -36,7 +36,7 @@ use deasilworks\api\UUID;
 class ComponentsTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Test API Models
+     * Test API Models.
      */
     public function testModels()
     {
@@ -61,8 +61,8 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
 
         $paramModel = new \deasilworks\api\model\ParamModel();
         $paramModel
-            ->setType("")
-            ->setName("testParam");
+            ->setType('')
+            ->setName('testParam');
 
         $this->assertEquals('testParam', $paramModel->getName());
         $this->assertEquals('', $paramModel->getType());
@@ -90,11 +90,10 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
             ->addModel($actionModel);
 
         $this->assertInstanceOf(get_class($actionModel), $actionCollection->current());
-
     }
 
     /**
-     * Test UUID
+     * Test UUID.
      */
     public function testUuid()
     {
@@ -103,7 +102,6 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Test Hydrator Simple Object.
-     *
      */
     public function testHydratorSimple()
     {
@@ -115,8 +113,8 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(UUID::isValid($pkgModel->getPkgUuid()));
 
         $json = '{
-            "pkg_uuid": "' . UUID::v4() . '",
-            "pkg_date_time": "' . $dateTime->format(DateTime::ATOM) . '",
+            "pkg_uuid": "'.UUID::v4().'",
+            "pkg_date_time": "'.$dateTime->format(DateTime::ATOM).'",
             "payload": "Test payload."
         }';
 
@@ -124,12 +122,11 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
 
         $pkgModel = $hydrator->hydrate($pkgModel, $obj);
 
-        $this->assertEquals("Test payload.", $pkgModel->getPayload());
+        $this->assertEquals('Test payload.', $pkgModel->getPayload());
     }
 
     /**
      * Test Hydrator Complex Object.
-     *
      */
     public function testHydratorComplex()
     {
@@ -137,7 +134,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
 
         $dryActionCollection = new \deasilworks\api\model\ActionCollection();
 
-        $json = file_get_contents(__DIR__ . '/resources/action_collection.json');
+        $json = file_get_contents(__DIR__.'/resources/action_collection.json');
         $obj = json_decode($json);
 
         /** @var \deasilworks\api\model\ActionCollection $actionCollection */
@@ -165,5 +162,4 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(method_exists($paramModel, 'getName'));
         $this->assertTrue(method_exists($paramModel, 'getType'));
     }
-
 }

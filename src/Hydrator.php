@@ -39,12 +39,11 @@ namespace deasilworks\api;
  * Model setters can accept a scaler or type hinted
  * class. Values for setters without type hints are passed
  * as compound types or scalers.
- *
  */
 class Hydrator
 {
     /**
-     * Hydrate
+     * Hydrate.
      *
      * Takes an object and tries to hydrate it with another.
      *
@@ -54,7 +53,7 @@ class Hydrator
      * prefixed with "add". This is required in order to find
      * the type hint.
      *
-     * @param object $targetObject
+     * @param object       $targetObject
      * @param object|array $payload
      *
      * @return object
@@ -62,7 +61,6 @@ class Hydrator
     public function hydrate($targetObject, $payload)
     {
         foreach ($payload as $param => $value) {
-
             if (is_int($param)) {
                 foreach ($value as $par => $val) {
                     $setter = $this->prefixer('add', $par);
@@ -80,7 +78,7 @@ class Hydrator
     }
 
     /**
-     * Handle Method
+     * Handle Method.
      *
      * Checks the method signature for a type hint, if
      * one is found hydrate is called and the result is
@@ -96,12 +94,12 @@ class Hydrator
     protected function callMethod($targetObject, $method, $value)
     {
         if (method_exists($targetObject, $method)) {
-
             $dryObject = $this->getParameterClassObject($targetObject, $method);
 
             if ($dryObject && is_object($dryObject)) {
                 $hydratedObject = $this->hydrate($dryObject, $value);
                 $targetObject->$method($hydratedObject);
+
                 return;
             }
 
@@ -110,30 +108,33 @@ class Hydrator
     }
 
     /**
-     * Get Parameter Class Object
+     * Get Parameter Class Object.
      *
      * Get the Class of object a method requires.
      *
      * @param $object
      * @param $method
+     *
      * @return mixed
      */
-    public function getParameterClassObject($object, $method) {
+    public function getParameterClassObject($object, $method)
+    {
         $reflectionClass = new \ReflectionClass(get_class($object));
         $parameters = $reflectionClass->getMethod($method)->getParameters();
 
-        if ($parameters && isset($parameters[0]) ) {
+        if ($parameters && isset($parameters[0])) {
             $refClass = $parameters[0]->getClass();
 
             if ($refClass) {
                 $class = $refClass->getName();
+
                 return new $class();
             }
         }
     }
 
     /**
-     * Snake to Pascal
+     * Snake to Pascal.
      *
      * Converts a_snake_case_string to aPascalCaseString.
      *
@@ -154,7 +155,8 @@ class Hydrator
      *
      * @return string
      */
-    private function prefixer($prefix, $method) {
-        return $prefix . $this->snakeToPascal($method);
+    private function prefixer($prefix, $method)
+    {
+        return $prefix.$this->snakeToPascal($method);
     }
 }
