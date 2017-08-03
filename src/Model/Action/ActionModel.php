@@ -23,7 +23,9 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\model;
+namespace deasilworks\api\Model\Action;
+
+use deasilworks\api\model\ParamCollection;
 
 /**
  * Class ActionModel.
@@ -125,7 +127,7 @@ class ActionModel
      *
      * @return ActionModel
      */
-    public function setParamCollection($paramCollection)
+    public function setParamCollection(ParamCollection $paramCollection)
     {
         $this->paramCollection = $paramCollection;
 

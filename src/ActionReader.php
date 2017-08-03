@@ -28,7 +28,7 @@ namespace deasilworks\api;
 use deasilworks\api\Annotation\ApiAction;
 use deasilworks\api\Annotation\ApiController;
 use deasilworks\api\model\ActionCollection;
-use deasilworks\api\model\ActionModel;
+use deasilworks\api\Model\Action\ActionModel;
 use deasilworks\api\model\ParamCollection;
 use deasilworks\api\model\ParamModel;
 use Doctrine\Common\Annotations\AnnotationReader;

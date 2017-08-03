@@ -25,7 +25,7 @@
 
 namespace deasilworks\api;
 
-use deasilworks\api\model\ActionModel;
+use deasilworks\api\Model\Action\ActionModel;
 use deasilworks\api\model\ActionResponseModel;
 use deasilworks\api\model\HttpRequestModel;
 use deasilworks\api\model\ParamModel;
@@ -152,6 +152,10 @@ class ActionExecutor
 
             foreach ($searchHashedArgs as $searchHashedArg) {
                 if (is_object($searchHashedArg) && $searchHashedArg->$paramName) {
+
+                    // TODO if the action is looking for a class we need to try to
+                    // hydrate it using a hydrator.
+
                     $preparedArgs[$paramIndex] = $searchHashedArg->$paramName;
                     continue;
                 }

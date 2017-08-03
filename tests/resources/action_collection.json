@@ -1,0 +1,35 @@
+[
+  {
+    "model": {
+      "class_method": "getTestA",
+      "rest_method": "GET",
+      "route_name": "test-page-a",
+      "param_collection": [
+          { "model": { "name": "paramNameA1", "type": "paramTypeA1" } },
+          { "model": { "name": "paramNameA2", "type": "paramTypeA2" } },
+          { "model": { "name": "paramNameA3", "type": "paramTypeA3" } }
+      ]
+    }
+  },
+  {
+    "model": {
+      "class_method": "getTestB",
+      "rest_method": "GET",
+      "route_name": "test-page-b",
+      "param_collection": [
+        { "model": { "name": "paramNameB1", "type": "paramTypeB1" } },
+        { "model": { "name": "paramNameB2", "type": "paramTypeB2" } }
+      ]
+    }
+  },
+  {
+    "model": {
+      "class_method": "setTestB",
+      "rest_method": "POST",
+      "route_name": "test-page-b",
+      "param_collection": [
+        { "model": { "name": "paramNameB1", "type": "paramTypeB1" } }
+      ]
+    }
+  }
+]

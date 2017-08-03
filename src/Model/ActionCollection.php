@@ -25,6 +25,8 @@
 
 namespace deasilworks\api\model;
 
+use deasilworks\api\Model\Action\ActionModel;
+
 /**
  * Class ActionCollection.
  *

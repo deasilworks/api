@@ -33,11 +33,11 @@ namespace deasilworks\api\model;
 final class ParamCollection extends ApiCollection
 {
     /**
-     * @param ParamModel $argModel
+     * @param ParamModel $paramModel
      */
-    public function addModel(ParamModel $argModel)
+    public function addModel(ParamModel $paramModel)
     {
-        $this->hashedContainer[$argModel->getName()] = $argModel;
-        $this->indexedContainer[] = $argModel;
+        $this->hashedContainer[$paramModel->getName()] = $paramModel;
+        $this->indexedContainer[] = $paramModel;
     }
 }

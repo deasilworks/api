@@ -50,7 +50,7 @@ class AckModel
     protected $dateTime;
 
     /**
-     * @var string
+     * @var int
      */
     protected $serverCode;
 
@@ -144,7 +144,7 @@ class AckModel
     }
 
     /**
-     * @return string
+     * @return int
      */
     public function getServerCode()
     {
@@ -152,7 +152,7 @@ class AckModel
     }
 
     /**
-     * @param string $serverCode
+     * @param int $serverCode
      *
      * @return AckModel
      */
