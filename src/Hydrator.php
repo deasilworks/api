@@ -44,14 +44,14 @@ class Hydrator
 {
     /**
      * Hydrating a class object from a hashed array
-     * uses an **Adder**. addSomething()
+     * uses an **Adder**. addSomething().
      */
     const PREFIX_ADDER = 'add';
 
     /**
      * Hydrating a class object from standard object
      * calls a **Setter** for each of it's properties.
-     * setSomething()
+     * setSomething().
      */
     const PREFIX_SETTER = 'set';
 

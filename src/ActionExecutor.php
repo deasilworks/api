@@ -27,8 +27,8 @@ namespace deasilworks\API;
 
 use deasilworks\API\Model\Action\ActionModel;
 use deasilworks\API\Model\ActionResponseModel;
-use deasilworks\API\Model\RestRequestModel;
 use deasilworks\API\Model\ParamModel;
+use deasilworks\API\Model\RestRequestModel;
 
 /**
  * Class ControllerAction.
