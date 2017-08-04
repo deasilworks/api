@@ -11,16 +11,15 @@ API Index
             * [ActionResponseModel](deasilworks-api-Model-ActionResponseModel.md)
             * deasilworks\api\Model\Action
                 * [ActionModel](deasilworks-api-Model-Action-ActionModel.md)
+            * [AckModel](deasilworks-api-Model-AckModel.md)
             * [ApiResultModel](deasilworks-api-Model-ApiResultModel.md)
+            * [ActionCollection](deasilworks-api-Model-ActionCollection.md)
             * [PkgModel](deasilworks-api-Model-PkgModel.md)
         * deasilworks\api\Annotation
             * [ApiAction](deasilworks-api-Annotation-ApiAction.md)
             * [ApiController](deasilworks-api-Annotation-ApiController.md)
         * [APIConfig](deasilworks-api-APIConfig.md)
         * [UUID](deasilworks-api-UUID.md)
-        * deasilworks\api\model
-            * [AckModel](deasilworks-api-model-AckModel.md)
-            * [ActionCollection](deasilworks-api-model-ActionCollection.md)
         * [ActionExecutor](deasilworks-api-ActionExecutor.md)
         * deasilworks\api\ServiceProvider
             * deasilworks\api\ServiceProvider\Silex

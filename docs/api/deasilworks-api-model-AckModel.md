@@ -1,4 +1,4 @@
-deasilworks\api\model\AckModel
+deasilworks\api\Model\AckModel
 ===============
 
 Class AckModel.
@@ -7,7 +7,7 @@ API metadata
 
 
 * Class name: AckModel
-* Namespace: deasilworks\api\model
+* Namespace: deasilworks\api\Model
 
 
 
@@ -188,7 +188,7 @@ Methods
 
 ### __construct
 
-    mixed deasilworks\api\model\AckModel::__construct()
+    mixed deasilworks\api\Model\AckModel::__construct()
 
 AckModel constructor.
 
@@ -201,7 +201,7 @@ AckModel constructor.
 
 ### getAckVersion
 
-    integer deasilworks\api\model\AckModel::getAckVersion()
+    integer deasilworks\api\Model\AckModel::getAckVersion()
 
 
 
@@ -214,7 +214,7 @@ AckModel constructor.
 
 ### getAckUuid
 
-    string deasilworks\api\model\AckModel::getAckUuid()
+    string deasilworks\api\Model\AckModel::getAckUuid()
 
 
 
@@ -227,7 +227,7 @@ AckModel constructor.
 
 ### getDateTime
 
-    \DateTime deasilworks\api\model\AckModel::getDateTime()
+    \DateTime deasilworks\api\Model\AckModel::getDateTime()
 
 
 
@@ -240,7 +240,7 @@ AckModel constructor.
 
 ### getServerCode
 
-    integer deasilworks\api\model\AckModel::getServerCode()
+    integer deasilworks\api\Model\AckModel::getServerCode()
 
 
 
@@ -253,7 +253,7 @@ AckModel constructor.
 
 ### setServerCode
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setServerCode(integer $serverCode)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setServerCode(integer $serverCode)
 
 
 
@@ -269,7 +269,7 @@ AckModel constructor.
 
 ### isSuccess
 
-    boolean deasilworks\api\model\AckModel::isSuccess()
+    boolean deasilworks\api\Model\AckModel::isSuccess()
 
 
 
@@ -282,7 +282,7 @@ AckModel constructor.
 
 ### setSuccess
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setSuccess(boolean $success)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setSuccess(boolean $success)
 
 
 
@@ -298,7 +298,7 @@ AckModel constructor.
 
 ### getErrorCode
 
-    string deasilworks\api\model\AckModel::getErrorCode()
+    string deasilworks\api\Model\AckModel::getErrorCode()
 
 
 
@@ -311,7 +311,7 @@ AckModel constructor.
 
 ### setErrorCode
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setErrorCode(string $errorCode)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setErrorCode(string $errorCode)
 
 
 
@@ -327,7 +327,7 @@ AckModel constructor.
 
 ### getErrorClass
 
-    string deasilworks\api\model\AckModel::getErrorClass()
+    string deasilworks\api\Model\AckModel::getErrorClass()
 
 
 
@@ -340,7 +340,7 @@ AckModel constructor.
 
 ### setErrorClass
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setErrorClass(string $errorClass)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setErrorClass(string $errorClass)
 
 
 
@@ -356,7 +356,7 @@ AckModel constructor.
 
 ### getErrorPayload
 
-    mixed deasilworks\api\model\AckModel::getErrorPayload()
+    mixed deasilworks\api\Model\AckModel::getErrorPayload()
 
 
 
@@ -369,7 +369,7 @@ AckModel constructor.
 
 ### setErrorPayload
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setErrorPayload(mixed $errorPayload)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setErrorPayload(mixed $errorPayload)
 
 
 
@@ -385,7 +385,7 @@ AckModel constructor.
 
 ### getErrorMessage
 
-    string deasilworks\api\model\AckModel::getErrorMessage()
+    string deasilworks\api\Model\AckModel::getErrorMessage()
 
 
 
@@ -398,7 +398,7 @@ AckModel constructor.
 
 ### setErrorMessage
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setErrorMessage(string $errorMessage)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setErrorMessage(string $errorMessage)
 
 
 
@@ -414,7 +414,7 @@ AckModel constructor.
 
 ### getApiLevel
 
-    string deasilworks\api\model\AckModel::getApiLevel()
+    string deasilworks\api\Model\AckModel::getApiLevel()
 
 
 
@@ -427,7 +427,7 @@ AckModel constructor.
 
 ### setApiLevel
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setApiLevel(string $apiLevel)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setApiLevel(string $apiLevel)
 
 
 
@@ -443,7 +443,7 @@ AckModel constructor.
 
 ### getLocation
 
-    string deasilworks\api\model\AckModel::getLocation()
+    string deasilworks\api\Model\AckModel::getLocation()
 
 
 
@@ -456,7 +456,7 @@ AckModel constructor.
 
 ### setLocation
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setLocation(string $location)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setLocation(string $location)
 
 
 
@@ -472,7 +472,7 @@ AckModel constructor.
 
 ### getLocationParams
 
-    array deasilworks\api\model\AckModel::getLocationParams()
+    array deasilworks\api\Model\AckModel::getLocationParams()
 
 
 
@@ -485,7 +485,7 @@ AckModel constructor.
 
 ### setLocationParams
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setLocationParams(array $locationParams)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setLocationParams(array $locationParams)
 
 
 
@@ -501,7 +501,7 @@ AckModel constructor.
 
 ### getRequestArgs
 
-    array deasilworks\api\model\AckModel::getRequestArgs()
+    array deasilworks\api\Model\AckModel::getRequestArgs()
 
 
 
@@ -514,7 +514,7 @@ AckModel constructor.
 
 ### setRequestArgs
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setRequestArgs(array $requestArgs)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setRequestArgs(array $requestArgs)
 
 
 
@@ -530,7 +530,7 @@ AckModel constructor.
 
 ### getPayloadClass
 
-    string deasilworks\api\model\AckModel::getPayloadClass()
+    string deasilworks\api\Model\AckModel::getPayloadClass()
 
 
 
@@ -543,7 +543,7 @@ AckModel constructor.
 
 ### setPayloadClass
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setPayloadClass(string $payloadClass)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setPayloadClass(string $payloadClass)
 
 
 
@@ -559,7 +559,7 @@ AckModel constructor.
 
 ### getPayload
 
-    mixed deasilworks\api\model\AckModel::getPayload()
+    mixed deasilworks\api\Model\AckModel::getPayload()
 
 
 
@@ -572,7 +572,7 @@ AckModel constructor.
 
 ### setPayload
 
-    \deasilworks\api\model\AckModel deasilworks\api\model\AckModel::setPayload(mixed $payload)
+    \deasilworks\api\Model\AckModel deasilworks\api\Model\AckModel::setPayload(mixed $payload)
 
 
 

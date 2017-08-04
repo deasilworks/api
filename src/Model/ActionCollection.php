@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\model;
+namespace deasilworks\api\Model;
 
 use deasilworks\api\Model\Action\ActionModel;
 

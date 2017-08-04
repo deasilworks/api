@@ -1545,25 +1545,25 @@
     </parse_markers>
     <source>eJyNVOFu4zYM/p+nIIobkhRuk94K3G23onMTpxHm2IHtNCvW7aDYSqzNsQxLubbo9d1HKk6KXtvbhDi2KPIjP1LkL+dVXrVavcMWHMKEJeDLVJRa4JYkA1Xd13KVG+ikXXjfP/kAQ8G1LGCu6n+0A6xMG9WpqNdSa6lKkBpyUYvFPaxqXhqRObCshQC1hDTn9Uo4YBTw8h4qUWs0UAvDZSnLFXBI0SXhobLJEUmrpbnltUD9DLjWKpUcISFT6WYtSsMNuVzKQmjomFzAQdxYHHStn0zwggBlCXS8O4VbaXK1MVALbWqZEoyDSmmxySiS3XEh17JxQuY2G5rwEHqjkQoF7MBaZXJJb2H5VZtFIXXuQCYJfbExKNQktOl1iE1P1aBFYYNDEIkELOmnGK0aOaoouaZJlybJba7Wz/lIG9VyU5foWFizTGH6rN+/RWpIQhZLVRTqljimqswkUdM/k22Ch3yhvgjLaVv3UhkMeRsHlaN6KnNzpHNeFLAQTe7QM2aaP6dVUwza4GWQvIBK1dbpt3SPm6uUjD2Iw1EydyMPWAzTKLxiQ28IB26M+wMH5iwZh7MEUCNyg+QawhG4wTX8xoKhA97v08iLYwgjQmOTqc88FLNg4M+GLLiECzQNQrzsDK884iah9dmgMS8mvIkXDca4dS+Yz5Jrh7BGLAkIeRRG4MLUjRI2mPluBNNZNA1jD4MYInLAglGEjryJFyTH6Bhl4F3hBuKx6/vkjeDcGdKIKFAYhNPriF2OExiH/tBD4YWH8bkXvrf1huwGvssmDgzdiXvpWasQgSxJ0tyGCfOxR1Ly6uJvkLAwID6DMEgi3DpIN0r21nMWew64EYspM6MonFimlF00Ci0OmgbeFogy/7xAqEL7WeztMWHouT7CxWTccN3pU5F7rVbJ10JXHO9PZgfKLc2TG17JTzSNtsOnwHaH2YwNtzbpft96aAEuq0frEK5Oj5vPneTXeFNV2Nt6zmsaLboT53jvJgLbOgvQe3eneSFSjp0M0rQ1XnQQd9ZOYh8U0pgCB1cpXsDXwmCrAXV3uWqkPfu2vZ/iCU6NFBuytLMFvpx2ti63wdPaYVSIYZad9g/90zt6jl752z1tZ29Oa20+44zNOn0H+ndLXDj0XpH9l83b5306h6/4ddrv97+j+ONe8eP3Fd+O8hXZHqb7yX4+tr4tPdNwxQuZvahQxWu+hnebjczeKN5CqeL/lE5q66Fjsd4oIt6Z1ec1N2neaff+unk4/6N/9BM/Wv758PHx5uhpd/py1z5+lixa7Tf0T94/3jyev+vJtrNl1oWzszM42SXnsfUvDUBBfw==</source>
   </file>
-  <file path="Model/AckModel.php" generated-path="Model.AckModel.html" hash="f4e449462ffac179468894bb767da0bd" package="Default">
+  <file path="Model/AckModel.php" generated-path="Model.AckModel.html" hash="a0039af0cee9c33baae5d8b8e325f0b2" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="UUID">\deasilworks\api\UUID</namespace-alias>
-    <class final="false" abstract="false" namespace="deasilworks\api\model" line="35" package="Default">
+    <class final="false" abstract="false" namespace="deasilworks\api\Model" line="35" package="Default">
       <extends/>
       <name>AckModel</name>
-      <full_name>\deasilworks\api\model\AckModel</full_name>
+      <full_name>\deasilworks\api\Model\AckModel</full_name>
       <docblock line="35">
         <description>Class AckModel.</description>
         <long-description>API metadata</long-description>
         <tag name="package" line="35" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="40" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="40" package="Default">
         <name>$ackVersion</name>
-        <full_name>\deasilworks\api\model\AckModel::ackVersion</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::ackVersion</full_name>
         <default>4</default>
         <docblock line="40">
           <description></description>
@@ -1573,9 +1573,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="45" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="45" package="Default">
         <name>$ackUuid</name>
-        <full_name>\deasilworks\api\model\AckModel::ackUuid</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::ackUuid</full_name>
         <default></default>
         <docblock line="45">
           <description></description>
@@ -1585,9 +1585,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="50" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="50" package="Default">
         <name>$dateTime</name>
-        <full_name>\deasilworks\api\model\AckModel::dateTime</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::dateTime</full_name>
         <default></default>
         <docblock line="50">
           <description></description>
@@ -1597,9 +1597,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="55" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="55" package="Default">
         <name>$serverCode</name>
-        <full_name>\deasilworks\api\model\AckModel::serverCode</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::serverCode</full_name>
         <default></default>
         <docblock line="55">
           <description></description>
@@ -1609,9 +1609,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="60" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="60" package="Default">
         <name>$success</name>
-        <full_name>\deasilworks\api\model\AckModel::success</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::success</full_name>
         <default></default>
         <docblock line="60">
           <description></description>
@@ -1621,9 +1621,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="65" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="65" package="Default">
         <name>$errorCode</name>
-        <full_name>\deasilworks\api\model\AckModel::errorCode</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::errorCode</full_name>
         <default></default>
         <docblock line="65">
           <description></description>
@@ -1633,9 +1633,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="70" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="70" package="Default">
         <name>$errorClass</name>
-        <full_name>\deasilworks\api\model\AckModel::errorClass</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::errorClass</full_name>
         <default></default>
         <docblock line="70">
           <description></description>
@@ -1645,9 +1645,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="75" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="75" package="Default">
         <name>$errorPayload</name>
-        <full_name>\deasilworks\api\model\AckModel::errorPayload</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::errorPayload</full_name>
         <default></default>
         <docblock line="75">
           <description></description>
@@ -1657,9 +1657,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="80" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="80" package="Default">
         <name>$errorMessage</name>
-        <full_name>\deasilworks\api\model\AckModel::errorMessage</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::errorMessage</full_name>
         <default></default>
         <docblock line="80">
           <description></description>
@@ -1669,9 +1669,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="85" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="85" package="Default">
         <name>$apiLevel</name>
-        <full_name>\deasilworks\api\model\AckModel::apiLevel</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::apiLevel</full_name>
         <default></default>
         <docblock line="85">
           <description></description>
@@ -1681,9 +1681,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="90" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="90" package="Default">
         <name>$location</name>
-        <full_name>\deasilworks\api\model\AckModel::location</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::location</full_name>
         <default></default>
         <docblock line="90">
           <description></description>
@@ -1693,9 +1693,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="95" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="95" package="Default">
         <name>$locationParams</name>
-        <full_name>\deasilworks\api\model\AckModel::locationParams</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::locationParams</full_name>
         <default></default>
         <docblock line="95">
           <description></description>
@@ -1705,9 +1705,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="100" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="100" package="Default">
         <name>$requestArgs</name>
-        <full_name>\deasilworks\api\model\AckModel::requestArgs</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::requestArgs</full_name>
         <default></default>
         <docblock line="100">
           <description></description>
@@ -1717,9 +1717,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="105" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="105" package="Default">
         <name>$payloadClass</name>
-        <full_name>\deasilworks\api\model\AckModel::payloadClass</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::payloadClass</full_name>
         <default></default>
         <docblock line="105">
           <description></description>
@@ -1729,9 +1729,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\api\model" line="110" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="110" package="Default">
         <name>$payload</name>
-        <full_name>\deasilworks\api\model\AckModel::payload</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::payload</full_name>
         <default></default>
         <docblock line="110">
           <description></description>
@@ -1741,18 +1741,18 @@
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="117" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="117" package="Default">
         <name>__construct</name>
-        <full_name>\deasilworks\api\model\AckModel::__construct()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::__construct()</full_name>
         <docblock line="117">
           <description>AckModel constructor.</description>
           <long-description></long-description>
           <tag name="SuppressWarnings" line="117" description="(StaticAccess)"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="127" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="127" package="Default">
         <name>getAckVersion</name>
-        <full_name>\deasilworks\api\model\AckModel::getAckVersion()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getAckVersion()</full_name>
         <docblock line="127">
           <description></description>
           <long-description></long-description>
@@ -1761,9 +1761,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="135" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="135" package="Default">
         <name>getAckUuid</name>
-        <full_name>\deasilworks\api\model\AckModel::getAckUuid()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getAckUuid()</full_name>
         <docblock line="135">
           <description></description>
           <long-description></long-description>
@@ -1772,9 +1772,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="143" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="143" package="Default">
         <name>getDateTime</name>
-        <full_name>\deasilworks\api\model\AckModel::getDateTime()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getDateTime()</full_name>
         <docblock line="143">
           <description></description>
           <long-description></long-description>
@@ -1783,9 +1783,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="151" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="151" package="Default">
         <name>getServerCode</name>
-        <full_name>\deasilworks\api\model\AckModel::getServerCode()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getServerCode()</full_name>
         <docblock line="151">
           <description></description>
           <long-description></long-description>
@@ -1794,17 +1794,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="161" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="161" package="Default">
         <name>setServerCode</name>
-        <full_name>\deasilworks\api\model\AckModel::setServerCode()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setServerCode()</full_name>
         <docblock line="161">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="161" description="" type="integer" variable="$serverCode">
             <type>integer</type>
           </tag>
-          <tag name="return" line="161" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="161" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -1813,9 +1813,9 @@
           <type>integer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="171" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="171" package="Default">
         <name>isSuccess</name>
-        <full_name>\deasilworks\api\model\AckModel::isSuccess()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::isSuccess()</full_name>
         <docblock line="171">
           <description></description>
           <long-description></long-description>
@@ -1824,17 +1824,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="181" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="181" package="Default">
         <name>setSuccess</name>
-        <full_name>\deasilworks\api\model\AckModel::setSuccess()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setSuccess()</full_name>
         <docblock line="181">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="181" description="" type="boolean" variable="$success">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="181" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="181" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -1843,9 +1843,9 @@
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="191" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="191" package="Default">
         <name>getErrorCode</name>
-        <full_name>\deasilworks\api\model\AckModel::getErrorCode()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getErrorCode()</full_name>
         <docblock line="191">
           <description></description>
           <long-description></long-description>
@@ -1854,17 +1854,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="201" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="201" package="Default">
         <name>setErrorCode</name>
-        <full_name>\deasilworks\api\model\AckModel::setErrorCode()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setErrorCode()</full_name>
         <docblock line="201">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="201" description="" type="string" variable="$errorCode">
             <type>string</type>
           </tag>
-          <tag name="return" line="201" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="201" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -1873,9 +1873,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="211" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="211" package="Default">
         <name>getErrorClass</name>
-        <full_name>\deasilworks\api\model\AckModel::getErrorClass()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getErrorClass()</full_name>
         <docblock line="211">
           <description></description>
           <long-description></long-description>
@@ -1884,17 +1884,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="221" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="221" package="Default">
         <name>setErrorClass</name>
-        <full_name>\deasilworks\api\model\AckModel::setErrorClass()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setErrorClass()</full_name>
         <docblock line="221">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="221" description="" type="string" variable="$errorClass">
             <type>string</type>
           </tag>
-          <tag name="return" line="221" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="221" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -1903,9 +1903,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="231" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="231" package="Default">
         <name>getErrorPayload</name>
-        <full_name>\deasilworks\api\model\AckModel::getErrorPayload()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getErrorPayload()</full_name>
         <docblock line="231">
           <description></description>
           <long-description></long-description>
@@ -1914,17 +1914,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="241" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="241" package="Default">
         <name>setErrorPayload</name>
-        <full_name>\deasilworks\api\model\AckModel::setErrorPayload()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setErrorPayload()</full_name>
         <docblock line="241">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="241" description="" type="mixed" variable="$errorPayload">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="241" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="241" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -1933,9 +1933,9 @@
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="251" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="251" package="Default">
         <name>getErrorMessage</name>
-        <full_name>\deasilworks\api\model\AckModel::getErrorMessage()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getErrorMessage()</full_name>
         <docblock line="251">
           <description></description>
           <long-description></long-description>
@@ -1944,17 +1944,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="261" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="261" package="Default">
         <name>setErrorMessage</name>
-        <full_name>\deasilworks\api\model\AckModel::setErrorMessage()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setErrorMessage()</full_name>
         <docblock line="261">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="261" description="" type="string" variable="$errorMessage">
             <type>string</type>
           </tag>
-          <tag name="return" line="261" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="261" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -1963,9 +1963,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="271" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="271" package="Default">
         <name>getApiLevel</name>
-        <full_name>\deasilworks\api\model\AckModel::getApiLevel()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getApiLevel()</full_name>
         <docblock line="271">
           <description></description>
           <long-description></long-description>
@@ -1974,17 +1974,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="281" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="281" package="Default">
         <name>setApiLevel</name>
-        <full_name>\deasilworks\api\model\AckModel::setApiLevel()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setApiLevel()</full_name>
         <docblock line="281">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="281" description="" type="string" variable="$apiLevel">
             <type>string</type>
           </tag>
-          <tag name="return" line="281" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="281" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -1993,9 +1993,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="291" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="291" package="Default">
         <name>getLocation</name>
-        <full_name>\deasilworks\api\model\AckModel::getLocation()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getLocation()</full_name>
         <docblock line="291">
           <description></description>
           <long-description></long-description>
@@ -2004,17 +2004,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="301" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="301" package="Default">
         <name>setLocation</name>
-        <full_name>\deasilworks\api\model\AckModel::setLocation()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setLocation()</full_name>
         <docblock line="301">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="301" description="" type="string" variable="$location">
             <type>string</type>
           </tag>
-          <tag name="return" line="301" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="301" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -2023,9 +2023,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="311" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="311" package="Default">
         <name>getLocationParams</name>
-        <full_name>\deasilworks\api\model\AckModel::getLocationParams()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getLocationParams()</full_name>
         <docblock line="311">
           <description></description>
           <long-description></long-description>
@@ -2034,17 +2034,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="321" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="321" package="Default">
         <name>setLocationParams</name>
-        <full_name>\deasilworks\api\model\AckModel::setLocationParams()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setLocationParams()</full_name>
         <docblock line="321">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="321" description="" type="array" variable="$locationParams">
             <type>array</type>
           </tag>
-          <tag name="return" line="321" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="321" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -2053,9 +2053,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="331" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="331" package="Default">
         <name>getRequestArgs</name>
-        <full_name>\deasilworks\api\model\AckModel::getRequestArgs()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getRequestArgs()</full_name>
         <docblock line="331">
           <description></description>
           <long-description></long-description>
@@ -2064,17 +2064,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="341" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="341" package="Default">
         <name>setRequestArgs</name>
-        <full_name>\deasilworks\api\model\AckModel::setRequestArgs()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setRequestArgs()</full_name>
         <docblock line="341">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="341" description="" type="array" variable="$requestArgs">
             <type>array</type>
           </tag>
-          <tag name="return" line="341" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="341" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -2083,9 +2083,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="351" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="351" package="Default">
         <name>getPayloadClass</name>
-        <full_name>\deasilworks\api\model\AckModel::getPayloadClass()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getPayloadClass()</full_name>
         <docblock line="351">
           <description></description>
           <long-description></long-description>
@@ -2094,17 +2094,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="361" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="361" package="Default">
         <name>setPayloadClass</name>
-        <full_name>\deasilworks\api\model\AckModel::setPayloadClass()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setPayloadClass()</full_name>
         <docblock line="361">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="361" description="" type="string" variable="$payloadClass">
             <type>string</type>
           </tag>
-          <tag name="return" line="361" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="361" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -2113,9 +2113,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="371" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="371" package="Default">
         <name>getPayload</name>
-        <full_name>\deasilworks\api\model\AckModel::getPayload()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::getPayload()</full_name>
         <docblock line="371">
           <description></description>
           <long-description></long-description>
@@ -2124,17 +2124,17 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="381" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="381" package="Default">
         <name>setPayload</name>
-        <full_name>\deasilworks\api\model\AckModel::setPayload()</full_name>
+        <full_name>\deasilworks\api\Model\AckModel::setPayload()</full_name>
         <docblock line="381">
           <description></description>
           <long-description></long-description>
           <tag name="param" line="381" description="" type="mixed" variable="$payload">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="381" description="" type="\deasilworks\api\model\AckModel">
-            <type>\deasilworks\api\model\AckModel</type>
+          <tag name="return" line="381" description="" type="\deasilworks\api\Model\AckModel">
+            <type>\deasilworks\api\Model\AckModel</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -2189,7 +2189,7 @@
       <error line="105" code="PPC:ERR-50007">No summary for property $payloadClass</error>
       <error line="110" code="PPC:ERR-50007">No summary for property $payload</error>
     </parse_markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="ActionExecutor.php" generated-path="ActionExecutor.html" hash="6ca9c035da0986404c4097ca511dca93" package="Default">
     <docblock line="0">
@@ -3026,25 +3026,62 @@ on a name and returning ActionModels</long-description>
     </parse_markers>
     <source>eJx9VEtv4zYQvvtXDIwckkBN2l4KdPsIY9MxUVkyJHndAHuhJSpiK4sCSccNFvnvnaFlG3EXFQwYHM58j+GQv/zeN/1odH87gltYiAJiXarOKVxSZGL6N6tfGg/X5Q38+P0PP8FUSadbWBv7t4tAdOWQulR2q53TpgPtoFFWbd7gxcrOqyqC2ioFpoaykfZFReANyO4NemUdFpiNl7rT3QtIKJGS8DDZN4jkTO330irMr0A6Z0otERIqU+62qvPSE2WtW+Xg2jcKxvlQMb4JPJWSLQHqDmj7uAt77Ruz82CV81aXBBNhUtnuKlJy3G71Vg8kVB664QgPoXcOrZDgCLam0jX9q+Cv321a7ZoIKk3om53HoKNgaG9Ebu6NBafaIA5BNBoIps8aQxoR9dRcP7TLUWTfmO1HPzqoqne2Q2IVyiqD7Qu8f6nSU4QqatO2Zk8eS9NVmqy5n6m2wE25Ma8qeDqce2c8Sj7ooOPoz8c8bLlGti1s1NA7ZMZOy4+2LGlwHodByxZ6YwPppd27YZSKOYc8nRVrlnEQOSyz9LOY8imMWY7rcQRrUczTVQGYkbGkeIZ0Bix5hj9EMo2A/7nMeJ5DmhGaWCxjwTEskkm8morkCR6xNElx2AWOPOIWaeAc0ATPCW/Bs8kcl+xRxKJ4jghrJoqEkGdpBgyWLCvEZBWzDJarbJnmHEVMETkRySxDIr7gSXGHxBgD/hkXkM9ZHBMbwbEV2shIKEzS5XMmnuYFzNN4yjH4yFEfe4z5gQ3dTWImFhFM2YI98VCVIlAwSZkHmbCec4oSK8PfpBBpQn4maVJkuIzQblacqtci5xGwTOTUmVmWLoJT6i4WpQEHSxN+AKLOfzwgTKH1KucnTJhyFiNcTsWD12M+HfL9aNTJrXK9xPmpwoOyp/fki+z1F9bhYIUL94kepjARD+fgMCMPBT0k/vrrGLuS5+P3m4Bb6w4HrGzxoQDW64npvMVxV3b0dQT4BTz6buFJeRfGT/3TG4djK8vDVNY4rhIsXn65aekuHDHuhtIjwsOrtLAxph0C9+G/t/oVXyi4OiH8Ct7uFLq5UPBglcfr+g2I8FDgXe6CJLza2YB1fRMSDmboGyCu6HJ+99uR8lPYf/8vYy+t3AbCs75LVwPkx/b9nzyn/EnfCfVS6IVCbMrVWe037RxNvI/+BeyVAHw=</source>
   </file>
-  <file path="Model/ActionCollection.php" generated-path="Model.ActionCollection.html" hash="7a417f80b7e4249a0b45fdb85c267b85" package="Default">
+  <file path="Model/ActionCollection.php" generated-path="Model.ActionCollection.html" hash="6c7c0219d7fd986cf8ef9bfe1207081b" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="ActionModel">\deasilworks\api\Model\Action\ActionModel</namespace-alias>
-    <class final="true" abstract="false" namespace="deasilworks\api\model" line="35" package="Default">
-      <extends>\deasilworks\api\model\ApiCollection</extends>
+    <class final="true" abstract="false" namespace="deasilworks\api\Model" line="35" package="Default">
+      <extends>\deasilworks\api\Model\ApiCollection</extends>
       <name>ActionCollection</name>
-      <full_name>\deasilworks\api\model\ActionCollection</full_name>
+      <full_name>\deasilworks\api\Model\ActionCollection</full_name>
       <docblock line="35">
         <description>Class ActionCollection.</description>
         <long-description>Stores a collection.</long-description>
         <tag name="package" line="35" description="Default"/>
+        <tag name="inherited_from" description="\deasilworks\api\Model\ApiCollection" refers="\deasilworks\api\Model\ApiCollection" link="/classes/deasilworks.api.Model.ApiCollection.html"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\model" line="40" package="Default">
+      <property static="false" visibility="private" namespace="deasilworks\api\Model" line="38" package="Default">
+        <name>$position</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::position</full_name>
+        <default>0</default>
+        <docblock line="38">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="38" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="43" package="Default">
+        <name>$indexedContainer</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::indexedContainer</full_name>
+        <default>array()</default>
+        <docblock line="43">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="43" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="deasilworks\api\Model" line="48" package="Default">
+        <name>$hashedContainer</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::hashedContainer</full_name>
+        <default>array()</default>
+        <docblock line="48">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="48" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="40" package="Default">
         <name>addModel</name>
-        <full_name>\deasilworks\api\model\ActionCollection::addModel()</full_name>
+        <full_name>\deasilworks\api\Model\ActionCollection::addModel()</full_name>
         <docblock line="40">
           <description></description>
           <long-description></long-description>
@@ -3058,12 +3095,181 @@ on a name and returning ActionModels</long-description>
           <type>\deasilworks\api\Model\Action\ActionModel</type>
         </argument>
       </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="53" package="Default">
+        <name>getCollection</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::getCollection()</full_name>
+        <docblock line="53">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="53" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="63" package="Default">
+        <name>setCollection</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::setCollection()</full_name>
+        <docblock line="63">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="63" description="" type="array" variable="$collection">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="63" description="" type="\deasilworks\api\Model\Collection">
+            <type>\deasilworks\api\Model\Collection</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$collection</name>
+          <default></default>
+          <type>array</type>
+        </argument>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="79" package="Default">
+        <name>current</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::current()</full_name>
+        <docblock line="79">
+          <description>Iterator.</description>
+          <long-description></long-description>
+          <tag name="return" line="79" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="87" package="Default">
+        <name>next</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::next()</full_name>
+        <docblock line="87">
+          <description>Iterator next.</description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="97" package="Default">
+        <name>key</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::key()</full_name>
+        <docblock line="97">
+          <description>Iterator key.</description>
+          <long-description></long-description>
+          <tag name="return" line="97" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="107" package="Default">
+        <name>valid</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::valid()</full_name>
+        <docblock line="107">
+          <description>Iterator valid.</description>
+          <long-description></long-description>
+          <tag name="return" line="107" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="115" package="Default">
+        <name>rewind</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::rewind()</full_name>
+        <docblock line="115">
+          <description>Iterator rewind.</description>
+          <long-description></long-description>
+        </docblock>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="127" package="Default">
+        <name>offsetExists</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::offsetExists()</full_name>
+        <docblock line="127">
+          <description>ArrayAccess Offset Exists.</description>
+          <long-description></long-description>
+          <tag name="param" line="127" description="" type="mixed" variable="$offset">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="127" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$offset</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="139" package="Default">
+        <name>offsetGet</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::offsetGet()</full_name>
+        <docblock line="139">
+          <description>ArrayAccess Offset Get.</description>
+          <long-description></long-description>
+          <tag name="param" line="139" description="" type="mixed" variable="$offset">
+            <type>mixed</type>
+          </tag>
+          <tag name="return" line="139" description="" type="mixed|null">
+            <type>mixed</type>
+            <type>null</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$offset</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="150" package="Default">
+        <name>offsetSet</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::offsetSet()</full_name>
+        <docblock line="150">
+          <description>ArrayAccess Offset Set.</description>
+          <long-description></long-description>
+          <tag name="param" line="150" description="" type="mixed" variable="$offset">
+            <type>mixed</type>
+          </tag>
+          <tag name="param" line="150" description="" type="\deasilworks\api\Model\ParamModel" variable="$argModel">
+            <type>\deasilworks\api\Model\ParamModel</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$offset</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$argModel</name>
+          <default></default>
+          <type>\deasilworks\api\Model\ParamModel</type>
+        </argument>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\api\Model" line="168" package="Default">
+        <name>offsetUnset</name>
+        <full_name>\deasilworks\api\Model\ApiCollection::offsetUnset()</full_name>
+        <docblock line="168">
+          <description>ArrayAccess Offset Unset.</description>
+          <long-description></long-description>
+          <tag name="param" line="168" description="" type="mixed" variable="$offset">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$offset</name>
+          <default></default>
+          <type>mixed</type>
+        </argument>
+        <inherited_from>\deasilworks\api\Model\ApiCollection</inherited_from>
+      </method>
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
       <error line="40" code="PPC:ERR-50008">No summary for method addModel()</error>
     </parse_markers>
-    <source>eJx1VNtu4zYQfddXDIJ9SALtuu1LgW67rSLRMVFdDEpeN2j6QEu0xVYWBZGuNyj23ztDKZtkmxIGZM7lnDlDcn78eWiHIFhcB3ANGa8g1bXqrcItWWIzPIz60Dq4rK/gu2++/R4SJa3uYGvGv2wIvK/n0LUaj9pabXrQFlo1qt0DHEbZO9WEsB+VArOHupXjQYXgDMj+AQY1WkwwOyd1r/sDSKiRkvAw2LWIZM3eneWoML4Baa2ptURIaEx9OqreSUeUe90pC5euVXBRzhkXV56nUbIjQN0DuR+9cNauNScHo7Ju1DXBhBhUd6eGKnl0d/qoZxJK992whIfQJ4tSqOAQjqbRe/oqr2847Tpt2xAaTei7k0OjJaNvb0hqFmYEqzpfHIJoFOBFP9Xow4hooOa6uV2WLOfWHF/q0b6q/WnskVj5tMZg+zzvn6p2ZKGMvek6cyaNtekbTdLsD5RboVPuzN/Ka5rOvTcOS57qoOMYno55dtlWdh3s1Nw7ZMZOy5eyRqrBOrwMWnYwmNGTfi333XyVqhWDslhW20gw4CWsRfGRJyyBi6jE/UUIW16tik0FGCGivLqDYglRfge/8jwJgf22FqwsoRCExrN1yhmaeR6nm4Tnt3CDqXmBl53jlUfcqvCcMxpnJeFlTMQr3EY3POXVXUhYS17lhLwsBESwjkTF400aCVhvxLooGRaRIHLO86VAIpaxvHqHxGgD9hE3UK6iNCU2gos2KENQoRAX6zvBb1cVrIo0YWi8YVhfdJOyiQ3VxWnEsxCSKItumc8qEMiLpMipTNiuGFmJNcJfXPEiJz1xkVcCtyHKFdWX7C0vWQiR4CV1ZimKzCul7mJS4XEwNWcTEHX+5QFhCO03JfuCCQmLUoQrKXnW+hhPh7wIgl4elR0k3p/GD5QzzZN7Oeh7fEmqex8E+Lj+48vIdx/5xzp/sjl8cT1NrA5nBEyuGC+68v8eb1bpDD53P2WeuxbBXvd4MetXk0F9cqpv0DHoJ2vwTwC4PC2ta/hlkKM8wrOy4I182sxhC//186HG19pPFLJpfNDl/2Vf+bSJk9Ybeo1vP7SS3npsehqgavz9ecrbDwflBM4wlWOzL6/+eMWLsy9TOOgadMNPLxjff82l+0Z9ek72esbn4HPwL8eL/eI=</source>
+    <source>eJx1VF1v2zYUfdevuAj6kARqve1lQLt1U2Q6JqoPg5LrBU0faIm2uMmiINJ1g6H/ffdScpMUGWFA5v04555L8v72R9/0QTC7DuAaUl5CoivVWYVbssSmfxj0vnFwWV3BLz/9/CvMlbS6hY0Z/rEh8K6aQldqOGhrtelAW2jUoLYPsB9k51Qdwm5QCswOqkYOexWCMyC7B+jVYDHBbJ3Une72IKFCSsLDYNcgkjU7d5KDwvgapLWm0hIhoTbV8aA6Jx1R7nSrLFy6RsFFMWVcXHmeWsmWAHUH5D574aRdY44OBmXdoCuCCTGoao81VXJ2t/qgJxJK992whIfQR4tSqOAQDqbWO/oqr68/blttmxBqTejbo0OjJaNvb0hqZmYAq1pfHIJoFOBFP9bow4iop+a6qV2WLKfGHJ7r0b6q3XHokFj5tNpg+zzv36pyZKGMnWlbcyKNlelqTdLsW8ot0Sm35ovymsZz74zDksc66Dj6x2OeXLaRbQtbNfUOmbHT8rmsgWqwDi+Dli30ZvCkP8p9M12lcsmgyBflJhIMeAErkX/kczaHi6jA/UUIG14u83UJGCGirLyDfAFRdgcfeDYPgf21EqwoIBeExtNVwhmaeRYn6znPbuEGU7McLzvHK4+4Ze45JzTOCsJLmYiXuI1ueMLLu5CwFrzMCHmRC4hgFYmSx+skErBai1VeMCxijsgZzxYCiVjKsvINEqMN2EfcQLGMkoTYCC5aowxBhUKcr+4Ev12WsMyTOUPjDcP6opuEjWyoLk4inoYwj9LolvmsHIG8SIocy4TNkpGVWCP8xSXPM9IT51kpcBuiXFF+z97wgoUQCV5QZxYiT71S6i4m5R4HUzM2AlHnnx8QhtB+XbDvmDBnUYJwBSVPWs/xdMizIOjkQdle4v2p/UA50Ty5l72+T02t2ndBgI/rZd995B/r9DmHz67HidXijIDRFeNFV/7f+WYVzuBz91PmqWsW7HSHF7N6MRnUV6e6Gh29frQG/waAy9PSuoY/eznIAzwpC17Jx80UNvNfPx8qfK3dSCHr2gdd/l/2lU8bOWm9otf4+n0j6a3HpqMBqoZPT1Nev98rJ3CGqQybfXn1+QUvzr5U4aCr0Q2/P2N89yOX7mr19SnZyxnfgm/Bf48L/cI=</source>
   </file>
   <file path="Model/PkgModel.php" generated-path="Model.PkgModel.html" hash="dc22b82f24bcc91451f8d96b766c6d4c" package="Default">
     <docblock line="0">
@@ -3473,7 +3679,6 @@ providing an EntityManager factory.</long-description>
       <namespace name="ServiceProvider" full_name="deasilworks\api\ServiceProvider">
         <namespace name="Silex" full_name="deasilworks\api\ServiceProvider\Silex"/>
       </namespace>
-      <namespace name="model" full_name="deasilworks\api\model"/>
     </namespace>
   </namespace>
   <deprecated count="0"/>
