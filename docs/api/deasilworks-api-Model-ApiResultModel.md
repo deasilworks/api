@@ -1,4 +1,4 @@
-deasilworks\api\Model\ApiResultModel
+deasilworks\API\Model\ApiResultModel
 ===============
 
 Class ExecutorResultModel.
@@ -7,7 +7,7 @@ Class ExecutorResultModel.
 
 
 * Class name: ApiResultModel
-* Namespace: deasilworks\api\Model
+* Namespace: deasilworks\API\Model
 
 
 
@@ -67,7 +67,7 @@ Methods
 
 ### getContent
 
-    mixed deasilworks\api\Model\ApiResultModel::getContent()
+    mixed deasilworks\API\Model\ApiResultModel::getContent()
 
 
 
@@ -80,7 +80,7 @@ Methods
 
 ### setContent
 
-    \deasilworks\api\Model\ApiResultModel deasilworks\api\Model\ApiResultModel::setContent(mixed $content)
+    \deasilworks\API\Model\ApiResultModel deasilworks\API\Model\ApiResultModel::setContent(mixed $content)
 
 
 
@@ -96,7 +96,7 @@ Methods
 
 ### isJson
 
-    boolean deasilworks\api\Model\ApiResultModel::isJson()
+    boolean deasilworks\API\Model\ApiResultModel::isJson()
 
 
 
@@ -109,7 +109,7 @@ Methods
 
 ### setJson
 
-    \deasilworks\api\Model\ApiResultModel deasilworks\api\Model\ApiResultModel::setJson(boolean $json)
+    \deasilworks\API\Model\ApiResultModel deasilworks\API\Model\ApiResultModel::setJson(boolean $json)
 
 
 
@@ -125,7 +125,7 @@ Methods
 
 ### getStatusCode
 
-    integer deasilworks\api\Model\ApiResultModel::getStatusCode()
+    integer deasilworks\API\Model\ApiResultModel::getStatusCode()
 
 
 
@@ -138,7 +138,7 @@ Methods
 
 ### setStatusCode
 
-    \deasilworks\api\Model\ApiResultModel deasilworks\api\Model\ApiResultModel::setStatusCode(integer $statusCode)
+    \deasilworks\API\Model\ApiResultModel deasilworks\API\Model\ApiResultModel::setStatusCode(integer $statusCode)
 
 
 
@@ -154,7 +154,7 @@ Methods
 
 ### getHeaders
 
-    array deasilworks\api\Model\ApiResultModel::getHeaders()
+    array deasilworks\API\Model\ApiResultModel::getHeaders()
 
 
 
@@ -167,7 +167,7 @@ Methods
 
 ### setHeaders
 
-    \deasilworks\api\Model\ApiResultModel deasilworks\api\Model\ApiResultModel::setHeaders(array $headers)
+    \deasilworks\API\Model\ApiResultModel deasilworks\API\Model\ApiResultModel::setHeaders(array $headers)
 
 
 

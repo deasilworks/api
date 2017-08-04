@@ -1,4 +1,4 @@
-deasilworks\api\Annotation\ApiController
+deasilworks\API\Annotation\ApiController
 ===============
 
 
@@ -7,7 +7,7 @@ deasilworks\api\Annotation\ApiController
 
 
 * Class name: ApiController
-* Namespace: deasilworks\api\Annotation
+* Namespace: deasilworks\API\Annotation
 
 
 
@@ -34,7 +34,7 @@ Methods
 
 ### isRoutable
 
-    boolean deasilworks\api\Annotation\ApiController::isRoutable()
+    boolean deasilworks\API\Annotation\ApiController::isRoutable()
 
 
 
@@ -47,7 +47,7 @@ Methods
 
 ### setRoutable
 
-    \deasilworks\api\Annotation\ApiController deasilworks\api\Annotation\ApiController::setRoutable(boolean $routable)
+    \deasilworks\API\Annotation\ApiController deasilworks\API\Annotation\ApiController::setRoutable(boolean $routable)
 
 
 

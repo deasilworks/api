@@ -1,4 +1,4 @@
-deasilworks\api\UUID
+deasilworks\API\UUID
 ===============
 
 Class UUID.
@@ -7,7 +7,7 @@ Class UUID.
 
 
 * Class name: UUID
-* Namespace: deasilworks\api
+* Namespace: deasilworks\API
 
 
 
@@ -21,7 +21,7 @@ Methods
 
 ### v4
 
-    string deasilworks\api\UUID::v4()
+    string deasilworks\API\UUID::v4()
 
 V4.
 
@@ -35,7 +35,7 @@ V4.
 
 ### isValid
 
-    boolean deasilworks\api\UUID::isValid($uuid)
+    boolean deasilworks\API\UUID::isValid($uuid)
 
 Is Valid.
 

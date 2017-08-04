@@ -1,4 +1,4 @@
-deasilworks\api\Hydrator
+deasilworks\API\Hydrator
 ===============
 
 Class ControllerAction.
@@ -17,7 +17,7 @@ as compound types or scalers.
 
 
 * Class name: Hydrator
-* Namespace: deasilworks\api
+* Namespace: deasilworks\API
 
 
 
@@ -49,7 +49,7 @@ Methods
 
 ### hydrateObject
 
-    object deasilworks\api\Hydrator::hydrateObject(object $targetObject, object|array $payload)
+    object deasilworks\API\Hydrator::hydrateObject(object $targetObject, object|array $payload)
 
 Hydrate Object.
 
@@ -72,7 +72,7 @@ the type hint.
 
 ### hydrateMethod
 
-    mixed deasilworks\api\Hydrator::hydrateMethod($targetObject, $method, $value)
+    mixed deasilworks\API\Hydrator::hydrateMethod($targetObject, $method, $value)
 
 Hydrate Method.
 
@@ -95,7 +95,7 @@ the value is used without attempting hydration.
 
 ### getParameterClassObject
 
-    mixed deasilworks\api\Hydrator::getParameterClassObject($object, $method)
+    mixed deasilworks\API\Hydrator::getParameterClassObject($object, $method)
 
 Get Parameter Class Object.
 
@@ -112,7 +112,7 @@ Get the Class of object a method requires.
 
 ### snakeToPascal
 
-    string deasilworks\api\Hydrator::snakeToPascal($input)
+    string deasilworks\API\Hydrator::snakeToPascal($input)
 
 Snake to Pascal.
 
@@ -128,7 +128,7 @@ Converts a_snake_case_string to aPascalCaseString.
 
 ### prefixer
 
-    string deasilworks\api\Hydrator::prefixer($prefix, $method)
+    string deasilworks\API\Hydrator::prefixer($prefix, $method)
 
 Prefixer.
 

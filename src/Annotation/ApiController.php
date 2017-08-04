@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\Annotation;
+namespace deasilworks\API\Annotation;
 
 /**
  * @Annotation

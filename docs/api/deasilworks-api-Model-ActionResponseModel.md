@@ -1,4 +1,4 @@
-deasilworks\api\Model\ActionResponseModel
+deasilworks\API\Model\ActionResponseModel
 ===============
 
 Class ActionResponseModel.
@@ -7,7 +7,7 @@ Class ActionResponseModel.
 
 
 * Class name: ActionResponseModel
-* Namespace: deasilworks\api\Model
+* Namespace: deasilworks\API\Model
 
 
 
@@ -56,7 +56,7 @@ Methods
 
 ### getResponse
 
-    mixed deasilworks\api\Model\ActionResponseModel::getResponse()
+    mixed deasilworks\API\Model\ActionResponseModel::getResponse()
 
 
 
@@ -69,7 +69,7 @@ Methods
 
 ### setResponse
 
-    \deasilworks\api\Model\ActionResponseModel deasilworks\api\Model\ActionResponseModel::setResponse(mixed $response)
+    \deasilworks\API\Model\ActionResponseModel deasilworks\API\Model\ActionResponseModel::setResponse(mixed $response)
 
 
 
@@ -85,7 +85,7 @@ Methods
 
 ### getParams
 
-    array deasilworks\api\Model\ActionResponseModel::getParams()
+    array deasilworks\API\Model\ActionResponseModel::getParams()
 
 
 
@@ -98,7 +98,7 @@ Methods
 
 ### setParams
 
-    \deasilworks\api\Model\ActionResponseModel deasilworks\api\Model\ActionResponseModel::setParams(array $params)
+    \deasilworks\API\Model\ActionResponseModel deasilworks\API\Model\ActionResponseModel::setParams(array $params)
 
 
 
@@ -114,7 +114,7 @@ Methods
 
 ### getArgs
 
-    array deasilworks\api\Model\ActionResponseModel::getArgs()
+    array deasilworks\API\Model\ActionResponseModel::getArgs()
 
 
 
@@ -127,7 +127,7 @@ Methods
 
 ### setArgs
 
-    \deasilworks\api\Model\ActionResponseModel deasilworks\api\Model\ActionResponseModel::setArgs(array $args)
+    \deasilworks\API\Model\ActionResponseModel deasilworks\API\Model\ActionResponseModel::setArgs(array $args)
 
 
 

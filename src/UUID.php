@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api;
+namespace deasilworks\API;
 
 /**
  * Class UUID.

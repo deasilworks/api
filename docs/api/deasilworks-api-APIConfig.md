@@ -1,4 +1,4 @@
-deasilworks\api\APIConfig
+deasilworks\API\APIConfig
 ===============
 
 Class APIConfig.
@@ -7,7 +7,7 @@ Class APIConfig.
 
 
 * Class name: APIConfig
-* Namespace: deasilworks\api
+* Namespace: deasilworks\API
 
 
 
@@ -67,7 +67,7 @@ Methods
 
 ### getClassPath
 
-    string deasilworks\api\APIConfig::getClassPath()
+    string deasilworks\API\APIConfig::getClassPath()
 
 
 
@@ -80,7 +80,7 @@ Methods
 
 ### setClassPath
 
-    \deasilworks\api\APIConfig deasilworks\api\APIConfig::setClassPath(array $classPath)
+    \deasilworks\API\APIConfig deasilworks\API\APIConfig::setClassPath(array $classPath)
 
 
 
@@ -96,7 +96,7 @@ Methods
 
 ### getAliases
 
-    array deasilworks\api\APIConfig::getAliases()
+    array deasilworks\API\APIConfig::getAliases()
 
 
 
@@ -109,7 +109,7 @@ Methods
 
 ### setAliases
 
-    \deasilworks\api\APIConfig deasilworks\api\APIConfig::setAliases(array $aliases)
+    \deasilworks\API\APIConfig deasilworks\API\APIConfig::setAliases(array $aliases)
 
 
 
@@ -125,7 +125,7 @@ Methods
 
 ### getControllerFactory
 
-    callable deasilworks\api\APIConfig::getControllerFactory()
+    callable deasilworks\API\APIConfig::getControllerFactory()
 
 
 
@@ -138,7 +138,7 @@ Methods
 
 ### setControllerFactory
 
-    \deasilworks\api\APIConfig deasilworks\api\APIConfig::setControllerFactory(callable $controllerFactory)
+    \deasilworks\API\APIConfig deasilworks\API\APIConfig::setControllerFactory(callable $controllerFactory)
 
 
 
@@ -154,7 +154,7 @@ Methods
 
 ### getSerializer
 
-    callable deasilworks\api\APIConfig::getSerializer()
+    callable deasilworks\API\APIConfig::getSerializer()
 
 
 
@@ -167,7 +167,7 @@ Methods
 
 ### setSerializer
 
-    \deasilworks\api\APIConfig deasilworks\api\APIConfig::setSerializer(callable $serializer)
+    \deasilworks\API\APIConfig deasilworks\API\APIConfig::setSerializer(callable $serializer)
 
 
 

@@ -23,14 +23,14 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api;
+namespace deasilworks\API;
 
-use deasilworks\api\Annotation\ApiAction;
-use deasilworks\api\Annotation\ApiController;
-use deasilworks\api\Model\Action\ActionModel;
-use deasilworks\api\model\ActionCollection;
-use deasilworks\api\model\ParamCollection;
-use deasilworks\api\model\ParamModel;
+use deasilworks\API\Annotation\ApiAction;
+use deasilworks\API\Annotation\ApiController;
+use deasilworks\API\Model\Action\ActionModel;
+use deasilworks\API\Model\ActionCollection;
+use deasilworks\API\Model\ParamCollection;
+use deasilworks\API\Model\ParamModel;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\Reader;
 

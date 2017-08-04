@@ -1,4 +1,4 @@
-deasilworks\api\Model\ApiCollection
+deasilworks\API\Model\ApiCollection
 ===============
 
 Class ApiCollection.
@@ -7,7 +7,7 @@ Stores a collection.
 
 
 * Class name: ApiCollection
-* Namespace: deasilworks\api\Model
+* Namespace: deasilworks\API\Model
 * This class implements: Iterator, ArrayAccess
 
 
@@ -56,7 +56,7 @@ Methods
 
 ### getCollection
 
-    array deasilworks\api\Model\ApiCollection::getCollection()
+    array deasilworks\API\Model\ApiCollection::getCollection()
 
 
 
@@ -69,7 +69,7 @@ Methods
 
 ### setCollection
 
-    \deasilworks\api\Model\Collection deasilworks\api\Model\ApiCollection::setCollection(array $collection)
+    \deasilworks\API\Model\Collection deasilworks\API\Model\ApiCollection::setCollection(array $collection)
 
 
 
@@ -85,7 +85,7 @@ Methods
 
 ### current
 
-    mixed deasilworks\api\Model\ApiCollection::current()
+    mixed deasilworks\API\Model\ApiCollection::current()
 
 Iterator.
 
@@ -98,7 +98,7 @@ Iterator.
 
 ### next
 
-    mixed deasilworks\api\Model\ApiCollection::next()
+    mixed deasilworks\API\Model\ApiCollection::next()
 
 Iterator next.
 
@@ -111,7 +111,7 @@ Iterator next.
 
 ### key
 
-    integer deasilworks\api\Model\ApiCollection::key()
+    integer deasilworks\API\Model\ApiCollection::key()
 
 Iterator key.
 
@@ -124,7 +124,7 @@ Iterator key.
 
 ### valid
 
-    boolean deasilworks\api\Model\ApiCollection::valid()
+    boolean deasilworks\API\Model\ApiCollection::valid()
 
 Iterator valid.
 
@@ -137,7 +137,7 @@ Iterator valid.
 
 ### rewind
 
-    mixed deasilworks\api\Model\ApiCollection::rewind()
+    mixed deasilworks\API\Model\ApiCollection::rewind()
 
 Iterator rewind.
 
@@ -150,7 +150,7 @@ Iterator rewind.
 
 ### offsetExists
 
-    boolean deasilworks\api\Model\ApiCollection::offsetExists(mixed $offset)
+    boolean deasilworks\API\Model\ApiCollection::offsetExists(mixed $offset)
 
 ArrayAccess Offset Exists.
 
@@ -166,7 +166,7 @@ ArrayAccess Offset Exists.
 
 ### offsetGet
 
-    mixed|null deasilworks\api\Model\ApiCollection::offsetGet(mixed $offset)
+    mixed|null deasilworks\API\Model\ApiCollection::offsetGet(mixed $offset)
 
 ArrayAccess Offset Get.
 
@@ -182,7 +182,7 @@ ArrayAccess Offset Get.
 
 ### offsetSet
 
-    mixed deasilworks\api\Model\ApiCollection::offsetSet(mixed $offset, \deasilworks\api\Model\ParamModel $argModel)
+    mixed deasilworks\API\Model\ApiCollection::offsetSet(mixed $offset, \deasilworks\API\Model\ParamModel $argModel)
 
 ArrayAccess Offset Set.
 
@@ -193,13 +193,13 @@ ArrayAccess Offset Set.
 
 #### Arguments
 * $offset **mixed**
-* $argModel **[deasilworks\api\Model\ParamModel](deasilworks-api-Model-ParamModel.md)**
+* $argModel **[deasilworks\API\Model\ParamModel](deasilworks-API-Model-ParamModel.md)**
 
 
 
 ### offsetUnset
 
-    mixed deasilworks\api\Model\ApiCollection::offsetUnset(mixed $offset)
+    mixed deasilworks\API\Model\ApiCollection::offsetUnset(mixed $offset)
 
 ArrayAccess Offset Unset.
 

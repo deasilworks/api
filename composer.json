@@ -22,14 +22,14 @@
     "doctrine/annotations": "^1.4"
   },
   "autoload": {
-    "psr-4": { "deasilworks\\api\\": "src/" },
+    "psr-4": { "deasilworks\\API\\": "src/" },
     "exclude-from-classmap": [
       "/tests/"
     ]
   },
   "autoload-dev": {
     "psr-4": {
-      "deasilworks\\api\\test\\": "tests/src/deasilworks/api/test"
+      "deasilworks\\API\\test\\": "tests/src/deasilworks/api/test"
     }
   },
   "minimum-stability": "dev"

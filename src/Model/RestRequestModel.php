@@ -23,12 +23,12 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\Model;
+namespace deasilworks\API\Model;
 
 /**
- * Class HttpRequestModel.
+ * Class RestRequestModel.
  */
-final class HttpRequestModel
+final class RestRequestModel
 {
     /**
      * @var string
@@ -71,7 +71,7 @@ final class HttpRequestModel
     /**
      * @param string $method
      *
-     * @return HttpRequestModel
+     * @return RestRequestModel
      */
     public function setMethod($method)
     {
@@ -91,7 +91,7 @@ final class HttpRequestModel
     /**
      * @param string $path
      *
-     * @return HttpRequestModel
+     * @return RestRequestModel
      */
     public function setPath($path)
     {
@@ -111,7 +111,7 @@ final class HttpRequestModel
     /**
      * @param string $content
      *
-     * @return HttpRequestModel
+     * @return RestRequestModel
      */
     public function setContent($content)
     {
@@ -131,7 +131,7 @@ final class HttpRequestModel
     /**
      * @param string $contentType
      *
-     * @return HttpRequestModel
+     * @return RestRequestModel
      */
     public function setContentType($contentType)
     {
@@ -151,7 +151,7 @@ final class HttpRequestModel
     /**
      * @param string $queryString
      *
-     * @return HttpRequestModel
+     * @return RestRequestModel
      */
     public function setQueryString($queryString)
     {
@@ -171,7 +171,7 @@ final class HttpRequestModel
     /**
      * @param string $session
      *
-     * @return HttpRequestModel
+     * @return RestRequestModel
      */
     public function setSession($session)
     {

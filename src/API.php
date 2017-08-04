@@ -23,12 +23,12 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api;
+namespace deasilworks\API;
 
-use deasilworks\api\model\AckModel;
-use deasilworks\api\model\ActionResponseModel;
-use deasilworks\api\model\ApiResultModel;
-use deasilworks\api\model\HttpRequestModel;
+use deasilworks\API\Model\AckModel;
+use deasilworks\API\Model\ActionResponseModel;
+use deasilworks\API\Model\ApiResultModel;
+use deasilworks\API\Model\RestRequestModel;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use JMS\Serializer\SerializationContext;
 use JMS\Serializer\SerializerBuilder;
@@ -61,13 +61,13 @@ class API
     /**
      * Execute API call.
      *
-     * @param HttpRequestModel $apiRequest
+     * @param RestRequestModel $apiRequest
      *
      * @throws \Exception
      *
      * @return mixed
      */
-    public function execute(HttpRequestModel $apiRequest)
+    public function execute(RestRequestModel $apiRequest)
     {
         $result = new ApiResultModel();
 
@@ -135,7 +135,7 @@ class API
      * Call Action.
      *
      * @param ActionReader     $actionReader
-     * @param HttpRequestModel $apiRequest
+     * @param RestRequestModel $apiRequest
      * @param $action
      * @param $args
      *

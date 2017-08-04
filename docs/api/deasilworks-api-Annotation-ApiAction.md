@@ -1,4 +1,4 @@
-deasilworks\api\Annotation\ApiAction
+deasilworks\API\Annotation\ApiAction
 ===============
 
 
@@ -7,7 +7,7 @@ deasilworks\api\Annotation\ApiAction
 
 
 * Class name: ApiAction
-* Namespace: deasilworks\api\Annotation
+* Namespace: deasilworks\API\Annotation
 
 
 
@@ -34,7 +34,7 @@ Methods
 
 ### isRoutable
 
-    boolean deasilworks\api\Annotation\ApiAction::isRoutable()
+    boolean deasilworks\API\Annotation\ApiAction::isRoutable()
 
 
 
@@ -47,7 +47,7 @@ Methods
 
 ### setRoutable
 
-    \deasilworks\api\Annotation\ApiAction deasilworks\api\Annotation\ApiAction::setRoutable(boolean $routable)
+    \deasilworks\API\Annotation\ApiAction deasilworks\API\Annotation\ApiAction::setRoutable(boolean $routable)
 
 
 

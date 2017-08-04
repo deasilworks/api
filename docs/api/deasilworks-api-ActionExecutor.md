@@ -1,4 +1,4 @@
-deasilworks\api\ActionExecutor
+deasilworks\API\ActionExecutor
 ===============
 
 Class ControllerAction.
@@ -8,7 +8,7 @@ on a name and returning ActionModels
 
 
 * Class name: ActionExecutor
-* Namespace: deasilworks\api
+* Namespace: deasilworks\API
 
 
 
@@ -20,7 +20,7 @@ Properties
 
 ### $actionReader
 
-    protected \deasilworks\api\ActionReader $actionReader
+    protected \deasilworks\API\ActionReader $actionReader
 
 
 
@@ -35,7 +35,7 @@ Methods
 
 ### __construct
 
-    mixed deasilworks\api\ActionExecutor::__construct(\deasilworks\api\ActionReader $actionReader)
+    mixed deasilworks\API\ActionExecutor::__construct(\deasilworks\API\ActionReader $actionReader)
 
 Resolver constructor.
 
@@ -45,13 +45,13 @@ Resolver constructor.
 
 
 #### Arguments
-* $actionReader **[deasilworks\api\ActionReader](deasilworks-api-ActionReader.md)**
+* $actionReader **[deasilworks\API\ActionReader](deasilworks-API-ActionReader.md)**
 
 
 
 ### execute
 
-    \deasilworks\api\$response deasilworks\api\ActionExecutor::execute(\deasilworks\api\model\HttpRequestModel $apiRequest, $action, $indexedArgs)
+    \deasilworks\API\$response deasilworks\API\ActionExecutor::execute(\deasilworks\API\Model\RestRequestModel $apiRequest, $action, $indexedArgs)
 
 
 
@@ -61,7 +61,7 @@ Resolver constructor.
 
 
 #### Arguments
-* $apiRequest **deasilworks\api\model\HttpRequestModel**
+* $apiRequest **[deasilworks\API\Model\RestRequestModel](deasilworks-API-Model-RestRequestModel.md)**
 * $action **mixed**
 * $indexedArgs **mixed**
 
@@ -69,7 +69,7 @@ Resolver constructor.
 
 ### contentParser
 
-    mixed deasilworks\api\ActionExecutor::contentParser(\deasilworks\api\model\HttpRequestModel $apiRequest)
+    mixed deasilworks\API\ActionExecutor::contentParser(\deasilworks\API\Model\RestRequestModel $apiRequest)
 
 
 
@@ -79,13 +79,13 @@ Resolver constructor.
 
 
 #### Arguments
-* $apiRequest **deasilworks\api\model\HttpRequestModel**
+* $apiRequest **[deasilworks\API\Model\RestRequestModel](deasilworks-API-Model-RestRequestModel.md)**
 
 
 
 ### prepareArgs
 
-    array deasilworks\api\ActionExecutor::prepareArgs(\deasilworks\api\Model\Action\ActionModel $targetAction, array $indexedArgs, array $searchHashedArgs)
+    array deasilworks\API\ActionExecutor::prepareArgs(\deasilworks\API\Model\Action\ActionModel $targetAction, array $indexedArgs, array $searchHashedArgs)
 
 Prepare Args.
 
@@ -95,7 +95,7 @@ Prepare Args.
 
 
 #### Arguments
-* $targetAction **[deasilworks\api\Model\Action\ActionModel](deasilworks-api-Model-Action-ActionModel.md)**
+* $targetAction **[deasilworks\API\Model\Action\ActionModel](deasilworks-API-Model-Action-ActionModel.md)**
 * $indexedArgs **array** - &lt;p&gt;indexed array of args&lt;/p&gt;
 * $searchHashedArgs **array** - &lt;p&gt;array of hashes to search&lt;/p&gt;
 
@@ -103,7 +103,7 @@ Prepare Args.
 
 ### sanitizeArgs
 
-    array deasilworks\api\ActionExecutor::sanitizeArgs($preparedArgs)
+    array deasilworks\API\ActionExecutor::sanitizeArgs($preparedArgs)
 
 
 

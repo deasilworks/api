@@ -1,4 +1,4 @@
-deasilworks\api\Model\PkgModel
+deasilworks\API\Model\PkgModel
 ===============
 
 Class PkgModel.
@@ -7,7 +7,7 @@ API metadata
 
 
 * Class name: PkgModel
-* Namespace: deasilworks\api\Model
+* Namespace: deasilworks\API\Model
 
 
 
@@ -67,7 +67,7 @@ Methods
 
 ### __construct
 
-    mixed deasilworks\api\Model\PkgModel::__construct()
+    mixed deasilworks\API\Model\PkgModel::__construct()
 
 PkgModel constructor.
 
@@ -80,7 +80,7 @@ PkgModel constructor.
 
 ### getPkgUuid
 
-    string deasilworks\api\Model\PkgModel::getPkgUuid()
+    string deasilworks\API\Model\PkgModel::getPkgUuid()
 
 
 
@@ -93,7 +93,7 @@ PkgModel constructor.
 
 ### setPkgUuid
 
-    \deasilworks\api\Model\PkgModel deasilworks\api\Model\PkgModel::setPkgUuid(string $pkgUuid)
+    \deasilworks\API\Model\PkgModel deasilworks\API\Model\PkgModel::setPkgUuid(string $pkgUuid)
 
 
 
@@ -109,7 +109,7 @@ PkgModel constructor.
 
 ### getPkgDateTime
 
-    \DateTime deasilworks\api\Model\PkgModel::getPkgDateTime()
+    \DateTime deasilworks\API\Model\PkgModel::getPkgDateTime()
 
 
 
@@ -122,7 +122,7 @@ PkgModel constructor.
 
 ### setPkgDateTime
 
-    \deasilworks\api\Model\PkgModel deasilworks\api\Model\PkgModel::setPkgDateTime(\DateTime $pkgDateTime)
+    \deasilworks\API\Model\PkgModel deasilworks\API\Model\PkgModel::setPkgDateTime(\DateTime $pkgDateTime)
 
 
 
@@ -138,7 +138,7 @@ PkgModel constructor.
 
 ### getClient
 
-    mixed deasilworks\api\Model\PkgModel::getClient()
+    mixed deasilworks\API\Model\PkgModel::getClient()
 
 
 
@@ -151,7 +151,7 @@ PkgModel constructor.
 
 ### setClient
 
-    \deasilworks\api\Model\PkgModel deasilworks\api\Model\PkgModel::setClient(mixed $client)
+    \deasilworks\API\Model\PkgModel deasilworks\API\Model\PkgModel::setClient(mixed $client)
 
 
 
@@ -167,7 +167,7 @@ PkgModel constructor.
 
 ### getPayload
 
-    string deasilworks\api\Model\PkgModel::getPayload()
+    string deasilworks\API\Model\PkgModel::getPayload()
 
 
 
@@ -180,7 +180,7 @@ PkgModel constructor.
 
 ### setPayload
 
-    \deasilworks\api\Model\PkgModel deasilworks\api\Model\PkgModel::setPayload(string $payload)
+    \deasilworks\API\Model\PkgModel deasilworks\API\Model\PkgModel::setPayload(string $payload)
 
 
 

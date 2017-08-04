@@ -1,4 +1,4 @@
-deasilworks\api\ActionReader
+deasilworks\API\ActionReader
 ===============
 
 Class ControllerAction.
@@ -8,7 +8,7 @@ on a name and returning ActionModels
 
 
 * Class name: ActionReader
-* Namespace: deasilworks\api
+* Namespace: deasilworks\API
 
 
 
@@ -42,7 +42,7 @@ Properties
 
 ### $actionCollection
 
-    private \deasilworks\api\model\ActionCollection $actionCollection
+    private \deasilworks\API\Model\ActionCollection $actionCollection
 
 
 
@@ -57,7 +57,7 @@ Methods
 
 ### __construct
 
-    mixed deasilworks\api\ActionReader::__construct($controller)
+    mixed deasilworks\API\ActionReader::__construct($controller)
 
 Resolver constructor.
 
@@ -73,7 +73,7 @@ Resolver constructor.
 
 ### getController
 
-    object deasilworks\api\ActionReader::getController()
+    object deasilworks\API\ActionReader::getController()
 
 
 
@@ -86,7 +86,7 @@ Resolver constructor.
 
 ### getActionCollection
 
-    \deasilworks\api\model\ActionCollection deasilworks\api\ActionReader::getActionCollection()
+    \deasilworks\API\Model\ActionCollection deasilworks\API\ActionReader::getActionCollection()
 
 
 
@@ -99,7 +99,7 @@ Resolver constructor.
 
 ### resolve
 
-    mixed deasilworks\api\ActionReader::resolve()
+    mixed deasilworks\API\ActionReader::resolve()
 
 
 
@@ -112,7 +112,7 @@ Resolver constructor.
 
 ### resolveActions
 
-    mixed deasilworks\api\ActionReader::resolveActions(\ReflectionObject $reflectionObject)
+    mixed deasilworks\API\ActionReader::resolveActions(\ReflectionObject $reflectionObject)
 
 
 
@@ -128,7 +128,7 @@ Resolver constructor.
 
 ### parseActionMethod
 
-    array deasilworks\api\ActionReader::parseActionMethod($methodName)
+    array deasilworks\API\ActionReader::parseActionMethod($methodName)
 
 
 
@@ -144,7 +144,7 @@ Resolver constructor.
 
 ### resolveActionParams
 
-    \deasilworks\api\model\ParamCollection deasilworks\api\ActionReader::resolveActionParams(\ReflectionMethod $reflectionMethod)
+    \deasilworks\API\Model\ParamCollection deasilworks\API\ActionReader::resolveActionParams(\ReflectionMethod $reflectionMethod)
 
 
 

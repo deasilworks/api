@@ -23,12 +23,12 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api;
+namespace deasilworks\API;
 
-use deasilworks\api\Model\Action\ActionModel;
-use deasilworks\api\model\ActionResponseModel;
-use deasilworks\api\model\HttpRequestModel;
-use deasilworks\api\model\ParamModel;
+use deasilworks\API\Model\Action\ActionModel;
+use deasilworks\API\Model\ActionResponseModel;
+use deasilworks\API\Model\RestRequestModel;
+use deasilworks\API\Model\ParamModel;
 
 /**
  * Class ControllerAction.
@@ -54,7 +54,7 @@ class ActionExecutor
     }
 
     /**
-     * @param HttpRequestModel $apiRequest
+     * @param RestRequestModel $apiRequest
      * @param $action
      * @param $indexedArgs
      *
@@ -62,7 +62,7 @@ class ActionExecutor
      *
      * @return $response
      */
-    public function execute(HttpRequestModel $apiRequest, $action, $indexedArgs)
+    public function execute(RestRequestModel $apiRequest, $action, $indexedArgs)
     {
         $actionReader = $this->actionReader;
         $response = new ActionResponseModel();
@@ -104,11 +104,11 @@ class ActionExecutor
     }
 
     /**
-     * @param HttpRequestModel $apiRequest
+     * @param RestRequestModel $apiRequest
      *
      * @return mixed
      */
-    private function contentParser(HttpRequestModel $apiRequest)
+    private function contentParser(RestRequestModel $apiRequest)
     {
         $content = [];
 

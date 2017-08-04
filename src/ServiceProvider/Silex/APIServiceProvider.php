@@ -23,13 +23,13 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\ServiceProvider\Silex;
+namespace deasilworks\API\ServiceProvider\Silex;
 
-use deasilworks\api\API;
-use deasilworks\api\APIConfig;
-use deasilworks\api\model\ApiResultModel;
-use deasilworks\api\model\HttpRequestModel;
-use deasilworks\cfg\ServiceProvider\Silex\ServiceProvider;
+use deasilworks\API\API;
+use deasilworks\API\APIConfig;
+use deasilworks\API\Model\ApiResultModel;
+use deasilworks\API\Model\RestRequestModel;
+use deasilworks\CFG\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Silex\Application;
@@ -99,7 +99,7 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
                     $contentType = 'json';
                 }
 
-                $apiRequest = new HttpRequestModel();
+                $apiRequest = new RestRequestModel();
                 $apiRequest
                     ->setMethod($request->getMethod())
                     ->setPath($path)

@@ -1,4 +1,4 @@
-deasilworks\api\Model\ParamCollection
+deasilworks\API\Model\ParamCollection
 ===============
 
 Class ParamCollection.
@@ -7,8 +7,8 @@ Stores a collection.
 
 
 * Class name: ParamCollection
-* Namespace: deasilworks\api\Model
-* Parent class: [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* Namespace: deasilworks\API\Model
+* Parent class: [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 
@@ -57,7 +57,7 @@ Methods
 
 ### addModel
 
-    mixed deasilworks\api\Model\ParamCollection::addModel(\deasilworks\api\Model\ParamModel $paramModel)
+    mixed deasilworks\API\Model\ParamCollection::addModel(\deasilworks\API\Model\ParamModel $paramModel)
 
 
 
@@ -67,34 +67,34 @@ Methods
 
 
 #### Arguments
-* $paramModel **[deasilworks\api\Model\ParamModel](deasilworks-api-Model-ParamModel.md)**
+* $paramModel **[deasilworks\API\Model\ParamModel](deasilworks-API-Model-ParamModel.md)**
 
 
 
 ### getCollection
 
-    array deasilworks\api\Model\ApiCollection::getCollection()
+    array deasilworks\API\Model\ApiCollection::getCollection()
 
 
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 
 
 ### setCollection
 
-    \deasilworks\api\Model\Collection deasilworks\api\Model\ApiCollection::setCollection(array $collection)
+    \deasilworks\API\Model\Collection deasilworks\API\Model\ApiCollection::setCollection(array $collection)
 
 
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 #### Arguments
@@ -104,84 +104,84 @@ Methods
 
 ### current
 
-    mixed deasilworks\api\Model\ApiCollection::current()
+    mixed deasilworks\API\Model\ApiCollection::current()
 
 Iterator.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 
 
 ### next
 
-    mixed deasilworks\api\Model\ApiCollection::next()
+    mixed deasilworks\API\Model\ApiCollection::next()
 
 Iterator next.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 
 
 ### key
 
-    integer deasilworks\api\Model\ApiCollection::key()
+    integer deasilworks\API\Model\ApiCollection::key()
 
 Iterator key.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 
 
 ### valid
 
-    boolean deasilworks\api\Model\ApiCollection::valid()
+    boolean deasilworks\API\Model\ApiCollection::valid()
 
 Iterator valid.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 
 
 ### rewind
 
-    mixed deasilworks\api\Model\ApiCollection::rewind()
+    mixed deasilworks\API\Model\ApiCollection::rewind()
 
 Iterator rewind.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 
 
 ### offsetExists
 
-    boolean deasilworks\api\Model\ApiCollection::offsetExists(mixed $offset)
+    boolean deasilworks\API\Model\ApiCollection::offsetExists(mixed $offset)
 
 ArrayAccess Offset Exists.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 #### Arguments
@@ -191,14 +191,14 @@ ArrayAccess Offset Exists.
 
 ### offsetGet
 
-    mixed|null deasilworks\api\Model\ApiCollection::offsetGet(mixed $offset)
+    mixed|null deasilworks\API\Model\ApiCollection::offsetGet(mixed $offset)
 
 ArrayAccess Offset Get.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 #### Arguments
@@ -208,32 +208,32 @@ ArrayAccess Offset Get.
 
 ### offsetSet
 
-    mixed deasilworks\api\Model\ApiCollection::offsetSet(mixed $offset, \deasilworks\api\Model\ParamModel $argModel)
+    mixed deasilworks\API\Model\ApiCollection::offsetSet(mixed $offset, \deasilworks\API\Model\ParamModel $argModel)
 
 ArrayAccess Offset Set.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 #### Arguments
 * $offset **mixed**
-* $argModel **[deasilworks\api\Model\ParamModel](deasilworks-api-Model-ParamModel.md)**
+* $argModel **[deasilworks\API\Model\ParamModel](deasilworks-API-Model-ParamModel.md)**
 
 
 
 ### offsetUnset
 
-    mixed deasilworks\api\Model\ApiCollection::offsetUnset(mixed $offset)
+    mixed deasilworks\API\Model\ApiCollection::offsetUnset(mixed $offset)
 
 ArrayAccess Offset Unset.
 
 
 
 * Visibility: **public**
-* This method is defined by [deasilworks\api\Model\ApiCollection](deasilworks-api-Model-ApiCollection.md)
+* This method is defined by [deasilworks\API\Model\ApiCollection](deasilworks-API-Model-ApiCollection.md)
 
 
 #### Arguments

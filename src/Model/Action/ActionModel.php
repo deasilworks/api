@@ -23,9 +23,9 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\Model\Action;
+namespace deasilworks\API\Model\Action;
 
-use deasilworks\api\model\ParamCollection;
+use deasilworks\API\Model\ParamCollection;
 
 /**
  * Class ActionModel.

@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-use deasilworks\api\UUID;
+use deasilworks\API\UUID;
 
 /**
  * Class ComponentsTest.
@@ -38,7 +38,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
      */
     public function testModels()
     {
-        $ackModel = new \deasilworks\api\model\AckModel();
+        $ackModel = new \deasilworks\API\Model\AckModel();
         $ackModel
             ->setErrorClass('ErrorClass')
             ->setErrorCode('ErrorCode')
@@ -57,7 +57,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($ackModel->isSuccess());
         $this->assertEquals(200, $ackModel->getServerCode());
 
-        $paramModel = new \deasilworks\api\model\ParamModel();
+        $paramModel = new \deasilworks\API\Model\ParamModel();
         $paramModel
             ->setType('')
             ->setName('testParam');
@@ -65,13 +65,13 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('testParam', $paramModel->getName());
         $this->assertEquals('', $paramModel->getType());
 
-        $paramCollection = new \deasilworks\api\model\ParamCollection();
+        $paramCollection = new \deasilworks\API\Model\ParamCollection();
         $paramCollection
             ->addModel($paramModel);
 
         $this->assertInstanceOf(get_class($paramModel), $paramCollection->current());
 
-        $actionModel = new \deasilworks\api\Model\Action\ActionModel();
+        $actionModel = new \deasilworks\API\Model\Action\ActionModel();
         $actionModel
             ->setClassMethod('getTest')
             ->setParamCollection($paramCollection)
@@ -83,7 +83,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('GET', $actionModel->getRestMethod());
         $this->assertEquals('test_path', $actionModel->getRouteName());
 
-        $actionCollection = new \deasilworks\api\model\ActionCollection();
+        $actionCollection = new \deasilworks\API\Model\ActionCollection();
         $actionCollection
             ->addModel($actionModel);
 
@@ -104,9 +104,9 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
     public function testHydratorSimple()
     {
         $dateTime = new \DateTime();
-        $hydrator = new \deasilworks\api\Hydrator();
+        $hydrator = new \deasilworks\API\Hydrator();
 
-        $pkgModel = new \deasilworks\api\model\PkgModel();
+        $pkgModel = new \deasilworks\API\Model\PkgModel();
 
         $this->assertTrue(UUID::isValid($pkgModel->getPkgUuid()));
 
@@ -128,34 +128,34 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
      */
     public function testHydratorComplex()
     {
-        $hydrator = new \deasilworks\api\Hydrator();
+        $hydrator = new \deasilworks\API\Hydrator();
 
-        $dryActionCollection = new \deasilworks\api\model\ActionCollection();
+        $dryActionCollection = new \deasilworks\API\Model\ActionCollection();
 
         $json = file_get_contents(__DIR__.'/resources/action_collection.json');
         $obj = json_decode($json);
 
-        /** @var \deasilworks\api\model\ActionCollection $actionCollection */
+        /** @var \deasilworks\API\Model\ActionCollection $actionCollection */
         $actionCollection = $hydrator->hydrateObject($dryActionCollection, $obj);
 
         $this->assertTrue(method_exists($actionCollection, 'addModel'));
         $this->assertEquals('getTestB', $actionCollection['test-page-b']['GET']->getClassMethod());
         $this->assertEquals('setTestB', $actionCollection['test-page-b']['POST']->getClassMethod());
 
-        /** @var \deasilworks\api\Model\Action\ActionModel $get */
+        /** @var \deasilworks\API\Model\Action\ActionModel $get */
         $actionModel = $actionCollection['test-page-b']['GET'];
 
-        $this->assertInstanceOf('\deasilworks\api\Model\Action\ActionModel', $actionModel);
+        $this->assertInstanceOf('\deasilworks\API\Model\Action\ActionModel', $actionModel);
 
-        /** @var \deasilworks\api\model\ParamCollection $paramCollection */
+        /** @var \deasilworks\API\Model\ParamCollection $paramCollection */
         $paramCollection = $actionModel->getParamCollection();
 
-        $this->assertInstanceOf('\deasilworks\api\model\ParamCollection', $paramCollection);
+        $this->assertInstanceOf('\deasilworks\API\Model\ParamCollection', $paramCollection);
 
-        /** @var \deasilworks\api\model\ParamModel $paramModel */
+        /** @var \deasilworks\API\Model\ParamModel $paramModel */
         $paramModel = $paramCollection->current();
 
-        $this->assertInstanceOf('\deasilworks\api\model\ParamModel', $paramModel);
+        $this->assertInstanceOf('\deasilworks\API\Model\ParamModel', $paramModel);
 
         $this->assertTrue(method_exists($paramModel, 'getName'));
         $this->assertTrue(method_exists($paramModel, 'getType'));

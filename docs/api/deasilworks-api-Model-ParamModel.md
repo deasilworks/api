@@ -1,4 +1,4 @@
-deasilworks\api\Model\ParamModel
+deasilworks\API\Model\ParamModel
 ===============
 
 Class ParamModel.
@@ -7,7 +7,7 @@ Stores attributes of a argument
 
 
 * Class name: ParamModel
-* Namespace: deasilworks\api\Model
+* Namespace: deasilworks\API\Model
 
 
 
@@ -45,7 +45,7 @@ Methods
 
 ### getName
 
-    string deasilworks\api\Model\ParamModel::getName()
+    string deasilworks\API\Model\ParamModel::getName()
 
 
 
@@ -58,7 +58,7 @@ Methods
 
 ### setName
 
-    \deasilworks\api\Model\ParamModel deasilworks\api\Model\ParamModel::setName(string $name)
+    \deasilworks\API\Model\ParamModel deasilworks\API\Model\ParamModel::setName(string $name)
 
 
 
@@ -74,7 +74,7 @@ Methods
 
 ### getType
 
-    string deasilworks\api\Model\ParamModel::getType()
+    string deasilworks\API\Model\ParamModel::getType()
 
 
 
@@ -87,7 +87,7 @@ Methods
 
 ### setType
 
-    \deasilworks\api\Model\ParamModel deasilworks\api\Model\ParamModel::setType(string $type)
+    \deasilworks\API\Model\ParamModel deasilworks\API\Model\ParamModel::setType(string $type)
 
 
 

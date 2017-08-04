@@ -1,4 +1,4 @@
-deasilworks\api\API
+deasilworks\API\API
 ===============
 
 Class CEF.
@@ -8,7 +8,7 @@ providing an EntityManager factory.
 
 
 * Class name: API
-* Namespace: deasilworks\api
+* Namespace: deasilworks\API
 
 
 
@@ -20,7 +20,7 @@ Properties
 
 ### $config
 
-    private \deasilworks\api\APIConfig $config
+    private \deasilworks\API\APIConfig $config
 
 
 
@@ -35,7 +35,7 @@ Methods
 
 ### __construct
 
-    mixed deasilworks\api\API::__construct(\deasilworks\api\APIConfig $config)
+    mixed deasilworks\API\API::__construct(\deasilworks\API\APIConfig $config)
 
 API constructor.
 
@@ -45,13 +45,13 @@ API constructor.
 
 
 #### Arguments
-* $config **[deasilworks\api\APIConfig](deasilworks-api-APIConfig.md)**
+* $config **[deasilworks\API\APIConfig](deasilworks-API-APIConfig.md)**
 
 
 
 ### execute
 
-    mixed deasilworks\api\API::execute(\deasilworks\api\model\HttpRequestModel $apiRequest)
+    mixed deasilworks\API\API::execute(\deasilworks\API\Model\RestRequestModel $apiRequest)
 
 Execute API call.
 
@@ -61,13 +61,13 @@ Execute API call.
 
 
 #### Arguments
-* $apiRequest **deasilworks\api\model\HttpRequestModel**
+* $apiRequest **[deasilworks\API\Model\RestRequestModel](deasilworks-API-Model-RestRequestModel.md)**
 
 
 
 ### optionsAck
 
-    \deasilworks\api\model\AckModel deasilworks\api\API::optionsAck(\deasilworks\api\ActionReader $actionReader, string $action)
+    \deasilworks\API\Model\AckModel deasilworks\API\API::optionsAck(\deasilworks\API\ActionReader $actionReader, string $action)
 
 Ack Options.
 
@@ -77,14 +77,14 @@ Ack Options.
 
 
 #### Arguments
-* $actionReader **[deasilworks\api\ActionReader](deasilworks-api-ActionReader.md)**
+* $actionReader **[deasilworks\API\ActionReader](deasilworks-API-ActionReader.md)**
 * $action **string**
 
 
 
 ### serialize
 
-    string deasilworks\api\API::serialize($object)
+    string deasilworks\API\API::serialize($object)
 
 Serialize.
 
@@ -100,7 +100,7 @@ Serialize.
 
 ### callAction
 
-    \deasilworks\api\model\AckModel deasilworks\api\API::callAction(\deasilworks\api\ActionReader $actionReader, \deasilworks\api\model\HttpRequestModel $apiRequest, $action, $args)
+    \deasilworks\API\Model\AckModel deasilworks\API\API::callAction(\deasilworks\API\ActionReader $actionReader, \deasilworks\API\Model\RestRequestModel $apiRequest, $action, $args)
 
 Call Action.
 
@@ -110,8 +110,8 @@ Call Action.
 
 
 #### Arguments
-* $actionReader **[deasilworks\api\ActionReader](deasilworks-api-ActionReader.md)**
-* $apiRequest **deasilworks\api\model\HttpRequestModel**
+* $actionReader **[deasilworks\API\ActionReader](deasilworks-API-ActionReader.md)**
+* $apiRequest **[deasilworks\API\Model\RestRequestModel](deasilworks-API-Model-RestRequestModel.md)**
 * $action **mixed**
 * $args **mixed**
 
@@ -119,7 +119,7 @@ Call Action.
 
 ### resolveController
 
-    array deasilworks\api\API::resolveController($path)
+    array deasilworks\API\API::resolveController($path)
 
 Resolves controller to object and remaining args.
 

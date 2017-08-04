@@ -1,4 +1,4 @@
-deasilworks\api\ServiceProvider\Silex\APIServiceProvider
+deasilworks\API\ServiceProvider\Silex\APIServiceProvider
 ===============
 
 Class APIServiceProvider.
@@ -8,8 +8,8 @@ the applications built on the Silex framework.
 
 
 * Class name: APIServiceProvider
-* Namespace: deasilworks\api\ServiceProvider\Silex
-* Parent class: deasilworks\cfg\ServiceProvider\Silex\ServiceProvider
+* Namespace: deasilworks\API\ServiceProvider\Silex
+* Parent class: deasilworks\CFG\ServiceProvider\Silex\ServiceProvider
 * This class implements: Pimple\ServiceProviderInterface
 
 
@@ -23,7 +23,7 @@ Methods
 
 ### register
 
-    mixed deasilworks\api\ServiceProvider\Silex\APIServiceProvider::register(\Pimple\Container $container)
+    mixed deasilworks\API\ServiceProvider\Silex\APIServiceProvider::register(\Pimple\Container $container)
 
 
 

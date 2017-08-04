@@ -1,4 +1,4 @@
-deasilworks\api\Model\Action\ActionModel
+deasilworks\API\Model\Action\ActionModel
 ===============
 
 Class ActionModel.
@@ -7,7 +7,7 @@ Stores attributes of an action
 
 
 * Class name: ActionModel
-* Namespace: deasilworks\api\Model\Action
+* Namespace: deasilworks\API\Model\Action
 
 
 
@@ -52,7 +52,7 @@ Properties
 
 ### $paramCollection
 
-    protected \deasilworks\api\model\ParamCollection $paramCollection
+    protected \deasilworks\API\Model\ParamCollection $paramCollection
 
 
 
@@ -67,7 +67,7 @@ Methods
 
 ### getClassMethod
 
-    string deasilworks\api\Model\Action\ActionModel::getClassMethod()
+    string deasilworks\API\Model\Action\ActionModel::getClassMethod()
 
 
 
@@ -80,7 +80,7 @@ Methods
 
 ### setClassMethod
 
-    \deasilworks\api\Model\Action\ActionModel deasilworks\api\Model\Action\ActionModel::setClassMethod(string $classMethod)
+    \deasilworks\API\Model\Action\ActionModel deasilworks\API\Model\Action\ActionModel::setClassMethod(string $classMethod)
 
 
 
@@ -96,7 +96,7 @@ Methods
 
 ### getRouteName
 
-    string deasilworks\api\Model\Action\ActionModel::getRouteName()
+    string deasilworks\API\Model\Action\ActionModel::getRouteName()
 
 
 
@@ -109,7 +109,7 @@ Methods
 
 ### setRouteName
 
-    \deasilworks\api\Model\Action\ActionModel deasilworks\api\Model\Action\ActionModel::setRouteName(string $routeName)
+    \deasilworks\API\Model\Action\ActionModel deasilworks\API\Model\Action\ActionModel::setRouteName(string $routeName)
 
 
 
@@ -125,7 +125,7 @@ Methods
 
 ### getRestMethod
 
-    string deasilworks\api\Model\Action\ActionModel::getRestMethod()
+    string deasilworks\API\Model\Action\ActionModel::getRestMethod()
 
 
 
@@ -138,7 +138,7 @@ Methods
 
 ### setRestMethod
 
-    \deasilworks\api\Model\Action\ActionModel deasilworks\api\Model\Action\ActionModel::setRestMethod(string $restMethod)
+    \deasilworks\API\Model\Action\ActionModel deasilworks\API\Model\Action\ActionModel::setRestMethod(string $restMethod)
 
 
 
@@ -154,7 +154,7 @@ Methods
 
 ### getParamCollection
 
-    \deasilworks\api\model\ParamCollection deasilworks\api\Model\Action\ActionModel::getParamCollection()
+    \deasilworks\API\Model\ParamCollection deasilworks\API\Model\Action\ActionModel::getParamCollection()
 
 
 
@@ -167,7 +167,7 @@ Methods
 
 ### setParamCollection
 
-    \deasilworks\api\Model\Action\ActionModel deasilworks\api\Model\Action\ActionModel::setParamCollection(\deasilworks\api\model\ParamCollection $paramCollection)
+    \deasilworks\API\Model\Action\ActionModel deasilworks\API\Model\Action\ActionModel::setParamCollection(\deasilworks\API\Model\ParamCollection $paramCollection)
 
 
 
@@ -177,7 +177,7 @@ Methods
 
 
 #### Arguments
-* $paramCollection **deasilworks\api\model\ParamCollection**
+* $paramCollection **[deasilworks\API\Model\ParamCollection](deasilworks-API-Model-ParamCollection.md)**
 
 
 

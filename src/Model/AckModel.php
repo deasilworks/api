@@ -23,9 +23,9 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\Model;
+namespace deasilworks\API\Model;
 
-use deasilworks\api\UUID;
+use deasilworks\API\UUID;
 
 /**
  * Class AckModel.
