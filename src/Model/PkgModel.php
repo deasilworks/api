@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\model;
+namespace deasilworks\api\Model;
 
 use deasilworks\api\UUID;
 
@@ -56,6 +56,8 @@ class PkgModel
 
     /**
      * PkgModel constructor.
+     *
+     * @SuppressWarnings(StaticAccess)
      */
     public function __construct()
     {

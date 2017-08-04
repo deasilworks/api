@@ -43,7 +43,20 @@ namespace deasilworks\api;
 class Hydrator
 {
     /**
-     * Hydrate.
+     * Hydrating a class object from a hashed array
+     * uses an **Adder**. addSomething()
+     */
+    const PREFIX_ADDER = 'add';
+
+    /**
+     * Hydrating a class object from standard object
+     * calls a **Setter** for each of it's properties.
+     * setSomething()
+     */
+    const PREFIX_SETTER = 'set';
+
+    /**
+     * Hydrate Object.
      *
      * Takes an object and tries to hydrate it with another.
      *
@@ -58,27 +71,27 @@ class Hydrator
      *
      * @return object
      */
-    public function hydrate($targetObject, $payload)
+    public function hydrateObject($targetObject, $payload)
     {
         foreach ($payload as $param => $value) {
             if (is_int($param)) {
                 foreach ($value as $par => $val) {
-                    $setter = $this->prefixer('add', $par);
-                    $this->callMethod($targetObject, $setter, $val);
+                    $setter = $this->prefixer(self::PREFIX_ADDER, $par);
+                    $this->hydrateMethod($targetObject, $setter, $val);
                 }
                 continue;
             }
 
-            $setter = $this->prefixer('set', $param);
+            $setter = $this->prefixer(self::PREFIX_SETTER, $param);
 
-            $this->callMethod($targetObject, $setter, $value);
+            $this->hydrateMethod($targetObject, $setter, $value);
         }
 
         return $targetObject;
     }
 
     /**
-     * Handle Method.
+     * Hydrate Method.
      *
      * Checks the method signature for a type hint, if
      * one is found hydrate is called and the result is
@@ -91,13 +104,13 @@ class Hydrator
      * @param $method
      * @param $value
      */
-    protected function callMethod($targetObject, $method, $value)
+    protected function hydrateMethod($targetObject, $method, $value)
     {
         if (method_exists($targetObject, $method)) {
             $dryObject = $this->getParameterClassObject($targetObject, $method);
 
             if ($dryObject && is_object($dryObject)) {
-                $hydratedObject = $this->hydrate($dryObject, $value);
+                $hydratedObject = $this->hydrateObject($dryObject, $value);
                 $targetObject->$method($hydratedObject);
 
                 return;

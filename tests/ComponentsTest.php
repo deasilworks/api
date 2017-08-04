@@ -28,10 +28,8 @@ use deasilworks\api\UUID;
 /**
  * Class ComponentsTest.
  *
- * Suppress all warning.
- * We do bad things here and we like it.
- *
  * @SuppressWarnings(PHPMD)
+ * We do bad things here and we like it.
  */
 class ComponentsTest extends \PHPUnit_Framework_TestCase
 {
@@ -120,7 +118,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
 
         $obj = json_decode($json);
 
-        $pkgModel = $hydrator->hydrate($pkgModel, $obj);
+        $pkgModel = $hydrator->hydrateObject($pkgModel, $obj);
 
         $this->assertEquals('Test payload.', $pkgModel->getPayload());
     }
@@ -138,7 +136,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
         $obj = json_decode($json);
 
         /** @var \deasilworks\api\model\ActionCollection $actionCollection */
-        $actionCollection = $hydrator->hydrate($dryActionCollection, $obj);
+        $actionCollection = $hydrator->hydrateObject($dryActionCollection, $obj);
 
         $this->assertTrue(method_exists($actionCollection, 'addModel'));
         $this->assertEquals('getTestB', $actionCollection['test-page-b']['GET']->getClassMethod());

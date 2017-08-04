@@ -79,7 +79,7 @@ class API
             $ack = $this->optionsAck($actionReader, $action);
 
             return $result
-                ->setResponse($this->serialize($ack))
+                ->setContent($this->serialize($ack))
                 ->setJson(true)
                 ->setHeaders(['Allow' => 'OPTIONS, GET, POST'])
                 ->setStatusCode(200);
@@ -88,7 +88,7 @@ class API
         $ack = $this->callAction($actionReader, $apiRequest, $action, $args);
 
         return $result
-            ->setResponse($this->serialize($ack))
+            ->setContent($this->serialize($ack))
             ->setJson(true) // serialized ^
             ->setStatusCode($ack->getServerCode());
     }

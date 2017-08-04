@@ -111,6 +111,8 @@ class AckModel
 
     /**
      * AckModel constructor.
+     *
+     * @SuppressWarnings(StaticAccess)
      */
     public function __construct()
     {

@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\model;
+namespace deasilworks\api\Model;
 
 /**
  * Class ExecutorResultModel.
@@ -33,7 +33,7 @@ class ApiResultModel
     /**
      * @var mixed
      */
-    protected $response;
+    protected $content;
 
     /**
      * @var bool
@@ -53,19 +53,19 @@ class ApiResultModel
     /**
      * @return mixed
      */
-    public function getResponse()
+    public function getContent()
     {
-        return $this->response;
+        return $this->content;
     }
 
     /**
-     * @param mixed $response
+     * @param mixed $content
      *
      * @return ApiResultModel
      */
-    public function setResponse($response)
+    public function setContent($content)
     {
-        $this->response = $response;
+        $this->content = $content;
 
         return $this;
     }

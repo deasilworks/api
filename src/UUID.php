@@ -33,6 +33,9 @@ class UUID
     /**
      * V4.
      *
+     * @SuppressWarnings(ShortMethodName)
+     * Because it's an expressive little one.
+     *
      * @return string
      */
     public static function v4()

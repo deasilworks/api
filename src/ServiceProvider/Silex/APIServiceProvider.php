@@ -33,7 +33,7 @@ use deasilworks\cfg\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Silex\Application;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -111,12 +111,15 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
                 /** @var ApiResultModel $apiResult */
                 $apiResult = $app[$this->namespace.'.api']->execute($apiRequest);
 
-                $response = new JsonResponse(
-                   $apiResult->getResponse(),
-                   $apiResult->getStatusCode(),
-                   $apiResult->getHeaders(),
-                   $apiResult->isJson()
-                );
+                $response = new Response();
+                $response->headers->set('Content-Type', 'application/json');
+                $content = $apiResult->getContent();
+
+                if (!$apiResult->isJson()) {
+                    $content = json_encode($content);
+                }
+
+                $response->setContent($content);
 
                 return $response;
             };

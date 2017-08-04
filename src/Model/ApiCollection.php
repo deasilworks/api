@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-namespace deasilworks\api\model;
+namespace deasilworks\api\Model;
 
 /**
  * Class ApiCollection.
