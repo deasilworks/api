@@ -30,7 +30,6 @@ use deasilworks\API\Model\ActionResponseModel;
 use deasilworks\API\Model\ParamModel;
 use deasilworks\API\Model\RestRequestModel;
 
-
 /**
  * Class ControllerAction.
  *
@@ -118,13 +117,10 @@ class ActionExecutor
             parse_str($apiRequest->getContent(), $content);
         }
 
-        if (in_array($apiRequest->getContentType(),['json','js'])) {
-
+        if (in_array($apiRequest->getContentType(), ['json', 'js'])) {
             $content = json_decode($apiRequest->getContent());
 
             // @TODO: check for PkgModel style object to pull out payload
-
-
         }
 
         return $content;
@@ -155,7 +151,6 @@ class ActionExecutor
 
         /** @var ParamModel $param */
         foreach ($targetAction->getParamCollection() as $param) {
-
             $params[$paramIndex] = $param;
 
             $paramName = $param->getName();
@@ -165,9 +160,7 @@ class ActionExecutor
             }
 
             foreach ($searchHashedArgs as $searchHashedArg) {
-
                 if (is_object($searchHashedArg) && $searchHashedArg->$paramName) {
-
                     $paramClass = $param->getType();
 
                     if ($paramClass) {
