@@ -30,6 +30,7 @@ use deasilworks\API\Model\ActionResponseModel;
 use deasilworks\API\Model\ParamModel;
 use deasilworks\API\Model\RestRequestModel;
 
+
 /**
  * Class ControllerAction.
  *
@@ -88,6 +89,7 @@ class ActionExecutor
         // array of hashed based args
         $searchHashedArgs = [$query, $content];
 
+        // get a hash of paramName => value ($preparedArgs), and a list of the params
         list($preparedArgs, $params) = $this->prepareArgs($targetAction, $indexedArgs, $searchHashedArgs);
 
         $callAction = [$actionReader->getController(), $targetAction->getClassMethod()];
@@ -116,10 +118,13 @@ class ActionExecutor
             parse_str($apiRequest->getContent(), $content);
         }
 
-        if ($apiRequest->getContentType() == 'json') {
+        if (in_array($apiRequest->getContentType(),['json','js'])) {
+
             $content = json_decode($apiRequest->getContent());
 
             // @TODO: check for PkgModel style object to pull out payload
+
+
         }
 
         return $content;
@@ -127,6 +132,14 @@ class ActionExecutor
 
     /**
      * Prepare Args.
+     *
+     * Takes a $targetAction to determine parameters.
+     *
+     * Takes an array of $indexedArgs and attempts to populate
+     * the parameters with them.
+     *
+     * Takes an array of hashes ($searchHashedArgs = [$query, $content])
+     * to look for any keys that match the actions parameters.
      *
      * @param ActionModel $targetAction
      * @param array       $indexedArgs      indexed array of args
@@ -142,19 +155,30 @@ class ActionExecutor
 
         /** @var ParamModel $param */
         foreach ($targetAction->getParamCollection() as $param) {
+
             $params[$paramIndex] = $param;
+
+            $paramName = $param->getName();
 
             if (isset($indexedArgs[$paramIndex])) {
                 $preparedArgs[$paramIndex] = $indexedArgs[$paramIndex];
             }
 
-            $paramName = $param->getName();
-
             foreach ($searchHashedArgs as $searchHashedArg) {
+
                 if (is_object($searchHashedArg) && $searchHashedArg->$paramName) {
 
-                    // TODO if the action is looking for a class we need to try to
-                    // hydrate it using a hydrator.
+                    $paramClass = $param->getType();
+
+                    if ($paramClass) {
+                        $dryObject = new $paramClass();
+
+                        $hydrator = new Hydrator();
+                        $hydratedObj = $hydrator->hydrateObject($dryObject, $searchHashedArg->$paramName);
+
+                        $preparedArgs[$paramIndex] = $hydratedObj;
+                        continue;
+                    }
 
                     $preparedArgs[$paramIndex] = $searchHashedArg->$paramName;
                     continue;
