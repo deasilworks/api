@@ -35,6 +35,7 @@ use Pimple\ServiceProviderInterface;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use deasilworks\CFG\Config;
 
 /**
  * Class APIServiceProvider.
@@ -51,16 +52,23 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
     {
         // the api
         $container[$this->namespace.'.api'] = function ($container) {
-            $configKey = $this->namespace.'.api.config';
 
-            if (!isset($container[$configKey])) {
-                $container[$configKey] = new APIConfig();
+            $apiConfigKey = $this->namespace.'.api.config';
+
+            if (!isset($container[$apiConfigKey])) {
+                $container[$apiConfigKey] = new APIConfig();
             }
 
-            /** @var APIConfig $config */
-            $config = $container[$configKey];
+            $api = new API($container[$apiConfigKey]);
 
-            $api = new API($config);
+            // first try to populate from cfg
+            $cfgKey = $this->namespace.'.cfg';
+
+            if (isset($container[$cfgKey])) {
+                /** @var Config $config */
+                $config = $container[$cfgKey];
+                $this->populateConfig($container[$apiConfigKey], 'api', $config->getAll());
+            }
 
             // if no controller factory is specified see if we have a CEF
             // controller_factory at this namespace to use as default
@@ -83,12 +91,14 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
                 }
             }
 
-            $this->populateConfig('api', $container);
+
+            // next try to populate from the container
+            $this->populateConfig($container[$apiConfigKey], 'api', $container);
 
             return $api;
         };
 
-        // api responder
+        // api responder (use as callback for api routes
         $container[$this->namespace.'.api.responder'] = function (Application $app) {
             return function (Request $request, $path) use ($app) {
                 $contentType = $request->getContentType();
