@@ -32,6 +32,7 @@ use deasilworks\API\Model\RestRequestModel;
 use deasilworks\CFG\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
+use Silex\Api\BootableProviderInterface;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -43,8 +44,18 @@ use deasilworks\CFG\Config;
  * Responsible for providing API as a service to
  * the applications built on the Silex framework.
  */
-class APIServiceProvider extends ServiceProvider implements ServiceProviderInterface
+class APIServiceProvider extends ServiceProvider implements ServiceProviderInterface, BootableProviderInterface
 {
+    /**
+     * @param Application $app
+     */
+    public function boot(Application $app)
+    {
+        // setup the api route
+        $app->match('/api/{path}', $this->namespace.'.api.responder')
+            ->assert('path', '.*');
+    }
+
     /**
      * @param Container $container
      */
