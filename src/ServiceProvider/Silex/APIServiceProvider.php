@@ -29,6 +29,7 @@ use deasilworks\API\API;
 use deasilworks\API\APIConfig;
 use deasilworks\API\Model\ApiResultModel;
 use deasilworks\API\Model\RestRequestModel;
+use deasilworks\CFG\Config;
 use deasilworks\CFG\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -36,7 +37,6 @@ use Silex\Api\BootableProviderInterface;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use deasilworks\CFG\Config;
 
 /**
  * Class APIServiceProvider.
@@ -63,7 +63,6 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
     {
         // the api
         $container[$this->namespace.'.api'] = function ($container) {
-
             $apiConfigKey = $this->namespace.'.api.config';
 
             if (!isset($container[$apiConfigKey])) {
@@ -101,7 +100,6 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
                     $container[$this->namespace.'.api.serializer'] = $seralizer;
                 }
             }
-
 
             // next try to populate from the container
             $this->populateConfig($container[$apiConfigKey], 'api', $container);
