@@ -10,7 +10,7 @@ the applications built on the Silex framework.
 * Class name: APIServiceProvider
 * Namespace: deasilworks\API\ServiceProvider\Silex
 * Parent class: deasilworks\CFG\ServiceProvider\Silex\ServiceProvider
-* This class implements: Pimple\ServiceProviderInterface
+* This class implements: Pimple\ServiceProviderInterface, Silex\Api\BootableProviderInterface
 
 
 
@@ -19,6 +19,22 @@ the applications built on the Silex framework.
 
 Methods
 -------
+
+
+### boot
+
+    mixed deasilworks\API\ServiceProvider\Silex\APIServiceProvider::boot(\Silex\Application $app)
+
+
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $app **Silex\Application**
+
 
 
 ### register

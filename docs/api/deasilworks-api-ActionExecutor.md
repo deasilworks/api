@@ -89,7 +89,13 @@ Resolver constructor.
 
 Prepare Args.
 
+Takes a $targetAction to determine parameters.
 
+Takes an array of $indexedArgs and attempts to populate
+the parameters with them.
+
+Takes an array of hashes ($searchHashedArgs = [$query, $content])
+to look for any keys that match the actions parameters.
 
 * Visibility: **private**
 
