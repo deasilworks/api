@@ -31,14 +31,9 @@ namespace deasilworks\API;
 final class APIConfig
 {
     /**
-     * @var string
+     * @var array
      */
-    private $classPath;
-
-    /**
-     * @var array hash of aliases
-     */
-    private $aliases = [];
+    private $routes;
 
     /**
      * @var callable
@@ -51,43 +46,54 @@ final class APIConfig
     private $serializer;
 
     /**
-     * @return string
-     */
-    public function getClassPath()
-    {
-        return $this->classPath;
-    }
-
-    /**
-     * @param array $classPath
-     *
-     * @return APIConfig
-     */
-    public function setClassPath($classPath)
-    {
-        $this->classPath = $classPath;
-
-        return $this;
-    }
-
-    /**
      * @return array
      */
-    public function getAliases()
+    public function getRoutes()
     {
-        return $this->aliases;
+        return $this->routes;
     }
 
     /**
-     * @param array $aliases
+     * @param array $routes
      *
      * @return APIConfig
      */
-    public function setAliases($aliases)
+    public function setRoutes($routes)
     {
-        $this->aliases = $aliases;
-
+        $this->routes = $routes;
         return $this;
+    }
+
+    /**
+     * Add or set a route.
+     *
+     * @param array
+     *
+     * @return array
+     */
+    public function setRoute($route, $config)
+    {
+        return $this->routes[$route] = $config;
+    }
+
+    /**
+     * @param string $route
+     *
+     * @return string
+     */
+    public function getClassPath($route)
+    {
+        return $this->routes[$route]['class_path'];
+    }
+
+    /**
+     * @param string $route
+     *
+     * @return array
+     */
+    public function getAliases($route)
+    {
+        return $this->routes[$route]['aliases'];
     }
 
     /**

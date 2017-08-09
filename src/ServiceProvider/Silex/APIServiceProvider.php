@@ -52,7 +52,7 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
     public function boot(Application $app)
     {
         // setup the api route
-        $app->match('/api/{path}', $this->namespace.'.api.responder')
+        $app->match('/api/{route}/{path}', $this->namespace.'.api.responder')
             ->assert('path', '.*');
     }
 
@@ -109,7 +109,7 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
 
         // api responder (use as callback for api routes
         $container[$this->namespace.'.api.responder'] = function (Application $app) {
-            return function (Request $request, $path) use ($app) {
+            return function (Request $request, $route, $path) use ($app) {
                 $contentType = $request->getContentType();
 
                 // should also be looking at headers however
@@ -121,6 +121,7 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
                 $apiRequest = new RestRequestModel();
                 $apiRequest
                     ->setMethod($request->getMethod())
+                    ->setRoute($route)
                     ->setPath($path)
                     ->setContentType($contentType)
                     ->setQueryString($request->getQueryString())

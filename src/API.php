@@ -71,7 +71,7 @@ class API
     {
         $result = new ApiResultModel();
 
-        list($controller, $action, $args) = $this->resolveController($apiRequest->getPath());
+        list($controller, $action, $args) = $this->resolveController($apiRequest->getRoute(), $apiRequest->getPath());
 
         $actionReader = new ActionReader($controller);
 
@@ -172,19 +172,20 @@ class API
     /**
      * Resolves controller to object and remaining args.
      *
-     * @param $path
+     * @param string $route
+     * @param string $path
      *
      * @throws \Exception
      *
      * @return array
      */
-    private function resolveController($path)
+    private function resolveController($route, $path)
     {
         $pathComponents = explode('/', $path);
-        $baseClassPath = $this->config->getClassPath();
+        $baseClassPath = $this->config->getClassPath($route);
 
         $classObject = null;
-        $aliases = $this->config->getAliases();
+        $aliases = $this->config->getAliases($route);
 
         $class = $baseClassPath;
         $classAlias = '';

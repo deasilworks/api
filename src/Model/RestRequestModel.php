@@ -43,6 +43,11 @@ final class RestRequestModel
     /**
      * @var string
      */
+    private $route;
+
+    /**
+     * @var string
+     */
     private $content;
 
     /**
@@ -77,6 +82,24 @@ final class RestRequestModel
     {
         $this->method = $method;
 
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRoute()
+    {
+        return $this->route;
+    }
+
+    /**
+     * @param string $route
+     * @return RestRequestModel
+     */
+    public function setRoute($route)
+    {
+        $this->route = $route;
         return $this;
     }
 
