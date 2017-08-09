@@ -95,11 +95,13 @@ final class RestRequestModel
 
     /**
      * @param string $route
+     *
      * @return RestRequestModel
      */
     public function setRoute($route)
     {
         $this->route = $route;
+
         return $this;
     }
 

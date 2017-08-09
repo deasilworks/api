@@ -61,6 +61,7 @@ final class APIConfig
     public function setRoutes($routes)
     {
         $this->routes = $routes;
+
         return $this;
     }
 
