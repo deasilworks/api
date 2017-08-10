@@ -217,7 +217,7 @@ class API
         }
 
         if (!$classObject) {
-            throw new \Exception('API: No controller found for the requested end point.');
+            throw new \Exception('API: No controller found for the requested end point. ');
         }
 
         // any path left over becomes args
