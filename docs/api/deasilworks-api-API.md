@@ -119,7 +119,7 @@ Call Action.
 
 ### resolveController
 
-    array deasilworks\API\API::resolveController($path)
+    array deasilworks\API\API::resolveController(string $route, string $path)
 
 Resolves controller to object and remaining args.
 
@@ -129,7 +129,8 @@ Resolves controller to object and remaining args.
 
 
 #### Arguments
-* $path **mixed**
+* $route **string**
+* $path **string**
 
 
 

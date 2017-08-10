@@ -50,5 +50,9 @@
       "deasilworks\\API\\test\\": "tests/src/deasilworks/api/test"
     }
   },
-  "minimum-stability": "dev"
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
 }

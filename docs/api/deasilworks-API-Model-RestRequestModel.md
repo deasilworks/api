@@ -39,6 +39,17 @@ Properties
 * Visibility: **private**
 
 
+### $route
+
+    private string $route
+
+
+
+
+
+* Visibility: **private**
+
+
 ### $content
 
     private string $content
@@ -113,6 +124,35 @@ Methods
 
 #### Arguments
 * $method **string**
+
+
+
+### getRoute
+
+    string deasilworks\API\Model\RestRequestModel::getRoute()
+
+
+
+
+
+* Visibility: **public**
+
+
+
+
+### setRoute
+
+    \deasilworks\API\Model\RestRequestModel deasilworks\API\Model\RestRequestModel::setRoute(string $route)
+
+
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $route **string**
 
 
 

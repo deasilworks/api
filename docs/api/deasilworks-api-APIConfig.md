@@ -17,20 +17,9 @@ Properties
 ----------
 
 
-### $classPath
+### $routes
 
-    private string $classPath
-
-
-
-
-
-* Visibility: **private**
-
-
-### $aliases
-
-    private array $aliases = array()
+    private array $routes
 
 
 
@@ -65,9 +54,9 @@ Methods
 -------
 
 
-### getClassPath
+### getRoutes
 
-    string deasilworks\API\APIConfig::getClassPath()
+    array deasilworks\API\APIConfig::getRoutes()
 
 
 
@@ -78,9 +67,9 @@ Methods
 
 
 
-### setClassPath
+### setRoutes
 
-    \deasilworks\API\APIConfig deasilworks\API\APIConfig::setClassPath(array $classPath)
+    \deasilworks\API\APIConfig deasilworks\API\APIConfig::setRoutes(array $routes)
 
 
 
@@ -90,26 +79,46 @@ Methods
 
 
 #### Arguments
-* $classPath **array**
+* $routes **array**
+
+
+
+### setRoute
+
+    array deasilworks\API\APIConfig::setRoute(array $route, $config)
+
+Add or set a route.
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $route **array**
+* $config **mixed**
+
+
+
+### getClassPath
+
+    string deasilworks\API\APIConfig::getClassPath(string $route)
+
+
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $route **string**
 
 
 
 ### getAliases
 
-    array deasilworks\API\APIConfig::getAliases()
-
-
-
-
-
-* Visibility: **public**
-
-
-
-
-### setAliases
-
-    \deasilworks\API\APIConfig deasilworks\API\APIConfig::setAliases(array $aliases)
+    array deasilworks\API\APIConfig::getAliases(string $route)
 
 
 
@@ -119,7 +128,7 @@ Methods
 
 
 #### Arguments
-* $aliases **array**
+* $route **string**
 
 
 
