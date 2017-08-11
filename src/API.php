@@ -121,7 +121,7 @@ class API
      *
      * @return string
      */
-    private function serialize($object)
+    public function serialize($object)
     {
         $context = new SerializationContext();
         $context->setSerializeNull(true);

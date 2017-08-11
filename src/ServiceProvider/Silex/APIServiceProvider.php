@@ -35,8 +35,9 @@ use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Silex\Api\BootableProviderInterface;
 use Silex\Application;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
+use deasilworks\API\Model\AckModel;
 
 /**
  * Class APIServiceProvider.
@@ -47,14 +48,20 @@ use Symfony\Component\HttpFoundation\Response;
 class APIServiceProvider extends ServiceProvider implements ServiceProviderInterface, BootableProviderInterface
 {
     /**
+     * The initial path component example.com/api/
+     */
+    const API_PATH = 'api';
+
+    /**
      * @param Application $app
      */
     public function boot(Application $app)
     {
-        // setup the api route
-        $app->match('/api/{route}/{path}', $this->namespace.'.api.responder')
+        // route
+        $app->match('/'.self::API_PATH.'/{route}/{path}', $this->namespace.'.api.responder')
             ->assert('path', '.*');
     }
+
 
     /**
      * @param Container $container

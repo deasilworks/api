@@ -626,6 +626,32 @@ AckModel constructor.
 
 
 
+### toJson
+
+    string deasilworks\API\Model\AckModel::toJson()
+
+
+
+
+
+* Visibility: **public**
+
+
+
+
+### serialize
+
+    string deasilworks\API\Model\AckModel::serialize()
+
+Serialize.
+
+
+
+* Visibility: **public**
+
+
+
+
 ## LICENSE
 
 MIT

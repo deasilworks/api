@@ -112,6 +112,52 @@
     </parse_markers>
     <source>eJylVE1v4zYQvftXDII9JIG6aXsp0G/GomNiZUmQ5HUD7IWWaIutLAokvUZQ7H/vDKXsJu6m7aKCAYPDmTfvPQ754y9DO8xmN9czuIaVqCDRteqdwiVF5mZ4sHrferisr+Dbr7/5DmIlne5gY+wfLgLR11NqruxBO6dND9pBq6zaPsDeyt6rJoKdVQrMDupW2r2KwBuQ/QMMyjosMFsvda/7PUiosSXhYbJvEcmZnT9JqzC/AemcqbVESGhMfTyo3ktPLXe6Uw4ufavgopwqLq5Cn0bJjgB1D7T9uAsn7Vtz9GCV81bXBBNhUt0dG2LyuN3pg56aUHlwwxEeQh8dSiHCERxMo3f0r4K+4bjttGsjaDShb48eg46Cwd6I1NwYC051gRyCaBQQRH/iGNKo0UDm+skuR5FTaw7P9ejAane0PTZWoawxaF/o+7uqPUWoYme6zpxIY236RpM09z3VVrgpt+a9CprGc++NR8ojDzqO4dMxT1uulV0HWzV5h53RaflcliUOzuMwaNnBYGxoei739TRK1ZJDmS2qDSs4iBLyInsrYh7DBStxfRHBRlTLbF0BZhQsre4hWwBL7+GNSOMI+G95wcsSsoLQxCpPBMewSOfJOhbpHdxiaZrhsAscecStstBzQhO8JLwVL+ZLXLJbkYjqPiKshahSQl5kBTDIWVGJ+TphBeTrIs9KjiRiRE5FuiiwEV/xtHqNjTEG/C0uoFyyJKFuBMfWKKMgojDP8vtC3C0rWGZJzDF4y5Efu0342A3VzRMmVhHEbMXueKjKECiIpMyRJmyWnKLUleFvXoksJT3zLK0KXEYot6g+Vm9EySNghSjJmUWRrYJScheLsoCDpSkfgcj55weEKbRel/wjJsScJQhXUvGk9TGfDvlmNuvlQblB4vw04UE50XvyjuXi3co0qvuB3qTxCerw0kMurTyEncchKb3BmwvST9crTJMEfF7CsxC61Ge1sz9ngF9Apu8afn0vcTYRot9PoZvwP1jj8crgML8ipkjnywv9w/C5Qqs83tHP1ob3Aa9wH14j2CufYvPLq7A7cqdvQnhFF/Krn0d+FP/w92YDaZ96jVKmrXM6T0z6J0puohSgznk9IQQ/PTPunPWLfL/InAoN/hdzxjP4T+ZQ6v82J1AKUC+YQ1tkzpPheMmcD7O/ADMPOMk=</source>
   </file>
+  <file path="Traits/Serializable.php" generated-path="Traits.Serializable.html" hash="f8a832b03546f2c379a540b75e3815cd" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="SerializerBuilder">\JMS\Serializer\SerializerBuilder</namespace-alias>
+    <namespace-alias name="SerializationContext">\JMS\Serializer\SerializationContext</namespace-alias>
+    <trait namespace="deasilworks\API\Traits" line="36" package="Default">
+      <name>Serializable</name>
+      <full_name>\deasilworks\API\Traits\Serializable</full_name>
+      <docblock line="36">
+        <description>Class CEF.</description>
+        <long-description>Responsible for managing configuration and
+providing an EntityManager factory.</long-description>
+        <tag name="package" line="36" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Traits" line="42" package="Default">
+        <name>toJson</name>
+        <full_name>\deasilworks\API\Traits\Serializable::toJson()</full_name>
+        <docblock line="42">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="42" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Traits" line="52" package="Default">
+        <name>serialize</name>
+        <full_name>\deasilworks\API\Traits\Serializable::serialize()</full_name>
+        <docblock line="52">
+          <description>Serialize.</description>
+          <long-description></long-description>
+          <tag name="return" line="52" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+    </trait>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="42" code="PPC:ERR-50008">No summary for method toJson()</error>
+    </parse_markers>
+    <source>eJydVVFv2zYQfvevOAQFagdqsu2lQNJ2k206ZidLhiTXC5AXWqJtdrJokFQ9r+h/3x0lO0477GFGAIfHu+++73h3fvfrfrvv9W6ve3ANM55DpApZW4lHsoz0/mjUZuugXwzgl59+fgtjKayqYKnNnzYAXhed61yanbJW6RqUha00cnWEjRG1k2UAayMl6DUUW2E2MgCnQdRH2EtjMUCvnFC1qjcgoMCUhIfObotIVq/dQRiJ/iUIa3WhBEJCqYtmJ2snHKVcq0pa6LuthKusi7ga+DylFBUBqhro+nQLB+W2unFgpHVGFQQToFNRNSUxOV1Xaqe6JBTuq2EJD6Ebi1KIcAA7Xao1fUuvb9+sKmW3AZSK0FeNQ6Mloy9vQGputQErK08OQRQK8KKfOXo3SrSn4rquXJYsh63evdSjPKt1Y2pMLH1YqbF8Pu9nWTiyUMRaV5U+kMZC16UiafaOYnO8FCv9RXpN7bvX2iHllgc9x/75mbsruxVVBSvZ1Q4zY6XFS1mGOFiHzaBEBXttfNLv5d50rZRPGWTJJF+GKQOewTxNPvExG8NVmOH5KoAlz6fJIgf0SMM4f4RkAmH8CL/zeBwA+2OesiyDJCU0PptHnKGZx6NoMebxAwwxNE6w2Tm2POLmic/ZoXGWEd6MpaMpHsMhj3j+GBDWhOcxIU+SFEKYh2nOR4soTGG+SOdJxpDEGJFjHk9STMRmLM5vMDHagH3CA2TTMIooG8GFC5SRElEYJfPHlD9Mc5gm0ZihcciQXziMWJsN1Y2ikM8CGIez8IH5qASBvEjybGnCcsrISllD/BvlPIlJzyiJ8xSPAcpN83P0kmcsgDDlGVVmkiYzr5Sqi0GJx8HQmLVAVPmXD4QudF5k7IwJYxZGCJdRcKf15E+PfNurxU7avcD2Kf0+OdA6eQrn/Ck3Qjl73+vhcMHHWfaUSYNNo/6W5uLfYaOqUpr7//LyQzvSuID+cve049qVVuESgRGbnLotRSLYjGpV0WgY2IlabLrpWKtNY9rhxwkg773RX5RfEKIGhv3sjjMKkAbWonDaHFuBjmTAmQqC9772eoAfz4M+1/CbkQ7nFWhF1JvOeuu//QIpcJzrot09+iOOfn/gL7+2rvjpAF7RbL75YE9F6A/uvcu3H1Ke63TTWf4Hl4s039F5VbTlhvdQywP820ucqF26E3N3ZhY3VdV3ppHo+ex6TmoQ/IdGuLsrjMTfhf7gzYcVmfqXwacqPWNc1soXL4DXn7HAr4MzqXMJv/0DbAU0mQ==</source>
+  </file>
   <file path="Model/ParamCollection.php" generated-path="Model.ParamCollection.html" hash="abbeab8bc54bec9ba00e504a7c2f1a49" package="Default">
     <docblock line="0">
       <description></description>
@@ -578,7 +624,7 @@
     </parse_markers>
     <source>eJytV21v2zYQ/u5fcQjywWnVpNuXAc3WTrGVWJgtGZLcLEiCgZbomKssCiSdF2z577uj5Pg9droKQQySd88999zxZP/6pRyXjcbJuwa8g56fQFekvNAcl7TTkuWTEndjA830CH7++NMv0OZMixwupfqmHfCLtDbtczURWgtZgNAw5ooPn+BOscLwzIGR4hzkCNIxU3fcASOBFU9QcqXRQQ4NE4Uo7oBBiiEJD43NGJG0HJkHpjjaZ8C0lqlgCAmZTKcTXhhmKORI5FxD04w5HMS1x8GRjZNxlhOgKICOZ6fwIMxYTg0oro0SKcE4aJTm04yYzI5zMRF1EHK3amjCQ+ipxlSIsAMTmYkRfXKbXzkd5kKPHcgEoQ+nBjc1bVp5HcrmRCrQPLfkEERgAjbpOUdrRoFKEtfUcmnaeRjLyXI+wrIaTVWBgbl1yyTKZ+P+zVNDO+QxknkuHyjHVBaZoNT0J/JN8JAN5T23OVV1L6RByhUPKkc5L3N9pMcsz2HIa+0wMirNltNSxEEbbAbBciilskFX0z2uWynpeBCH58mlG3ngx9CPwq9+22vDgRvj+sCBSz/phIME0CJyg+QKwnNwgyv4ww/aDnh/9iMvjiGMCM3v9bu+h9t+0OoO2n5wAWfoGoTY7D62POImoY1Zo/leTHg9L2p1cOme+V0/uXII69xPAkI+DyNwoe9Gid8adN0I+oOoH8YekmgjcuAH5xEG8npekBxjYNwD7ysuIO643S5FIzh3gGlERBRaYf8q8i86CXTCbtvDzTMP+blnXa+Khtm1uq7fc6Dt9twLz3qFCGSTJMuKJlx2PNqlqC7+tRI/DCifVhgkES4dTDdKXrwv/dhzwI38mJQ5j8KezZTURafQ4qBr4FVApPxygdCE1oPYe8GEtud2ES4m5zrXmT0V+aTRKNiE65Jh/2R2oDzQPLlx+/5NT2Y8P6WZVI2gHC89uKVoYdtye01nfRIbiZfXzozFo5NGuu4DYlLmnAaGhhvfcMXQ2YEbVyn25KYp17rxTwPwsXHpeQe/3zOF3Wzq9Yn9LJW4xwkEh6XU9vLAb/AR+W7yZYS+4i0NMsJbciiKjD/yrCULmn5cIc717fcAjRld+J04ihscDpug7FzC0VFUUt1xMxeueWRtKm3oqWEOaRx8+LyaxKm1e16PXjLFJlVwOJwXrD5fJdlaNdjMVC8xXYBdJb2FLUq14FRrRs8IO4ulY1jExLcPHOLryzbo0QL4QoCVUly/2H/4jKoG2PTNo1uKOts/fUF5bmyUeJugsx4+3qLgRGCir4qXTpXC+/DGAl/X+7Puv91FEAr+aI5fZUIWazTev1+JtDPQN/60TY21S7zCAF136LA3i3uWi2wbj6GU+atErPc2Kvji5aa5b2GOdlJVHL8GZK/XprJZY7QSrJqBm8MtjFgIRyNMAbxH/Fqk10SqZoTtXDiU1vR7day8qzjNGmsfVdcucOW6XcwN2V1w8z9Sszb/FtN8nwQviPkPyA6+bJ1gtQl8AuL0BhniHTJUfbSkxcygT//tfJxPyj3UiOdqOAujekUYMYKm0H9RNi/a/fhxvoCydlNXXJZ8qrJtfC3sqtBGHlunxVavvYo7wF8xb+ny18pmsba18bTY/3au2W/N+uU6Pzf+A4LnXE4=</source>
   </file>
-  <file path="Model/ActionResponseModel.php" generated-path="Model.ActionResponseModel.html" hash="9c45d28cd3919d5e906cedaa56cac805" package="Default">
+  <file path="Model/ActionResponseModel.php" generated-path="Model.ActionResponseModel.html" hash="fe1a6467e6758671adb497a0e22ba307" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
@@ -742,16 +788,16 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="125" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="126" package="Default">
         <name>setPkgUuid</name>
         <full_name>\deasilworks\API\Model\ActionResponseModel::setPkgUuid()</full_name>
-        <docblock line="125">
+        <docblock line="126">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="125" description="" type="string" variable="$pkgUuid">
+          <tag name="param" line="126" description="" type="string" variable="$pkgUuid">
             <type>string</type>
           </tag>
-          <tag name="return" line="125" description="" type="\deasilworks\API\Model\ActionResponseModel">
+          <tag name="return" line="126" description="" type="\deasilworks\API\Model\ActionResponseModel">
             <type>\deasilworks\API\Model\ActionResponseModel</type>
           </tag>
         </docblock>
@@ -771,13 +817,13 @@
       <error line="96" code="PPC:ERR-50008">No summary for method getArgs()</error>
       <error line="106" code="PPC:ERR-50008">No summary for method setArgs()</error>
       <error line="116" code="PPC:ERR-50008">No summary for method getPkgUuid()</error>
-      <error line="125" code="PPC:ERR-50008">No summary for method setPkgUuid()</error>
+      <error line="126" code="PPC:ERR-50008">No summary for method setPkgUuid()</error>
       <error line="36" code="PPC:ERR-50007">No summary for property $response</error>
       <error line="41" code="PPC:ERR-50007">No summary for property $params</error>
       <error line="46" code="PPC:ERR-50007">No summary for property $args</error>
       <error line="51" code="PPC:ERR-50007">No summary for property $pkgUuid</error>
     </parse_markers>
-    <source>eJy1VNtu4zYQffdXDIJ9SAJ10/alQO+KTcdEZUmQ5HUD7Ast0Ta7siiQ9LpBsf/eGUrOxbGTtkgFAwbncubM4XB+/KVdt4PB1eUALmHKC4hUKRsr8UiWoW7vjFqtHZyXF/Dt1998ByMprKphrs0nGwBvyj40lWajrFW6AWVhLY1c3MHKiMbJKoClkRL0Esq1MCsZgNMgmjtopbGYoBdOqEY1KxBQYknCw2C3RiSrl24njMT4CoS1ulQCIaHS5XYjGycclVyqWlo4d2sJZ3mfcXbh61RS1ASoGiD33gs75dZ668BI64wqCSbAoLLeVsRk767VRvVFKN2rYQkPobcWWyHCAWx0pZb0L31/7XZRK7sOoFKEvtg6NFoyenkD6uZKG7Cy9uQQRGEDvukHjj6MCrUkruvlsmTZrfXmaT/Ks1puTYOFpU+rNMrn6/4hS0cWyljqutY76rHUTaWoNfs95RboFAv9WfqeuntvtEPKHQ+6jvbhmnuXXYu6hoXstcPKqLR42pYhDtbhMChRQ6uNL3rY7vt+lIoJgzwZF/MwY8BzSLPkAx+xEZyFOZ7PApjzYpLMCsCILIyLW0jGEMa38BuPRwGw39OM5TkkGaHxaRpxhmYeD6PZiMc3cI2pcYLDznHkEbdIfM0ejbOc8KYsG07wGF7ziBe3AWGNeRET8jjJIIQ0zAo+nEVhBuksS5OcIYkRIsc8HmdYiE1ZXLzHwmgD9gEPkE/CKKJqBBfOsI2MiMIwSW8zfjMpYJJEI4bGa4b8wuuIddWwu2EU8mkAo3Aa3jCflSCQb5IiO5ownzCyUtUQf8OCJzH1M0ziIsNjgO1mxX32nOcsgDDjOSkzzpKp75TUxaTE42BqzDogUv7pBWEInWc5u8eEEQsjhMspue91H0+XfDUYNGIjbStwfiq/UHa0Tz6GKf841ZWsf6Cd1K2gGh89hP59ZpiCcyN9SAdUnnIP/hoAfh6Fvkv49bMwsFF/yqq3XPn/1miHrwPn9p3pAbD6sVxhjLg7ldsKIzb2v2TiRjyVR7ujWZ0s+Wk126rqSK6RDvfAsWb9CsIt0XjFYCXdXrXzCx/RyUZfD/KO3v1XPz9oQ74vz2t6AbqSD0r23kNix+7rJZr2Ec177EO+B0Thp2cXetjVyV76oCPX9ly/1F/8K+rtp+NF7Xy5/SS9nXI9wR73hGqdkzR7Msj/i2IhDvwrenVv4p+oRZFvp5Wn5jFP6EQuUunRo/23Gh171EfGqnvcr83VfgW8KFVX8X5hvMVM9ez2kKemqvP6sXrM9JRkXwZ/A6MTC4Y=</source>
+    <source>eJy1VNtu4zYQffdXDIJ9SAJ10/alQLc3xaZjorIkSPKmAfaFlmibXVkUSHrdoNh/3xlKTtaOnbRFKhgwOJdzZg6H89Ov7aodDK4uB3AJU15ApErZWIlHsgx1e2/UcuXgvLyA77/97gcYSWFVDbfafLQB8KbsQ1Np1spapRtQFlbSyPk9LI1onKwCWBgpQS+gXAmzlAE4DaK5h1Yaiwl67oRqVLMEASVSEh4GuxUiWb1wW2EkxlcgrNWlEggJlS43a9k44YhyoWpp4dytJJzlfcbZheeppKgJUDVA7p0Xtsqt9MaBkdYZVRJMgEFlvamokp27VmvVk1C6V8MSHkJvLLZCBQew1pVa0L/0/bWbea3sKoBKEfp849BoyejlDaibK23AytoXhyAKG/BNP9bow4ioJXFdL5cly3al1/v9KF/VYmMaJJY+rdIon+f9U5aOLJSx0HWtt9RjqZtKUWv2R8ot0Cnm+pP0PXX33miHJXd10HW0j9fcu+xK1DXMZa8dMqPSYr8tQzVYh8OgRA2tNp70sN23/SgVEwZ5Mi5uw4wBzyHNkvd8xEZwFuZ4PgvglheTZFYARmRhXNxBMoYwvoPfeTwKgP2RZizPIckIjU/TiDM083gYzUY8voFrTI0THHaOI4+4ReI5ezTOcsKbsmw4wWN4zSNe3AWENeZFTMjjJIMQ0jAr+HAWhRmksyxNcoZFjBA55vE4QyI2ZXHxFonRBuw9HiCfhFFEbAQXzrCNjAqFYZLeZfxmUsAkiUYMjdcM6wuvI9axYXfDKOTTAEbhNLxhPitBIN8kRXZlwu2EkZVYQ/wNC57E1M8wiYsMjwG2mxUP2bc8ZwGEGc9JmXGWTH2npC4mJR4HU2PWAZHy+xeEIXSe5ewBE0YsjBAup+S+1108XfLVYNCItbStwPmp/ELZ0j75EKb8w1RXsn5HO6lbQTU+egj9+8wwBedG+pAOqDzlHvw9APw8Cn2X8NsnYWCt/pJVb7ny/63RDl8Hzu0b0wMg+7FcYYy4P5XbCiPW9r9k4kY8lUe7o1mepPy4nG1UdSTXSId74FizfgXhlmi8YrCUbqfa+YWP6GSjrwd5Q+/+m18etSHf56ecXoCO8lHJ3ntY2LH7eq5M+1WZD9iH9R4UCj8/udDDrk720gcduban+qX+4l9Qbzcdz2rn6XaT9HrK9QX2uCdU65yk2d4g/y+KhTjwL+jVvYl/ohZFvp5WvjSPeUIncpFKXz3af6vRsUd9ZKy6x/3SXO1WwLNSdYwPC+MVR6svcod8arg6r5+uvZ11SrrPgy9DUgxk</source>
   </file>
   <file path="Annotation/ApiAction.php" generated-path="Annotation.ApiAction.html" hash="743ccf22842445847e1da47f07b96658" package="Default">
     <docblock line="0">
@@ -1271,14 +1317,14 @@
     </parse_markers>
     <source>eJy1VNtu4zYQffdXDIJ9SAJ13falQO+KTcfEypIhyesGyAst0TZbWRREeo2g2H/vDC3f5DjZdFvBgMHhzJkzZ4bz82/Vsup0urcduIURTyFQmSyNxCNZerp6qtViaeE6u4Hvv/3uB+hLYVQBU13/ZTzgZda4jmW9UsYoXYIysJS1nD3BohallbkH81pK0HPIlqJeSA+sBlE+QSVrgwF6ZoUqVbkAARmmJDx0tktEMnpuN6KW6J+DMEZnSiAk5Dpbr2RphaWUc1VIA9d2KeEqaSKublyeXIqCAFUJdL27hY2yS722UEtja5URjIdOWbHOicnuulAr1SShcKeGITyEXhsshQh7sNK5mtO/dPVV61mhzNKDXBH6bG3RaMjo5PWomq6uwcjCkUMQhQW4og8cnRslqkhc28hlyLJZ6tVpPcqxmq/rEhNLF5ZrlM/l/VNmliwUMddFoTdUY6bLXFFp5keKTfFSzPQn6Wra9r3UFilveVA7qkObmyuzFEUBM9loh5lRaXFaVk0cjMVhUKKAStcuabvc980opUMGSTRIp37MgCcwjqOPvM/6cOUneL7yYMrTYTRJAT1iP0wfIBqAHz7ABx72PWB/jGOWJBDFhMZH44AzNPOwF0z6PLyHOwwNIxx2jiOPuGnkcjZonCWEN2Jxb4hH/44HPH3wCGvA05CQB1EMPoz9OOW9SeDHMJ7E4yhhSKKPyCEPBzEmYiMWpu8xMdqAfcQDJEM/CCgbwfkTLCMmotCLxg8xvx+mMIyCPkPjHUN+/l3Attmwul7g85EHfX/k3zMXFSGQK5I8tzRhOmRkpaw+/nopj0KqpxeFaYxHD8uN0330lCfMAz/mCSkziKORq5TUxaDI4WBoyLZApPxpg9CFzpOE7TGhz/wA4RIKbmrd+VOTu51OKVbSVALnJ3cLZUP75NEf88eRzmXx6LsH+VOng2/sgstY1GLVw2GWO9/u7XZrFbgnYIvgXHeDlViNrx2EbZ6km0CB0+pcHbGsHdv5uwP4OWj6buH3TwLnGSHKRWPquv+q1hap4AN451BGEjdIjrTeHl/j5pEhSvTvonGjvZi8pdwlnOpM4DZYLS3um2fpuF2H66h0sbCQtncQ5frGOW2lpa8Bekc75ptfT+Sj68/nqR25JvOJ4I1Hm+NxS18iak6JHiO3SZ+zhV+e6327wIs1vUnOeDcjr4h5NEtfJOXe/+uFPFA8oF4QcX9PErbH/38ScP9MXlPw6D19mYT7gP9AwwPLI9xLKu4dnIztPfBWHV/cE+eCttxfUfVsu7wobQv7bDl9vdBt9q9lvNCClhf14fk9eqkZnzv/AEqba6Q=</source>
   </file>
-  <file path="UUID.php" generated-path="UUID.html" hash="1b1dabfc467e9cc6219f0d7f97957a9a" package="Default">
+  <file path="UUID.php" generated-path="UUID.html" hash="9b5dd44a1630855176b1f9bfd4836f15" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <namespace-alias name="ApiController">\deasilworks\API\Annotation\ApiController</namespace-alias>
     <namespace-alias name="ApiAction">\deasilworks\API\Annotation\ApiAction</namespace-alias>
+    <namespace-alias name="ApiController">\deasilworks\API\Annotation\ApiController</namespace-alias>
     <class final="false" abstract="false" namespace="deasilworks\API" line="36" package="Default">
       <extends/>
       <name>UUID</name>
@@ -1323,269 +1369,270 @@
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
     </parse_markers>
-    <source>eJyNVG1v4kYQ/s6vGEVXQSIncNdIvTaNcg6YsKqxkW2SRqU9LfaC92q8lne5XJTmv3dmMUSkyTUrjL3z8sw8M7vz60WVV61W96gFRzBmCfgyFaUWuCVJX1X3tVzmBjrpIXzovf8JBoJrWcCNqv/WDrAybUwnol5JraUqQWrIRS3m97CseWlE5sCiFgLUAtKc10vhgFHAy3uoRK3RQc0Nl6Usl8AhxZCEh8YmRyStFuaO1wLtM+Baq1RyhIRMpeuVKA03FHIhC6GhY3IBB3HjcXBo42SCFwQoSyD1Vgt30uRqbaAW2tQyJRgHjdJinVEmW3UhV7IJQu62GprwEHqtkQol7MBKZXJBb2H5Vet5IXXuQCYJfb42KNQktOV1iE1X1aBFYZNDEIkELOmnHK0ZBaqouKYplybJXa5W+3ykzWqxrksMLKxbprB8Nu4XkRqSkMdCFYW6I46pKjNJ1PQv5Jugks/VV2E5bfpeKoMpb/KgdlRPbW5UOudFAXPR1A4jY6X5Pq2actAGD4PkBVSqtkGf0z1pjlIy8iAOh8mNG3nAYphE4TUbeAM4cGPcHzhww5JROE0ALSI3SG4hHIIb3MJvLBg44P0+ibw4hjAiNDae+MxDMQv6/nTAgiu4RNcgxMPO8MgjbhLamA0a82LCG3tRf4Rb95L5LLl1CGvIkoCQh2EELkzcKGH9qe9GMJlGkzD2MIkBIgcsGEYYyBt7QXKCgVEG3jVuIB65vk/RCM6dIo2IEoV+OLmN2NUogVHoDzwUXnqYn3vpe5toyK7vu2zswMAdu1ee9QoRyJIky02acDPySEpRXfz1ExYGxKcfBkmEWwfpRsnO+4bFngNuxGKqzDAKx5YpVRedQouDroG3AaLK7zcITWg/jb0dJgw810e4mJwbrlt7anK31Sr5SuiK4/nJ7EC5o3kycyfsrNXCa/VcOnNLPG72Gs7cSvZVaWo8xqI+e4O1ay/3GY25zVQrcI7AdMoG2xP3aQ+zc2hzTHdmrYcW4LLutI7gShicVaSDr6cnjXSr/LSLSUj7qloYvKFAQ6FcNtKufduRkaIG807xHpcWAZbCXJ82OJs0aG1hKoQxi077h97pN3qOX/jbPm1n505rZT7jdM46PQd63xa4cFy+IPs/n9f1PdLDP/h12uv1vmP4487w4/cNX8/yBdkO5vDMfj62njeRabjmhcye9e8tbax4zVfwbr2W2SsdnitVvKW/UtscOhbrlTZXtVh+XnGT5p1296/Zw8UfveOf+fHiz4ePj7Pjp93pf3ftk71y0mq/Yv/+w+Ps8eJdV7adDbNDOD8/h/fb8j22/gXZC1wz</source>
+    <source>eJyNVG1v4kYQ/s6vGEVXQSIncNdIvTaNcg6YsKqxkW2SRqU9LfaC92q8lne5XJTmv3dmMUSkyTUrjL3z8sw8M7vz60WVV61W96gFRzBmCfgyFaUWuCVJX1X3tVzmBjrpIXzovf8JBoJrWcCNqv/WDrAybUwnol5JraUqQWrIRS3m97CseWlE5sCiFgLUAtKc10vhgFHAy3uoRK3RQc0Nl6Usl8AhxZCEh8YmRyStFuaO1wLtM+Baq1RyhIRMpeuVKA03FHIhC6GhY3IBB3HjcXBo42SCFwQoSyD1Vgt30uRqbaAW2tQyJRgHjdJinVEmW3UhV7IJQu62GprwEHqtkQol7MBKZXJBb2H5Vet5IXXuQCYJfb42KNQktOV1iE1X1aBFYZNDEIkELOmnHK0ZBaqouKYplybJXa5W+3ykzWqxrksMLKxbprB8Nu4XkRqSkMdCFYW6I46pKjNJ1PQv5Jugks/VV2E5bfpeKoMpb/KgdlRPbW5UOudFAXPR1A4jY6X5Pq2actAGD4PkBVSqtkGf0z1pjlIy8iAOh8mNG3nAYphE4TUbeAM4cGPcHzhww5JROE0ALSI3SG4hHIIb3MJvLBg44P0+ibw4hjAiNDae+MxDMQv6/nTAgiu4RNcgxMPO8MgjbhLamA0a82LCG3tRf4Rb95L5LLl1CGvIkoCQh2EELkzcKGH9qe9GMJlGkzD2MIkBIgcsGEYYyBt7QXKCgVEG3jVuIB65vk/RCM6dIo2IEoV+OLmN2NUogVHoDzwUXnqYn3vpe5toyK7vu2zswMAdu1ee9QoRyJIky02acDPySEpRXfz1ExYGxKcfBkmEWwfpRsnO+4bFngNuxGKqzDAKx5YpVRedQouDroG3AaLK7zcITWg/jb0dJgw810e4mJwbrlt7anK31Sr5SuiK4/nJ7EC5o3kycyfsrNXCa/VcOnNLPG72Gs7cSrr2up69wbKvSlPjgRf1GY25zVQrcI7AdMoG2xP3ac+yc2hzTHdmrYcW4LLutI7gShicVaSDr6cnjXSr/LTLkJD2VbUweEOBhkK5bKRd+7YjI0UN5p7iPS4tAiyFuT5tcDZp0NrCVAhjFp32D73Tb/Qcv/C3fdrOzp3WynzG6Zx1eg70vi1w4bh8QfZ/Pq/re6SHf/DrtNfrfcfwx53hx+8bvp7lC7IdzOGZ/XxsPW8i03DNC5k9699b2ljxmq/g3Xots1c6PFeqeEt/pbY5dCzWK22uarH8vOImzTvt7l+zh4s/esc/8+PFnw8fH2fHT7vT/+7aJ3vlpNV+xf79h8fZ48W7rmw7G2aHcH5+Du+35Xts/QvN+1wz</source>
   </file>
-  <file path="Model/AckModel.php" generated-path="Model.AckModel.html" hash="77835f50464cb88b29cf0b63777b05b6" package="Default">
+  <file path="Model/AckModel.php" generated-path="Model.AckModel.html" hash="9dce6c5db9da3e17fd4a9e9f2215167a" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
+    <namespace-alias name="Serializable">\deasilworks\API\Traits\Serializable</namespace-alias>
     <namespace-alias name="UUID">\deasilworks\API\UUID</namespace-alias>
-    <class final="false" abstract="false" namespace="deasilworks\API\Model" line="37" package="Default">
+    <class final="false" abstract="false" namespace="deasilworks\API\Model" line="38" package="Default">
       <extends/>
       <name>AckModel</name>
       <full_name>\deasilworks\API\Model\AckModel</full_name>
-      <docblock line="37">
+      <docblock line="38">
         <description>Class AckModel.</description>
         <long-description>API metadata</long-description>
-        <tag name="SuppressWarnings" line="37" description="(PHPMD.TooManyFields)"/>
-        <tag name="package" line="37" description="Default"/>
+        <tag name="SuppressWarnings" line="38" description="(PHPMD.TooManyFields)"/>
+        <tag name="package" line="38" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="42" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="45" package="Default">
         <name>$ackVersion</name>
         <full_name>\deasilworks\API\Model\AckModel::ackVersion</full_name>
         <default>4</default>
-        <docblock line="42">
+        <docblock line="45">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="42" description="" type="integer" variable="">
+          <tag name="var" line="45" description="" type="integer" variable="">
             <type>integer</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="47" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="50" package="Default">
         <name>$ackUuid</name>
         <full_name>\deasilworks\API\Model\AckModel::ackUuid</full_name>
         <default></default>
-        <docblock line="47">
+        <docblock line="50">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="47" description="" type="string" variable="">
+          <tag name="var" line="50" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="52" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="55" package="Default">
         <name>$pkgUuid</name>
         <full_name>\deasilworks\API\Model\AckModel::pkgUuid</full_name>
         <default></default>
-        <docblock line="52">
+        <docblock line="55">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="52" description="" type="string" variable="">
+          <tag name="var" line="55" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="57" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="60" package="Default">
         <name>$dateTime</name>
         <full_name>\deasilworks\API\Model\AckModel::dateTime</full_name>
         <default></default>
-        <docblock line="57">
+        <docblock line="60">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="57" description="" type="\DateTime" variable="">
+          <tag name="var" line="60" description="" type="\DateTime" variable="">
             <type>\DateTime</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="62" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="65" package="Default">
         <name>$serverCode</name>
         <full_name>\deasilworks\API\Model\AckModel::serverCode</full_name>
         <default></default>
-        <docblock line="62">
+        <docblock line="65">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="62" description="" type="integer" variable="">
+          <tag name="var" line="65" description="" type="integer" variable="">
             <type>integer</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="67" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="70" package="Default">
         <name>$success</name>
         <full_name>\deasilworks\API\Model\AckModel::success</full_name>
         <default></default>
-        <docblock line="67">
+        <docblock line="70">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="67" description="" type="boolean" variable="">
+          <tag name="var" line="70" description="" type="boolean" variable="">
             <type>boolean</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="72" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="75" package="Default">
         <name>$errorCode</name>
         <full_name>\deasilworks\API\Model\AckModel::errorCode</full_name>
         <default></default>
-        <docblock line="72">
+        <docblock line="75">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="72" description="" type="string" variable="">
+          <tag name="var" line="75" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="77" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="80" package="Default">
         <name>$errorClass</name>
         <full_name>\deasilworks\API\Model\AckModel::errorClass</full_name>
         <default></default>
-        <docblock line="77">
+        <docblock line="80">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="77" description="" type="string" variable="">
+          <tag name="var" line="80" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="82" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="85" package="Default">
         <name>$errorPayload</name>
         <full_name>\deasilworks\API\Model\AckModel::errorPayload</full_name>
         <default></default>
-        <docblock line="82">
+        <docblock line="85">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="82" description="" type="mixed" variable="">
+          <tag name="var" line="85" description="" type="mixed" variable="">
             <type>mixed</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="87" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="90" package="Default">
         <name>$errorMessage</name>
         <full_name>\deasilworks\API\Model\AckModel::errorMessage</full_name>
         <default></default>
-        <docblock line="87">
+        <docblock line="90">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="87" description="" type="string" variable="">
+          <tag name="var" line="90" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="92" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="95" package="Default">
         <name>$apiLevel</name>
         <full_name>\deasilworks\API\Model\AckModel::apiLevel</full_name>
         <default></default>
-        <docblock line="92">
+        <docblock line="95">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="92" description="" type="string" variable="">
+          <tag name="var" line="95" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="97" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="100" package="Default">
         <name>$location</name>
         <full_name>\deasilworks\API\Model\AckModel::location</full_name>
         <default></default>
-        <docblock line="97">
+        <docblock line="100">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="97" description="" type="string" variable="">
+          <tag name="var" line="100" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="102" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="105" package="Default">
         <name>$locationParams</name>
         <full_name>\deasilworks\API\Model\AckModel::locationParams</full_name>
         <default></default>
-        <docblock line="102">
+        <docblock line="105">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="102" description="" type="array" variable="">
+          <tag name="var" line="105" description="" type="array" variable="">
             <type>array</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="107" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="110" package="Default">
         <name>$requestArgs</name>
         <full_name>\deasilworks\API\Model\AckModel::requestArgs</full_name>
         <default></default>
-        <docblock line="107">
+        <docblock line="110">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="107" description="" type="array" variable="">
+          <tag name="var" line="110" description="" type="array" variable="">
             <type>array</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="112" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="115" package="Default">
         <name>$payloadClass</name>
         <full_name>\deasilworks\API\Model\AckModel::payloadClass</full_name>
         <default></default>
-        <docblock line="112">
+        <docblock line="115">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="112" description="" type="string" variable="">
+          <tag name="var" line="115" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="117" package="Default">
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="120" package="Default">
         <name>$payload</name>
         <full_name>\deasilworks\API\Model\AckModel::payload</full_name>
         <default></default>
-        <docblock line="117">
+        <docblock line="120">
           <description></description>
           <long-description></long-description>
-          <tag name="var" line="117" description="" type="mixed" variable="">
+          <tag name="var" line="120" description="" type="mixed" variable="">
             <type>mixed</type>
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="124" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="127" package="Default">
         <name>__construct</name>
         <full_name>\deasilworks\API\Model\AckModel::__construct()</full_name>
-        <docblock line="124">
+        <docblock line="127">
           <description>AckModel constructor.</description>
           <long-description></long-description>
-          <tag name="SuppressWarnings" line="124" description="(StaticAccess)"/>
+          <tag name="SuppressWarnings" line="127" description="(StaticAccess)"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="134" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="137" package="Default">
         <name>getAckVersion</name>
         <full_name>\deasilworks\API\Model\AckModel::getAckVersion()</full_name>
-        <docblock line="134">
+        <docblock line="137">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="134" description="" type="integer">
+          <tag name="return" line="137" description="" type="integer">
             <type>integer</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="142" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="145" package="Default">
         <name>getAckUuid</name>
         <full_name>\deasilworks\API\Model\AckModel::getAckUuid()</full_name>
-        <docblock line="142">
+        <docblock line="145">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="142" description="" type="string">
+          <tag name="return" line="145" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="150" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="153" package="Default">
         <name>getPkgUuid</name>
         <full_name>\deasilworks\API\Model\AckModel::getPkgUuid()</full_name>
-        <docblock line="150">
+        <docblock line="153">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="150" description="" type="string">
+          <tag name="return" line="153" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="159" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="163" package="Default">
         <name>setPkgUuid</name>
         <full_name>\deasilworks\API\Model\AckModel::setPkgUuid()</full_name>
-        <docblock line="159">
+        <docblock line="163">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="159" description="" type="string" variable="$pkgUuid">
+          <tag name="param" line="163" description="" type="string" variable="$pkgUuid">
             <type>string</type>
           </tag>
-          <tag name="return" line="159" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="163" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1595,38 +1642,38 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="168" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="173" package="Default">
         <name>getDateTime</name>
         <full_name>\deasilworks\API\Model\AckModel::getDateTime()</full_name>
-        <docblock line="168">
+        <docblock line="173">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="168" description="" type="\DateTime">
+          <tag name="return" line="173" description="" type="\DateTime">
             <type>\DateTime</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="176" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="181" package="Default">
         <name>getServerCode</name>
         <full_name>\deasilworks\API\Model\AckModel::getServerCode()</full_name>
-        <docblock line="176">
+        <docblock line="181">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="176" description="" type="integer">
+          <tag name="return" line="181" description="" type="integer">
             <type>integer</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="186" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="191" package="Default">
         <name>setServerCode</name>
         <full_name>\deasilworks\API\Model\AckModel::setServerCode()</full_name>
-        <docblock line="186">
+        <docblock line="191">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="186" description="" type="integer" variable="$serverCode">
+          <tag name="param" line="191" description="" type="integer" variable="$serverCode">
             <type>integer</type>
           </tag>
-          <tag name="return" line="186" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="191" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1636,27 +1683,27 @@
           <type>integer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="196" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="201" package="Default">
         <name>isSuccess</name>
         <full_name>\deasilworks\API\Model\AckModel::isSuccess()</full_name>
-        <docblock line="196">
+        <docblock line="201">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="196" description="" type="boolean">
+          <tag name="return" line="201" description="" type="boolean">
             <type>boolean</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="206" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="211" package="Default">
         <name>setSuccess</name>
         <full_name>\deasilworks\API\Model\AckModel::setSuccess()</full_name>
-        <docblock line="206">
+        <docblock line="211">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="206" description="" type="boolean" variable="$success">
+          <tag name="param" line="211" description="" type="boolean" variable="$success">
             <type>boolean</type>
           </tag>
-          <tag name="return" line="206" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="211" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1666,27 +1713,27 @@
           <type>boolean</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="216" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="221" package="Default">
         <name>getErrorCode</name>
         <full_name>\deasilworks\API\Model\AckModel::getErrorCode()</full_name>
-        <docblock line="216">
+        <docblock line="221">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="216" description="" type="string">
+          <tag name="return" line="221" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="226" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="231" package="Default">
         <name>setErrorCode</name>
         <full_name>\deasilworks\API\Model\AckModel::setErrorCode()</full_name>
-        <docblock line="226">
+        <docblock line="231">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="226" description="" type="string" variable="$errorCode">
+          <tag name="param" line="231" description="" type="string" variable="$errorCode">
             <type>string</type>
           </tag>
-          <tag name="return" line="226" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="231" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1696,27 +1743,27 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="236" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="241" package="Default">
         <name>getErrorClass</name>
         <full_name>\deasilworks\API\Model\AckModel::getErrorClass()</full_name>
-        <docblock line="236">
+        <docblock line="241">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="236" description="" type="string">
+          <tag name="return" line="241" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="246" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="251" package="Default">
         <name>setErrorClass</name>
         <full_name>\deasilworks\API\Model\AckModel::setErrorClass()</full_name>
-        <docblock line="246">
+        <docblock line="251">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="246" description="" type="string" variable="$errorClass">
+          <tag name="param" line="251" description="" type="string" variable="$errorClass">
             <type>string</type>
           </tag>
-          <tag name="return" line="246" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="251" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1726,27 +1773,27 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="256" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="261" package="Default">
         <name>getErrorPayload</name>
         <full_name>\deasilworks\API\Model\AckModel::getErrorPayload()</full_name>
-        <docblock line="256">
+        <docblock line="261">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="256" description="" type="mixed">
+          <tag name="return" line="261" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="266" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="271" package="Default">
         <name>setErrorPayload</name>
         <full_name>\deasilworks\API\Model\AckModel::setErrorPayload()</full_name>
-        <docblock line="266">
+        <docblock line="271">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="266" description="" type="mixed" variable="$errorPayload">
+          <tag name="param" line="271" description="" type="mixed" variable="$errorPayload">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="266" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="271" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1756,27 +1803,27 @@
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="276" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="281" package="Default">
         <name>getErrorMessage</name>
         <full_name>\deasilworks\API\Model\AckModel::getErrorMessage()</full_name>
-        <docblock line="276">
+        <docblock line="281">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="276" description="" type="string">
+          <tag name="return" line="281" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="286" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="291" package="Default">
         <name>setErrorMessage</name>
         <full_name>\deasilworks\API\Model\AckModel::setErrorMessage()</full_name>
-        <docblock line="286">
+        <docblock line="291">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="286" description="" type="string" variable="$errorMessage">
+          <tag name="param" line="291" description="" type="string" variable="$errorMessage">
             <type>string</type>
           </tag>
-          <tag name="return" line="286" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="291" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1786,27 +1833,27 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="296" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="301" package="Default">
         <name>getApiLevel</name>
         <full_name>\deasilworks\API\Model\AckModel::getApiLevel()</full_name>
-        <docblock line="296">
+        <docblock line="301">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="296" description="" type="string">
+          <tag name="return" line="301" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="306" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="311" package="Default">
         <name>setApiLevel</name>
         <full_name>\deasilworks\API\Model\AckModel::setApiLevel()</full_name>
-        <docblock line="306">
+        <docblock line="311">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="306" description="" type="string" variable="$apiLevel">
+          <tag name="param" line="311" description="" type="string" variable="$apiLevel">
             <type>string</type>
           </tag>
-          <tag name="return" line="306" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="311" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1816,27 +1863,27 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="316" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="321" package="Default">
         <name>getLocation</name>
         <full_name>\deasilworks\API\Model\AckModel::getLocation()</full_name>
-        <docblock line="316">
+        <docblock line="321">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="316" description="" type="string">
+          <tag name="return" line="321" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="326" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="331" package="Default">
         <name>setLocation</name>
         <full_name>\deasilworks\API\Model\AckModel::setLocation()</full_name>
-        <docblock line="326">
+        <docblock line="331">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="326" description="" type="string" variable="$location">
+          <tag name="param" line="331" description="" type="string" variable="$location">
             <type>string</type>
           </tag>
-          <tag name="return" line="326" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="331" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1846,27 +1893,27 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="336" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="341" package="Default">
         <name>getLocationParams</name>
         <full_name>\deasilworks\API\Model\AckModel::getLocationParams()</full_name>
-        <docblock line="336">
+        <docblock line="341">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="336" description="" type="array">
+          <tag name="return" line="341" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="346" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="351" package="Default">
         <name>setLocationParams</name>
         <full_name>\deasilworks\API\Model\AckModel::setLocationParams()</full_name>
-        <docblock line="346">
+        <docblock line="351">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="346" description="" type="array" variable="$locationParams">
+          <tag name="param" line="351" description="" type="array" variable="$locationParams">
             <type>array</type>
           </tag>
-          <tag name="return" line="346" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="351" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1876,27 +1923,27 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="356" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="361" package="Default">
         <name>getRequestArgs</name>
         <full_name>\deasilworks\API\Model\AckModel::getRequestArgs()</full_name>
-        <docblock line="356">
+        <docblock line="361">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="356" description="" type="array">
+          <tag name="return" line="361" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="366" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="371" package="Default">
         <name>setRequestArgs</name>
         <full_name>\deasilworks\API\Model\AckModel::setRequestArgs()</full_name>
-        <docblock line="366">
+        <docblock line="371">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="366" description="" type="array" variable="$requestArgs">
+          <tag name="param" line="371" description="" type="array" variable="$requestArgs">
             <type>array</type>
           </tag>
-          <tag name="return" line="366" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="371" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1906,27 +1953,27 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="376" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="381" package="Default">
         <name>getPayloadClass</name>
         <full_name>\deasilworks\API\Model\AckModel::getPayloadClass()</full_name>
-        <docblock line="376">
+        <docblock line="381">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="376" description="" type="string">
+          <tag name="return" line="381" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="386" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="391" package="Default">
         <name>setPayloadClass</name>
         <full_name>\deasilworks\API\Model\AckModel::setPayloadClass()</full_name>
-        <docblock line="386">
+        <docblock line="391">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="386" description="" type="string" variable="$payloadClass">
+          <tag name="param" line="391" description="" type="string" variable="$payloadClass">
             <type>string</type>
           </tag>
-          <tag name="return" line="386" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="391" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1936,27 +1983,27 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="396" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="401" package="Default">
         <name>getPayload</name>
         <full_name>\deasilworks\API\Model\AckModel::getPayload()</full_name>
-        <docblock line="396">
+        <docblock line="401">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="396" description="" type="mixed">
+          <tag name="return" line="401" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="406" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="411" package="Default">
         <name>setPayload</name>
         <full_name>\deasilworks\API\Model\AckModel::setPayload()</full_name>
-        <docblock line="406">
+        <docblock line="411">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="406" description="" type="mixed" variable="$payload">
+          <tag name="param" line="411" description="" type="mixed" variable="$payload">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="406" description="" type="\deasilworks\API\Model\AckModel">
+          <tag name="return" line="411" description="" type="\deasilworks\API\Model\AckModel">
             <type>\deasilworks\API\Model\AckModel</type>
           </tag>
         </docblock>
@@ -1966,56 +2013,80 @@
           <type>mixed</type>
         </argument>
       </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="42" package="Default">
+        <name>toJson</name>
+        <full_name>\deasilworks\API\Traits\Serializable::toJson()</full_name>
+        <docblock line="42">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="42" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\API\Traits\Serializable</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="52" package="Default">
+        <name>serialize</name>
+        <full_name>\deasilworks\API\Traits\Serializable::serialize()</full_name>
+        <docblock line="52">
+          <description>Serialize.</description>
+          <long-description></long-description>
+          <tag name="return" line="52" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\API\Traits\Serializable</inherited_from>
+      </method>
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="134" code="PPC:ERR-50008">No summary for method getAckVersion()</error>
-      <error line="142" code="PPC:ERR-50008">No summary for method getAckUuid()</error>
-      <error line="150" code="PPC:ERR-50008">No summary for method getPkgUuid()</error>
-      <error line="159" code="PPC:ERR-50008">No summary for method setPkgUuid()</error>
-      <error line="168" code="PPC:ERR-50008">No summary for method getDateTime()</error>
-      <error line="176" code="PPC:ERR-50008">No summary for method getServerCode()</error>
-      <error line="186" code="PPC:ERR-50008">No summary for method setServerCode()</error>
-      <error line="196" code="PPC:ERR-50008">No summary for method isSuccess()</error>
-      <error line="206" code="PPC:ERR-50008">No summary for method setSuccess()</error>
-      <error line="216" code="PPC:ERR-50008">No summary for method getErrorCode()</error>
-      <error line="226" code="PPC:ERR-50008">No summary for method setErrorCode()</error>
-      <error line="236" code="PPC:ERR-50008">No summary for method getErrorClass()</error>
-      <error line="246" code="PPC:ERR-50008">No summary for method setErrorClass()</error>
-      <error line="256" code="PPC:ERR-50008">No summary for method getErrorPayload()</error>
-      <error line="266" code="PPC:ERR-50008">No summary for method setErrorPayload()</error>
-      <error line="276" code="PPC:ERR-50008">No summary for method getErrorMessage()</error>
-      <error line="286" code="PPC:ERR-50008">No summary for method setErrorMessage()</error>
-      <error line="296" code="PPC:ERR-50008">No summary for method getApiLevel()</error>
-      <error line="306" code="PPC:ERR-50008">No summary for method setApiLevel()</error>
-      <error line="316" code="PPC:ERR-50008">No summary for method getLocation()</error>
-      <error line="326" code="PPC:ERR-50008">No summary for method setLocation()</error>
-      <error line="336" code="PPC:ERR-50008">No summary for method getLocationParams()</error>
-      <error line="346" code="PPC:ERR-50008">No summary for method setLocationParams()</error>
-      <error line="356" code="PPC:ERR-50008">No summary for method getRequestArgs()</error>
-      <error line="366" code="PPC:ERR-50008">No summary for method setRequestArgs()</error>
-      <error line="376" code="PPC:ERR-50008">No summary for method getPayloadClass()</error>
-      <error line="386" code="PPC:ERR-50008">No summary for method setPayloadClass()</error>
-      <error line="396" code="PPC:ERR-50008">No summary for method getPayload()</error>
-      <error line="406" code="PPC:ERR-50008">No summary for method setPayload()</error>
-      <error line="42" code="PPC:ERR-50007">No summary for property $ackVersion</error>
-      <error line="47" code="PPC:ERR-50007">No summary for property $ackUuid</error>
-      <error line="52" code="PPC:ERR-50007">No summary for property $pkgUuid</error>
-      <error line="57" code="PPC:ERR-50007">No summary for property $dateTime</error>
-      <error line="62" code="PPC:ERR-50007">No summary for property $serverCode</error>
-      <error line="67" code="PPC:ERR-50007">No summary for property $success</error>
-      <error line="72" code="PPC:ERR-50007">No summary for property $errorCode</error>
-      <error line="77" code="PPC:ERR-50007">No summary for property $errorClass</error>
-      <error line="82" code="PPC:ERR-50007">No summary for property $errorPayload</error>
-      <error line="87" code="PPC:ERR-50007">No summary for property $errorMessage</error>
-      <error line="92" code="PPC:ERR-50007">No summary for property $apiLevel</error>
-      <error line="97" code="PPC:ERR-50007">No summary for property $location</error>
-      <error line="102" code="PPC:ERR-50007">No summary for property $locationParams</error>
-      <error line="107" code="PPC:ERR-50007">No summary for property $requestArgs</error>
-      <error line="112" code="PPC:ERR-50007">No summary for property $payloadClass</error>
-      <error line="117" code="PPC:ERR-50007">No summary for property $payload</error>
+      <error line="137" code="PPC:ERR-50008">No summary for method getAckVersion()</error>
+      <error line="145" code="PPC:ERR-50008">No summary for method getAckUuid()</error>
+      <error line="153" code="PPC:ERR-50008">No summary for method getPkgUuid()</error>
+      <error line="163" code="PPC:ERR-50008">No summary for method setPkgUuid()</error>
+      <error line="173" code="PPC:ERR-50008">No summary for method getDateTime()</error>
+      <error line="181" code="PPC:ERR-50008">No summary for method getServerCode()</error>
+      <error line="191" code="PPC:ERR-50008">No summary for method setServerCode()</error>
+      <error line="201" code="PPC:ERR-50008">No summary for method isSuccess()</error>
+      <error line="211" code="PPC:ERR-50008">No summary for method setSuccess()</error>
+      <error line="221" code="PPC:ERR-50008">No summary for method getErrorCode()</error>
+      <error line="231" code="PPC:ERR-50008">No summary for method setErrorCode()</error>
+      <error line="241" code="PPC:ERR-50008">No summary for method getErrorClass()</error>
+      <error line="251" code="PPC:ERR-50008">No summary for method setErrorClass()</error>
+      <error line="261" code="PPC:ERR-50008">No summary for method getErrorPayload()</error>
+      <error line="271" code="PPC:ERR-50008">No summary for method setErrorPayload()</error>
+      <error line="281" code="PPC:ERR-50008">No summary for method getErrorMessage()</error>
+      <error line="291" code="PPC:ERR-50008">No summary for method setErrorMessage()</error>
+      <error line="301" code="PPC:ERR-50008">No summary for method getApiLevel()</error>
+      <error line="311" code="PPC:ERR-50008">No summary for method setApiLevel()</error>
+      <error line="321" code="PPC:ERR-50008">No summary for method getLocation()</error>
+      <error line="331" code="PPC:ERR-50008">No summary for method setLocation()</error>
+      <error line="341" code="PPC:ERR-50008">No summary for method getLocationParams()</error>
+      <error line="351" code="PPC:ERR-50008">No summary for method setLocationParams()</error>
+      <error line="361" code="PPC:ERR-50008">No summary for method getRequestArgs()</error>
+      <error line="371" code="PPC:ERR-50008">No summary for method setRequestArgs()</error>
+      <error line="381" code="PPC:ERR-50008">No summary for method getPayloadClass()</error>
+      <error line="391" code="PPC:ERR-50008">No summary for method setPayloadClass()</error>
+      <error line="401" code="PPC:ERR-50008">No summary for method getPayload()</error>
+      <error line="411" code="PPC:ERR-50008">No summary for method setPayload()</error>
+      <error line="45" code="PPC:ERR-50007">No summary for property $ackVersion</error>
+      <error line="50" code="PPC:ERR-50007">No summary for property $ackUuid</error>
+      <error line="55" code="PPC:ERR-50007">No summary for property $pkgUuid</error>
+      <error line="60" code="PPC:ERR-50007">No summary for property $dateTime</error>
+      <error line="65" code="PPC:ERR-50007">No summary for property $serverCode</error>
+      <error line="70" code="PPC:ERR-50007">No summary for property $success</error>
+      <error line="75" code="PPC:ERR-50007">No summary for property $errorCode</error>
+      <error line="80" code="PPC:ERR-50007">No summary for property $errorClass</error>
+      <error line="85" code="PPC:ERR-50007">No summary for property $errorPayload</error>
+      <error line="90" code="PPC:ERR-50007">No summary for property $errorMessage</error>
+      <error line="95" code="PPC:ERR-50007">No summary for property $apiLevel</error>
+      <error line="100" code="PPC:ERR-50007">No summary for property $location</error>
+      <error line="105" code="PPC:ERR-50007">No summary for property $locationParams</error>
+      <error line="110" code="PPC:ERR-50007">No summary for property $requestArgs</error>
+      <error line="115" code="PPC:ERR-50007">No summary for property $payloadClass</error>
+      <error line="120" code="PPC:ERR-50007">No summary for property $payload</error>
     </parse_markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="ActionExecutor.php" generated-path="ActionExecutor.html" hash="37f28021e50318dbb8576794959aae3c" package="Default">
     <docblock line="0">
@@ -2199,7 +2270,7 @@ to look for any keys that match the actions parameters.</long-description>
     </parse_markers>
     <source>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</source>
   </file>
-  <file path="ServiceProvider/Silex/APIServiceProvider.php" generated-path="ServiceProvider.Silex.APIServiceProvider.html" hash="b61f41f724df3a36b1baa732a7bdfc77" package="Default">
+  <file path="ServiceProvider/Silex/APIServiceProvider.php" generated-path="ServiceProvider.Silex.APIServiceProvider.html" hash="7f4bf5ba9fbc41da82ec465e43cfa95b" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
@@ -2215,27 +2286,37 @@ to look for any keys that match the actions parameters.</long-description>
     <namespace-alias name="ServiceProviderInterface">\Pimple\ServiceProviderInterface</namespace-alias>
     <namespace-alias name="BootableProviderInterface">\Silex\Api\BootableProviderInterface</namespace-alias>
     <namespace-alias name="Application">\Silex\Application</namespace-alias>
-    <namespace-alias name="Request">\Symfony\Component\HttpFoundation\Request</namespace-alias>
     <namespace-alias name="Response">\Symfony\Component\HttpFoundation\Response</namespace-alias>
-    <class final="false" abstract="false" namespace="deasilworks\API\ServiceProvider\Silex" line="47" package="Default">
+    <namespace-alias name="Request">\Symfony\Component\HttpFoundation\Request</namespace-alias>
+    <namespace-alias name="AckModel">\deasilworks\API\Model\AckModel</namespace-alias>
+    <class final="false" abstract="false" namespace="deasilworks\API\ServiceProvider\Silex" line="48" package="Default">
       <extends>\deasilworks\CFG\ServiceProvider\Silex\ServiceProvider</extends>
       <implements>\Pimple\ServiceProviderInterface</implements>
       <implements>\Silex\Api\BootableProviderInterface</implements>
       <name>APIServiceProvider</name>
       <full_name>\deasilworks\API\ServiceProvider\Silex\APIServiceProvider</full_name>
-      <docblock line="47">
+      <docblock line="48">
         <description>Class APIServiceProvider.</description>
         <long-description>Responsible for providing API as a service to
 the applications built on the Silex framework.</long-description>
-        <tag name="package" line="47" description="Default"/>
+        <tag name="package" line="48" description="Default"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\ServiceProvider\Silex" line="52" package="Default">
+      <constant namespace="deasilworks\API\ServiceProvider\Silex" line="53" package="Default">
+        <name>API_PATH</name>
+        <full_name>\deasilworks\API\ServiceProvider\Silex\APIServiceProvider::API_PATH</full_name>
+        <value>'api'</value>
+        <docblock line="53">
+          <description>The initial path component example.com/api/</description>
+          <long-description></long-description>
+        </docblock>
+      </constant>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\ServiceProvider\Silex" line="58" package="Default">
         <name>boot</name>
         <full_name>\deasilworks\API\ServiceProvider\Silex\APIServiceProvider::boot()</full_name>
-        <docblock line="52">
+        <docblock line="58">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="52" description="" type="\Silex\Application" variable="$app">
+          <tag name="param" line="58" description="" type="\Silex\Application" variable="$app">
             <type>\Silex\Application</type>
           </tag>
         </docblock>
@@ -2245,13 +2326,13 @@ the applications built on the Silex framework.</long-description>
           <type>\Silex\Application</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\ServiceProvider\Silex" line="62" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\ServiceProvider\Silex" line="69" package="Default">
         <name>register</name>
         <full_name>\deasilworks\API\ServiceProvider\Silex\APIServiceProvider::register()</full_name>
-        <docblock line="62">
+        <docblock line="69">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="62" description="" type="\Pimple\Container" variable="$container">
+          <tag name="param" line="69" description="" type="\Pimple\Container" variable="$container">
             <type>\Pimple\Container</type>
           </tag>
         </docblock>
@@ -2264,10 +2345,10 @@ the applications built on the Silex framework.</long-description>
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="52" code="PPC:ERR-50008">No summary for method boot()</error>
-      <error line="62" code="PPC:ERR-50008">No summary for method register()</error>
+      <error line="58" code="PPC:ERR-50008">No summary for method boot()</error>
+      <error line="69" code="PPC:ERR-50008">No summary for method register()</error>
     </parse_markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="Hydrator.php" generated-path="Hydrator.html" hash="dd2a77a01c9fbe3bff9f3c755e3e3b88" package="Default">
     <docblock line="0">
@@ -2820,6 +2901,73 @@ on a name and returning ActionModels</long-description>
     </parse_markers>
     <source>eJytVE1v4zYQvftXDIIckkDdtL0U6Ldi0zFbWTIkedOg2wMt0RG3siiQ9GaDYv97ZyjZcew4wQIRDBgkZ9689zicn39rq3YwuLwYwAVMeQ6RKmRjJS5pZ6jbB6PuKgdnxTl8/+13P8BICqtquNHmXxsAb4o+dCbNSlmrdAPKQiWNXDzAnRGNk2UASyMl6CUUlTB3MgCnQTQP0EpjMUEvnFCNau5AQIElCQ+DXYVIVi/dvTAS40sQ1upCCYSEUhfrlWyccFRyqWpp4cxVEk6yPuPk3NcppagJUDVAx5tTuFeu0msHRlpnVEEwAQYV9bokJpvjWq1UX4TSvRuW8BB6bVEKEQ5gpUu1pH/p9bXrRa1sFUCpCH2xdrhpadPbG5CaS23AytqTQxCFArzoR44+jAq1ZK7r7bK0c1/p1VM9yrNark2DhaVPKzXa5+t+lIWjHcpY6rrW96Sx0E2pSJr9kXJzPBQL/Ul6Td29N9oh5Y4HXUf7eM39ka1EXcNC9t5hZXRaPJVliIN12AxK1NBq44vuy33Xt1I+YZAl4/wmTBnwDGZp8p6P2AhOwgzXJwHc8HySzHPAiDSM81tIxhDGt/Anj0cBsL9mKcsySFJC49NZxBlu83gYzUc8voYrTI0TbHaOLY+4eeJr9micZYQ3Zelwgsvwikc8vw0Ia8zzmJDHSQohzMI058N5FKYwm6ezJGNIYoTIMY/HKRZiUxbn77Aw7gF7jwvIJmEUUTWCC+coIyWiMExmtym/nuQwSaIRw80rhvzCq4h11VDdMAr5NIBROA2vmc9KEMiLpMiOJtxMGO1S1RB/w5wnMekZJnGe4jJAuWm+zb7hGQsgTHlGzozTZOqVkruYlHgcTI1ZB0TOP70gDKH1PGNbTBixMEK4jJJ7rZt4uuTLwaARK2lbgf1T+oFyT/PkQzjjH6a6lPVPNJO6EVTjowf2WRZrp00q7bp2PqQDKvxx2Kqdk8F/A8DPA9B3Ab9/EgZW6rMs+51L/98a7fBhYMue4lNwOE2w7nOpC63rY5kf8UkeSVONO5aFj8Gt7RDpHskVxoiHY9mVFCXOAvgF/v7nmXwjHY6B5wT7CYRDovHzDu6kG3bCz859QOccfT3GKb36b37d2kNHXw4rtsKIVVdw62V/uM9q765eomcf6W1A92k+5YeG7N3kvpSjCvqgw5ve46TsH3jhr9jV9cSLXlGhrnnexCdPysMdcYiOyJ6ddv1abw7a+bCbsm1bv+LQbv+/6BMW3X0tb2LWDssd6CPGPQaQfQfv9mtNfOZdH9o46d73Kx72U+AVA33B7ch4E/829DagR5x7nFKnW6ovevZl8D8MeQdt</source>
   </file>
+  <file path="ServiceProvider/Silex/APIErrorServiceProvider.php" generated-path="ServiceProvider.Silex.APIErrorServiceProvider.html" hash="1fe01c47e5ebf1ea4ddbe67336d85cb0" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="AckModel">\deasilworks\API\Model\AckModel</namespace-alias>
+    <namespace-alias name="ServiceProvider">\deasilworks\CFG\ServiceProvider\Silex\ServiceProvider</namespace-alias>
+    <namespace-alias name="Container">\Pimple\Container</namespace-alias>
+    <namespace-alias name="ServiceProviderInterface">\Pimple\ServiceProviderInterface</namespace-alias>
+    <namespace-alias name="BootableProviderInterface">\Silex\Api\BootableProviderInterface</namespace-alias>
+    <namespace-alias name="Application">\Silex\Application</namespace-alias>
+    <namespace-alias name="Request">\Symfony\Component\HttpFoundation\Request</namespace-alias>
+    <namespace-alias name="Response">\Symfony\Component\HttpFoundation\Response</namespace-alias>
+    <namespace-alias name="ExceptionModel">\deasilworks\API\Model\ExceptionModel</namespace-alias>
+    <class final="false" abstract="false" namespace="deasilworks\API\ServiceProvider\Silex" line="44" package="Default">
+      <extends>\deasilworks\CFG\ServiceProvider\Silex\ServiceProvider</extends>
+      <implements>\Pimple\ServiceProviderInterface</implements>
+      <implements>\Silex\Api\BootableProviderInterface</implements>
+      <name>APIErrorServiceProvider</name>
+      <full_name>\deasilworks\API\ServiceProvider\Silex\APIErrorServiceProvider</full_name>
+      <docblock line="44">
+        <description>Class APIServiceProvider.</description>
+        <long-description>Responsible for providing API as a service to
+the applications built on the Silex framework.</long-description>
+        <tag name="package" line="44" description="Default"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\ServiceProvider\Silex" line="49" package="Default">
+        <name>boot</name>
+        <full_name>\deasilworks\API\ServiceProvider\Silex\APIErrorServiceProvider::boot()</full_name>
+        <docblock line="49">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="49" description="" type="\Silex\Application" variable="$app">
+            <type>\Silex\Application</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$app</name>
+          <default></default>
+          <type>\Silex\Application</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\ServiceProvider\Silex" line="58" package="Default">
+        <name>register</name>
+        <full_name>\deasilworks\API\ServiceProvider\Silex\APIErrorServiceProvider::register()</full_name>
+        <docblock line="58">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="58" description="" type="\Pimple\Container" variable="$container">
+            <type>\Pimple\Container</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$container</name>
+          <default></default>
+          <type>\Pimple\Container</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="49" code="PPC:ERR-50008">No summary for method boot()</error>
+      <error line="58" code="PPC:ERR-50008">No summary for method register()</error>
+    </parse_markers>
+    <source>eJyNVmFv4kYQ/c6vmEaRMJETev1S6dJL64AJbgEj27k0Oq6RsRe8F+N1d5fLRVX+e2fWBhLDJWdFir0782bezOxbfvu9zMpWq3vSghMYexGMeMIKxfCTVnqifJR8mWmwkg788vO7X6HPYsVzuBHyXtngFUltOmVyxZXiogCuIGOSzR9hKeNCs9SGhWQMxAKSLJZLZoMWEBePUDKp0EHMdcwLXiwhhgRDEh4a6wyRlFjoh1gytE8hVkokPEZISEWyXrFCx5pCLnjOFFg6Y3AU1h5HHRMnZXFOgLwA2t7swgPXmVhrkExpyROCsdEoydcpZbLZzvmK10HI3VRDER5CrxVSoYRtWImUL+g/M/zK9TznKrMh5YQ+X2tcVLRoymsTm66QoFhukkMQjgQM6V2OxowClVRcXZdL0cpDJlYv+XCT1WItCwzMjFsqsHwm7heWaFohj4XIc/FAHBNRpJyoqffkG+FmPBdfmeFU9b0QGlOu8qB2lLs211sqi/Mc5qyuHUbGSscvaUnKQWkcBh7nUAppgjbpntWjFA1dCP1BdOMELnghTAP/o9d3+3DkhPh9ZMONFw396wjQInAm0S34A3Amt/CXN+nb4P49DdwwBD8gNG88HXkuLnuT3ui6702u4BJdJz4Ou4cjj7iRb2LWaJ4bEt7YDXpD/HQuvZEX3dqENfCiCSEP/AAcmDpB5PWuR04A0+tg6ocuJtFH5Ik3GQQYyB27k+gMA+MauB/xA8KhMxpRNIJzrpFGQIlCz5/eBt7VMIKhP+q7uHjpYn7O5citoiG73sjxxjb0nbFz5RovH4EMSbKs0oSboUurFNXBv17k+RPi0/MnUYCfNtINoq33jRe6NjiBF1JlBoE/NkypuujkGxx0nbgVEFX+ZYPQhL6vQ3eLCX3XGSFcSM411409NbnbahXxiqkyxvlJjaA8kJ7MnKk3C5n8inM1leIrT5mchXi0v523WnjY9mzHImX5zEnuzcv5nk1vcHUYr7lauU75qszZrCcK0qPGasPDQ2GTCyRQGVWoTslnl0LoeJ6/ZViiFBhZqZcfVwtRPGLsVSkK1LXZUOtyINZFaqxmAft3jUr1w9YKNxTbL8mubO63hJVkXRcPb4FK9HOUWUC7BuPN8ayxOXJELZFQmn3SE/RBiUYRV5UnKo5RStKVHWEF8zXPNdSKagqCFwQOBGVYzUeyycGVUshGIsC+aVakCprrplF0KextbZtgw3f70/qvBfiYKtBzAn+UMaYFz5oFx0ik3u6a/0bpE9TdwlwhMEd4q+nRMaYVvonRBUbEIENhzbF02x2yPr0wmxa9fzom2T292J6Xs3Zc8jNjcGe8mWx/7pwbgKfWdxhsJxqOk83rqywkW+LFxaR1yPN1NhtkIrN1+TEa8GGXgfUs3rNY9Eim8ZZ7ZrobZThmm1cb6iMDx7J6sSmhlHXo3m7ivwhgcl/FOsnw8voAnz6f722XWKE7Y2K1u//Mulb7DA9/Y+rev8cJvps60fCs3Zl1z066vG1v0zm9WDI9jXXmFQth4Y+VTUjs5l48rHFJR0JnUqyXGfD65xH+4T2MRw7LCYm5dhsPWlo/4ZXNtLUJ8Ond506zqM3ixjmpR3P36UCh2AsdwXoV7AFeiou1MzpE7jhO7mu/jZZbB+1kLWu18UblrM5+plvb04uMxdgMnD6qQZsmGiXiNHosGXaj/UyZul/w51X7dTDEqBGsg/UjLgc36DHuNCRM9pClVc3j6+YjUSVnfWdu3nAP10nClLJMQ9+wNWJr5N/CEHdGhK1Gf9+KZzCm8WMu4nTP9wdcx5hsvGRNV0N6s/dqDlr8iV209k0OTVQ97dv+vmz90+7zaaOwT63/Aajy/FM=</source>
+  </file>
   <file path="Annotation/ApiController.php" generated-path="Annotation.ApiController.html" hash="76e75dfc853fa012a71d7e3517d57f73" package="Default">
     <docblock line="0">
       <description></description>
@@ -3133,7 +3281,7 @@ on a name and returning ActionModels</long-description>
     </parse_markers>
     <source>eJx1VN9v2zYQftdfcQj6kARqve1lQLt1YyQ6JipLhiTXC5o+0BJtcZNFQaTrBkP/991RcpMUGWFA5v34vvuO5P32R9/0QTC7DuAalqKERFeqswq3ZIlM/zDofePgsrqCX376+VeIlbS6hY0Z/rEhiK6aQldqOGhrtelAW2jUoLYPsB9k51Qdwm5QCswOqkYOexWCMyC7B+jVYDHBbJ3Une72IKFCSsLDYNcgkjU7d5KDwvgapLWm0hIhoTbV8aA6Jx1R7nSrLFy6RsFFMWVcXHmeWsmWAHUH5D574aRdY44OBmXdoCuCCTGoao81VXJ2t/qgJxJK992whIfQR4tSqOAQDqbWO/oqr68/blttmxBqTejbo0OjJaNvb0hqZmYAq1pfHIJoFOBFP9bow4iop+a6qV2WLKfGHJ7r0b6q3XHokFj5tNpg+zzv36pyZKGMnWlbcyKNlelqTdLsW8ot0Sm35ovymsZz74zDksc66Dj6x2OeXLaRbQtbNfUOmbHT8rmsgWqwDi+Dli30ZvCkP8p9M12lcsGhyOblhuUcRAGrPPsoYh7DBStwfxHCRpSLbF0CRuQsLe8gmwNL7+CDSOMQ+F+rnBcFZDmhieUqERzNIo2SdSzSW7jB1DTDyy7wyiNumXnOCU3wgvCWPI8WuGU3IhHlXUhYc1GmhDzPcmCwYnkponXCclit81VWcCwiRuRUpPMcifiSp+UbJEYb8I+4gWLBkoTYCI6tUUZOhUKUre5ycbsoYZElMUfjDcf62E3CRzZUFyVMLEOI2ZLdcp+VIZAXSZFjmbBZcLISK8NfVIosJT1RlpY5bkOUm5ffszei4CGwXBTUmXmeLb1S6i4mZR4HU1M+AlHnnx8QhtB+XfDvmBBzliBcQcmT1nM8HfIsCDp5ULaXeH9qP1BONE/u2UrcL02t2ndBgI/rZd898491+pzDZ9fjxGpxRsDoivCiK//vfLMKZ/C5+ynz1DULdrrDi1m9mAzqq1NdjY5eP1qDfwPA5WlpXcOfvRzkAZ6UBa/k42YKm/mvnw8VvtZupJB17YMu/y/7yqeNnLRe0Wt8/b6R9NYj09EAVcOnpymv3++Vy3GGqRSbfXn1+QUvzr6lwkFXoxt+f8b47kcu3dXq61OylzO+Bd+C/wBEPP0C</source>
   </file>
-  <file path="Model/PkgModel.php" generated-path="Model.PkgModel.html" hash="ec961c56bcdbaf4eb20c1b19165f918f" package="Default">
+  <file path="Model/PkgModel.php" generated-path="Model.PkgModel.html" hash="1545e8aa2ef02973d2ef64e322697665" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
@@ -3229,16 +3377,16 @@ on a name and returning ActionModels</long-description>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="85" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="86" package="Default">
         <name>setPkgVersion</name>
         <full_name>\deasilworks\API\Model\PkgModel::setPkgVersion()</full_name>
-        <docblock line="85">
+        <docblock line="86">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="85" description="" type="integer" variable="$pkgVersion">
+          <tag name="param" line="86" description="" type="integer" variable="$pkgVersion">
             <type>integer</type>
           </tag>
-          <tag name="return" line="85" description="" type="\deasilworks\API\Model\PkgModel">
+          <tag name="return" line="86" description="" type="\deasilworks\API\Model\PkgModel">
             <type>\deasilworks\API\Model\PkgModel</type>
           </tag>
         </docblock>
@@ -3248,27 +3396,27 @@ on a name and returning ActionModels</long-description>
           <type>integer</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="94" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="96" package="Default">
         <name>getPkgUuid</name>
         <full_name>\deasilworks\API\Model\PkgModel::getPkgUuid()</full_name>
-        <docblock line="94">
+        <docblock line="96">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="94" description="" type="string">
+          <tag name="return" line="96" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="104" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="106" package="Default">
         <name>setPkgUuid</name>
         <full_name>\deasilworks\API\Model\PkgModel::setPkgUuid()</full_name>
-        <docblock line="104">
+        <docblock line="106">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="104" description="" type="string" variable="$pkgUuid">
+          <tag name="param" line="106" description="" type="string" variable="$pkgUuid">
             <type>string</type>
           </tag>
-          <tag name="return" line="104" description="" type="\deasilworks\API\Model\PkgModel">
+          <tag name="return" line="106" description="" type="\deasilworks\API\Model\PkgModel">
             <type>\deasilworks\API\Model\PkgModel</type>
           </tag>
         </docblock>
@@ -3278,27 +3426,27 @@ on a name and returning ActionModels</long-description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="114" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="116" package="Default">
         <name>getPkgDateTime</name>
         <full_name>\deasilworks\API\Model\PkgModel::getPkgDateTime()</full_name>
-        <docblock line="114">
+        <docblock line="116">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="114" description="" type="\DateTime">
+          <tag name="return" line="116" description="" type="\DateTime">
             <type>\DateTime</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="124" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="126" package="Default">
         <name>setPkgDateTime</name>
         <full_name>\deasilworks\API\Model\PkgModel::setPkgDateTime()</full_name>
-        <docblock line="124">
+        <docblock line="126">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="124" description="" type="\DateTime" variable="$pkgDateTime">
+          <tag name="param" line="126" description="" type="\DateTime" variable="$pkgDateTime">
             <type>\DateTime</type>
           </tag>
-          <tag name="return" line="124" description="" type="\deasilworks\API\Model\PkgModel">
+          <tag name="return" line="126" description="" type="\deasilworks\API\Model\PkgModel">
             <type>\deasilworks\API\Model\PkgModel</type>
           </tag>
         </docblock>
@@ -3308,27 +3456,27 @@ on a name and returning ActionModels</long-description>
           <type>\DateTime</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="134" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="136" package="Default">
         <name>getClient</name>
         <full_name>\deasilworks\API\Model\PkgModel::getClient()</full_name>
-        <docblock line="134">
+        <docblock line="136">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="134" description="" type="mixed">
+          <tag name="return" line="136" description="" type="mixed">
             <type>mixed</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="144" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="146" package="Default">
         <name>setClient</name>
         <full_name>\deasilworks\API\Model\PkgModel::setClient()</full_name>
-        <docblock line="144">
+        <docblock line="146">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="144" description="" type="mixed" variable="$client">
+          <tag name="param" line="146" description="" type="mixed" variable="$client">
             <type>mixed</type>
           </tag>
-          <tag name="return" line="144" description="" type="\deasilworks\API\Model\PkgModel">
+          <tag name="return" line="146" description="" type="\deasilworks\API\Model\PkgModel">
             <type>\deasilworks\API\Model\PkgModel</type>
           </tag>
         </docblock>
@@ -3338,27 +3486,27 @@ on a name and returning ActionModels</long-description>
           <type>mixed</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="154" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="156" package="Default">
         <name>getPayload</name>
         <full_name>\deasilworks\API\Model\PkgModel::getPayload()</full_name>
-        <docblock line="154">
+        <docblock line="156">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="154" description="" type="string">
+          <tag name="return" line="156" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="164" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="166" package="Default">
         <name>setPayload</name>
         <full_name>\deasilworks\API\Model\PkgModel::setPayload()</full_name>
-        <docblock line="164">
+        <docblock line="166">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="164" description="" type="string" variable="$payload">
+          <tag name="param" line="166" description="" type="string" variable="$payload">
             <type>string</type>
           </tag>
-          <tag name="return" line="164" description="" type="\deasilworks\API\Model\PkgModel">
+          <tag name="return" line="166" description="" type="\deasilworks\API\Model\PkgModel">
             <type>\deasilworks\API\Model\PkgModel</type>
           </tag>
         </docblock>
@@ -3372,24 +3520,24 @@ on a name and returning ActionModels</long-description>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
       <error line="76" code="PPC:ERR-50008">No summary for method getPkgVersion()</error>
-      <error line="85" code="PPC:ERR-50008">No summary for method setPkgVersion()</error>
-      <error line="94" code="PPC:ERR-50008">No summary for method getPkgUuid()</error>
-      <error line="104" code="PPC:ERR-50008">No summary for method setPkgUuid()</error>
-      <error line="114" code="PPC:ERR-50008">No summary for method getPkgDateTime()</error>
-      <error line="124" code="PPC:ERR-50008">No summary for method setPkgDateTime()</error>
-      <error line="134" code="PPC:ERR-50008">No summary for method getClient()</error>
-      <error line="144" code="PPC:ERR-50008">No summary for method setClient()</error>
-      <error line="154" code="PPC:ERR-50008">No summary for method getPayload()</error>
-      <error line="164" code="PPC:ERR-50008">No summary for method setPayload()</error>
+      <error line="86" code="PPC:ERR-50008">No summary for method setPkgVersion()</error>
+      <error line="96" code="PPC:ERR-50008">No summary for method getPkgUuid()</error>
+      <error line="106" code="PPC:ERR-50008">No summary for method setPkgUuid()</error>
+      <error line="116" code="PPC:ERR-50008">No summary for method getPkgDateTime()</error>
+      <error line="126" code="PPC:ERR-50008">No summary for method setPkgDateTime()</error>
+      <error line="136" code="PPC:ERR-50008">No summary for method getClient()</error>
+      <error line="146" code="PPC:ERR-50008">No summary for method setClient()</error>
+      <error line="156" code="PPC:ERR-50008">No summary for method getPayload()</error>
+      <error line="166" code="PPC:ERR-50008">No summary for method setPayload()</error>
       <error line="40" code="PPC:ERR-50007">No summary for property $pkgVersion</error>
       <error line="45" code="PPC:ERR-50007">No summary for property $pkgUuid</error>
       <error line="50" code="PPC:ERR-50007">No summary for property $pkgDateTime</error>
       <error line="55" code="PPC:ERR-50007">No summary for property $client</error>
       <error line="60" code="PPC:ERR-50007">No summary for property $payload</error>
     </parse_markers>
-    <source>eJylVWtv6kYQ/c6vGEX5kERu0lZXqpT05YC5rAo2sk1opEhXi73ANsZreZdLo+r+986sbQiER9MgJLS7M2fOnJ09/PxbMS9arZurFlzBgMXQl4nItcAl7bRV8VLK2dzARXIJP37/w0/QEVzLDMaqfNYOsDypQ4eiXEitpcpBapiLUkxeYFby3IjUgWkpBKgpJHNezoQDRgHPX6AQpcYENTFc5jKfAYcESxIeBps5Imk1NSteCoxPgWutEskRElKVLBciN9xQyanMhIYLMxdwFtUZZ5e2Tip4RoAyBzpuTmElzVwtDZRCm1ImBONgUJItU2LSHGdyIesilG7V0ISH0EuNrRBhBxYqlVP6Fba/YjnJpJ47kEpCnywNbmratPI61M2NKkGLzJJDEIkN2KY3HG0YFSpIXFPLpWlnNVeL7X6kZTVdljkWFjYtVSifrfuXSAztUMZUZZlaUY+JylNJrelbyo3xkE/UV2F7qu49VwYpVzzoOorNNddHes6zDCai1g4ro9J8u62SOGiDwyB5BoUqbdHddq/rUYp7HkRBNx67oQcsgmEYPLCO14EzN8L1mQNjFveCUQwYEbp+/AhBF1z/Ef5gfscB789h6EURBCGhscGwzzzcZn67P+ow/zPcY6of4LAzHHnEjQNbs0ZjXkR4Ay9s93Dp3rM+ix8dwuqy2CfkbhCCC0M3jFl71HdDGI7CYRB5SKKDyD7zuyEW8gaeH19jYdwD7wEXEPXcfp+qEZw7wjZCIgrtYPgYss+9GHpBv+Ph5r2H/Nz7vldVw+7afZcNHOi4A/ezZ7MCBLJNUmRFE8Y9j3apqovfdswCn/ppB34c4tLBdsN4nT1mkeeAG7KIlOmGwcB2SupiUmBxMNX3KiBSfvuCMITWo8hbY0LHc/sIF1Fy3WsTT5d802rlfCF0wXF+UmsoK/KTJ3fIngYqFdldq4WP683ZaMQ6d2RXlTtl6AcwfJ7ZlGZ6MA5foeEpN9zWSrbCWv+0AD8Wgj5X8PtXXuLMmnp9Y3+LUhl8MzjN58Xz7AEfHo38L/AJy+/Lp1eez45AjJYyPZD71EFHi+VCHElvQg5ALOTfIj2UnmQSjfL/EecvmeJ7iDdykocgxDIxqryuD9f40bIo0F71mJfk7voiIidN3CTBzcvtmtYb0b5y68Tw5csa+KKKrO6NPufkRN/9WouKl0JjcXs7E+bh08Xl3Z64Rj2MzcVqI3gT/e2tNqUwaKVv52KHJxYdrufjDdMaZEOkDjxYteAlX1DR12O3y2k9yseI6S1ir9AOq7mZ8vNdqrvNnJJt31TtVY5u8LRs1eM5qllVcf3Udkfx/dJZZg3cyRHceeLv1euABeyVbDO8p2TbmMZR6dbFt5zm4wquib6GPazkq0e6x/Heq+geR3yrZts64wkhG/s8qqEt11jtB6WrWdVgBwSrDkmrLXt/r0z/8aFWfwOnJq75sziq1PqhVtEfHbOaWQN3aLyqUztaW39ph/T61voXeTa7Nw==</source>
+    <source>eJylVWtv6jgQ/c6vGFX90FbZdnd1pZXau48UQrEWEpSEspUqXZnEgLchjmJz2Wp1//udcRIoLY/tFiEh2zNnzhyPD59/L+ZFq3V10YILGLAY+jIRuRa4pJ22Kp5LOZsbOEvO4ecff/oFOoJrmcFYlU/aAZYndehQlAuptVQ5SA1zUYrJM8xKnhuROjAthQA1hWTOy5lwwCjg+TMUotSYoCaGy1zmM+CQYEnCw2AzRyStpmbFS4HxKXCtVSI5QkKqkuVC5IYbKjmVmdBwZuYCTqI64+Tc1kkFzwhQ5kDHzSmspJmrpYFSaFPKhGAcDEqyZUpMmuNMLmRdhNKtGprwEHqpsRUi7MBCpXJKv8L2VywnmdRzB1JJ6JOlwU1Nm1Zeh7q5UiVokVlyCCKxAdv0hqMNo0IFiWtquTTtrOZqsd2PtKymyzLHwsKmpQrls3X/FomhHcqYqixTK+oxUXkqqTV9TbkxHvKJ+ipsT9W958og5YoHXUexueb6SM95lsFE1NphZVSab7dVEgdtcBgkz6BQpS36ut3LepTingdR0I3HbugBi2AYBves43XgxI1wfeLAmMW9YBQDRoSuHz9A0AXXf4A/md9xwPtrGHpRBEFIaGww7DMPt5nf7o86zL+DW0z1Axx2hiOPuHFga9ZozIsIb+CF7R4u3VvWZ/GDQ1hdFvuE3A1CcGHohjFrj/puCMNROAwiD0l0ENlnfjfEQt7A8+NLLIx74N3jAqKe2+9TNYJzR9hGSEShHQwfQnbXi6EX9Dsebt56yM+97XtVNeyu3XfZwIGOO3DvPJsVIJBtkiIrmjDuebRLVV38tmMW+NRPO/DjEJcOthvG6+wxizwH3JBFpEw3DAa2U1IXkwKLg6m+VwGR8tsXhCG0HkXeGhM6nttHuIiS616beLrkq1Yr5wuhC47zk1pDWZGfPLpD9jhQqchuWi18XG/ORiPWuSG7qtwpQz+A4dPMpjTTg3H4Cg1PueG2VrIV1vq3BfixEPS5gD++8hJn1tTrK/tblMrgm8FpPi2eZvf48Gjkf4VPWH5XPr3yfHYAYrSU6Z7cxw46WiwX4kB6E7IHYiH/Eem+9CSTaJT/jzh/zhTfQbyRkzwEIZaJUeVlfbjGj5ZFgfaqx7wkd9dnETlp4iYJbp5v17TeiPaVWyeGL1/WwGdVZHVv9DklJ/rht1pUvBQai+vrmTD3n87Ob3bENephbC5WG8Gb6G9vtSmFQSt9OxeveGLR4Xo+3jCtQTZE6sC9VQte8gUVfTl2r2WtUdcTfYif3uL3AnS/qJthP33JeGdTx+TbNV07FaSbPC5f9YgOaldVXD+5j2tnmTVwR0fx1VN/r157rGCnZJshPibbxjwOSrcuvuU4H1dwTfQl7H4lXzzWHc73XkV3OONbNdvWIY8I2djoQQ1tucZyPyhdzaoG2yNYdUhabdn8e2X6jw+1+js4NnHNn8ZBpdYPtYr+6JjVzBq4feNVndrR2vpr26fXt9Z3SYG8FQ==</source>
   </file>
-  <file path="API.php" generated-path="API.html" hash="95e5977568169c45da8458e8591ad60d" package="Default">
+  <file path="API.php" generated-path="API.html" hash="68e6512a0834411d4d9e9fc6e8b97778" package="Default">
     <docblock line="0">
       <description></description>
       <long-description></long-description>
@@ -3489,7 +3637,7 @@ providing an EntityManager factory.</long-description>
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="deasilworks\API" line="124" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API" line="124" package="Default">
         <name>serialize</name>
         <full_name>\deasilworks\API\API::serialize()</full_name>
         <docblock line="124">
@@ -3583,7 +3731,7 @@ providing an EntityManager factory.</long-description>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
       <error line="49" code="PPC:ERR-50007">No summary for property $config</error>
     </parse_markers>
-    <source>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</source>
+    <source>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</source>
   </file>
   <file path="Model/RestRequestModel.php" generated-path="Model.RestRequestModel.html" hash="10fa17486f7a45157e885df40f2ea9f8" package="Default">
     <docblock line="0">
@@ -3921,6 +4069,195 @@ providing an EntityManager factory.</long-description>
     </parse_markers>
     <source>eJy1lt9v4zYMx9/zVxDFPbSFd932MmC/3URphDl2ZjvXFbgXxVZibY7lWUqDYrj/faTstEnbXNMiNQoEFskvyY8kuj//Vhd1r3dx3oNzGPMUApXJykh8pZW+ru8atSgsnGZn8P233/0AAymMKuFaN/8YD3iVda4T2SyVMUpXoAwUspGzO1g0orIy92DeSAl6DlkhmoX0wGoQ1R3UsjEYoGdWqEpVCxCQYUrSQ2dboJLRc7sWjUT/HIQxOlMCJSHX2WopKysspZyrUho4tYWEk6SLODlzeXIpShJUFZB5Y4W1soVeWWiksY3KSMZDp6xc5VTJxlyqpeqSULijYUgPpVcGW6GCPVjqXM3pV7r+6tWsVKbwIFekPltZXDS06PB61M2FbsDI0hWHIgobcE0/1OjcKFFNcG2Hy9DKutDL3X6Uq2q+aipMLF1YrhGfy/u3zCytUMRcl6VeU4+ZrnJFrZkfKTZFo5jpW+l6ave90hZLbuug7agftrkzmUKUJcxkxw4zI2mx21ZDNRiLh0GJEmrduKSP2/3YHaV0xCCJhum1HzPgCUzi6BMfsAGc+Am+n3hwzdNRNE0BPWI/TG8gGoIf3sAfPBx4wP6axCxJIIpJjY8nAWe4zMN+MB3w8AouMTSM8LBzPPKom0YuZ6fGWUJ6Yxb3R/jqX/KApzceaQ15GpLyMIrBh4kfp7w/DfwYJtN4EiUMixigcsjDYYyJ2JiF6UdMjGvAPuELJCM/CCgbyflTbCOmQqEfTW5ifjVKYRQFA4aLlwzr8y8D1mbD7vqBz8ceDPyxf8VcVIRCrknybMuE6xGjVcrq418/5VFI/fSjMI3x1cN24/Q++ponzAM/5gmRGcbR2HVKdDEocjoYGrJWiMjvbhC60Ps0YfeaMGB+gHIJBXe9bvxpky96vUospakFnp/cDZQ1zZPP/oR/Hutclj/RTGpHUImXHmK8pLH8d4U/zt6qzFWFxyl71qP3Xw/wcSr0nMPvtwLPId7GatEtXbjfulG3OFLgw1Lilc8x9WsDa2GLN4Q1OF/kG+Lw2lqcfG+PTO/qt+RFuM1d4hzeEG2kGxvPRDbS4tR6NthNTBxqlZvPsJB27Dbp9MzZ2z2mp9P4QEPqm183O0mWL08T1qIRyy7fZts74+Oinhyrr5Vn7svrRB9XuVMe/PLoyD3uY2/9rwIW0yl7gVd3Eg/C5XyPRKutrZXcw8rZCNX2bXkfUhO8xi+Aam/6QZzI9UiYXGFOcA8kMhGjrUH0Poj67QB5gdL9gDoIVOd9JFabCjeye4h1VoK2O07flRsN3sPYtSP6Nfwo4rgMXbXb8l9nSR5bPLc+Mu/D9M+Hz9ELTHc+XAcx3Yo4EtPtarfl9zDd8iCmTz+978M0aT/SL/C8/5QfxLLzPhLHTYUb2T38Oiux2/3HYx+3L73/AS3IR6w=</source>
   </file>
+  <file path="Model/ExceptionModel.php" generated-path="Model.ExceptionModel.html" hash="aafa6766617af31fede828b46449ccbf" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Serializable">\deasilworks\API\Traits\Serializable</namespace-alias>
+    <namespace-alias name="Exclude">\JMS\Serializer\Annotation\Exclude</namespace-alias>
+    <class final="false" abstract="false" namespace="deasilworks\API\Model" line="37" package="Default">
+      <extends/>
+      <name>ExceptionModel</name>
+      <full_name>\deasilworks\API\Model\ExceptionModel</full_name>
+      <docblock line="37">
+        <description>Class ExceptionModel.</description>
+        <long-description>API metadata</long-description>
+        <tag name="package" line="37" description="Default"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="44" package="Default">
+        <name>$class</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::class</full_name>
+        <default></default>
+        <docblock line="44">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="44" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="49" package="Default">
+        <name>$message</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::message</full_name>
+        <default></default>
+        <docblock line="49">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="49" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="54" package="Default">
+        <name>$file</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::file</full_name>
+        <default></default>
+        <docblock line="54">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="54" description="" type="string" variable="">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="59" package="Default">
+        <name>$line</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::line</full_name>
+        <default></default>
+        <docblock line="59">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="59" description="" type="integer" variable="">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="protected" namespace="deasilworks\API\Model" line="65" package="Default">
+        <name>$trace</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::trace</full_name>
+        <default></default>
+        <docblock line="65">
+          <description></description>
+          <long-description></long-description>
+          <tag name="Exclude" line="65" description="()"/>
+          <tag name="var" line="65" description="" type="array" variable="">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="72" package="Default">
+        <name>__construct</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::__construct()</full_name>
+        <docblock line="72">
+          <description>ErrorModel constructor.</description>
+          <long-description></long-description>
+          <tag name="param" line="72" description="" type="\Exception" variable="$exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$exception</name>
+          <default></default>
+          <type>\Exception</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="84" package="Default">
+        <name>getClass</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::getClass()</full_name>
+        <docblock line="84">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="84" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="92" package="Default">
+        <name>getMessage</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::getMessage()</full_name>
+        <docblock line="92">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="92" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="100" package="Default">
+        <name>getFile</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::getFile()</full_name>
+        <docblock line="100">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="100" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="108" package="Default">
+        <name>getLine</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::getLine()</full_name>
+        <docblock line="108">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="108" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="116" package="Default">
+        <name>getTrace</name>
+        <full_name>\deasilworks\API\Model\ExceptionModel::getTrace()</full_name>
+        <docblock line="116">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="116" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="42" package="Default">
+        <name>toJson</name>
+        <full_name>\deasilworks\API\Traits\Serializable::toJson()</full_name>
+        <docblock line="42">
+          <description></description>
+          <long-description></long-description>
+          <tag name="return" line="42" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\API\Traits\Serializable</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="deasilworks\API\Model" line="52" package="Default">
+        <name>serialize</name>
+        <full_name>\deasilworks\API\Traits\Serializable::serialize()</full_name>
+        <docblock line="52">
+          <description>Serialize.</description>
+          <long-description></long-description>
+          <tag name="return" line="52" description="" type="string">
+            <type>string</type>
+          </tag>
+        </docblock>
+        <inherited_from>\deasilworks\API\Traits\Serializable</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="84" code="PPC:ERR-50008">No summary for method getClass()</error>
+      <error line="92" code="PPC:ERR-50008">No summary for method getMessage()</error>
+      <error line="100" code="PPC:ERR-50008">No summary for method getFile()</error>
+      <error line="108" code="PPC:ERR-50008">No summary for method getLine()</error>
+      <error line="116" code="PPC:ERR-50008">No summary for method getTrace()</error>
+      <error line="44" code="PPC:ERR-50007">No summary for property $class</error>
+      <error line="49" code="PPC:ERR-50007">No summary for property $message</error>
+      <error line="54" code="PPC:ERR-50007">No summary for property $file</error>
+      <error line="59" code="PPC:ERR-50007">No summary for property $line</error>
+      <error line="65" code="PPC:ERR-50007">No summary for property $trace</error>
+    </parse_markers>
+    <source>eJytVd9v4kYQfuevGEV5ICdf0valUtNe68AStjU2ss2lkZCixV5gW+O1dpdL0+r+986sDTkCycPpLCR7Z2e+b37z86/Nuun1rt714B1MeA6RKmRtJR5JMtDNk1GrtYN+cQE/fPf9jzCUwqoK7rT52wbA66JTnUqzUdYqXYOysJZGLp5gZUTtZBnA0kgJegnFWpiVDMBpEPUTNNJYNNALJ1St6hUIKJCS8FDZrRHJ6qV7FEaifgnCWl0ogZBQ6mK7kbUTjiiXqpIW+m4t4SzrLM4uPE8pRUWAqga63t3Co3JrvXVgpHVGFQQToFJRbUvyZHddqY3qSMjcZ8MSHkJvLYZCDgew0aVa0lv6+JrtolJ2HUCpCH2xdSi0JPTpDSiaK23Ayso7hyAKA/BBP/vo1YiooeS6Ll2WJI9rvTmMR3mvlltTI7H0ZqXG9Hnev2ThSEIWS11V+pFiLHRdKgrN/kS2OV6Khf4kfUxt3Wvt0OXWDypH81zm7squRVXBQna5Q2bMtDgMy5AP1mEzKFFBo40nfRnuZddK+ZhBlozyuzBlwDOYpslHPmRDOAszPJ8FcMfzcTLLATXSMM7vIRlBGN/DHzweBsD+nKYsyyBJCY1PphFnKObxIJoNeXwLN2gaJ9jsHFsecfPEc3ZonGWEN2HpYIzH8IZHPL8PCGvE85iQR0kKIUzDNOeDWRSmMJ2l0yRj6MQQkWMej1IkYhMW55dIjDJgH/EA2TiMImIjuHCGYaTkKAyS6X3Kb8c5jJNoyFB4w9C/8CZiLRtGN4hCPglgGE7CW+atEgTyQZJm6ybcjRlJiTXE3yDnSUzxDJI4T/EYYLhpvre+4xkLIEx5RpkZpcnER0rZRaPE46BpzFogyvxhgVCFzrOM7TFhyMII4TIy7mLd6VORr3q9WmykbQT2T+kXyiPtk3k45fOJLmV13evhcB3d5UYoZ+eZNNhH6l+xqOS1V/x9ku2l0szDGpvTD+2c/eO78pqWXLvTKtwigGLZkIKn23UecuAEO1EKJ1rRVa84od/7rwf4EPOhL17sieh5B799Etj7uAHqVSe68u/GaIcjicNy7vG/yhIzaMXq61hpYb5iqGr3mlWl6lNWXY77Fwc4whjx9BqSM1j7YyhmjDY+xbScMIRt4bS57K738I0wYgPzfVHgXO4+Dwn9xsWlWPv9Dg8Pe9T+Ses2gra69JzT0nv/oe2BX2Al3YP/7n9hcv1Su6sL6j9rvf+AtpP2on9sQuU41h+h9IQyVeFYOULpCWWf6GPtnMQ79c/HJTXS4T/JySZ6kVME8yPVf5m7DuLLFH4bun0a3yTcT8e3oGwr8SZfO1Fvkx2N1jFTW8Y3mdopfJvpxPAdc3VN8CZZN6gt2+fe/3b29/Y=</source>
+  </file>
   <package name="Default" full_name="Default"/>
   <package name="global" full_name="global"/>
   <namespace name="deasilworks" full_name="deasilworks">
@@ -3932,6 +4269,7 @@ providing an EntityManager factory.</long-description>
       <namespace name="ServiceProvider" full_name="deasilworks\API\ServiceProvider">
         <namespace name="Silex" full_name="deasilworks\API\ServiceProvider\Silex"/>
       </namespace>
+      <namespace name="Traits" full_name="deasilworks\API\Traits"/>
     </namespace>
   </namespace>
   <deprecated count="0"/>

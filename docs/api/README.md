@@ -15,6 +15,7 @@ API Index
             * [ActionCollection](deasilworks-API-Model-ActionCollection.md)
             * [PkgModel](deasilworks-API-Model-PkgModel.md)
             * [RestRequestModel](deasilworks-API-Model-RestRequestModel.md)
+            * [ExceptionModel](deasilworks-API-Model-ExceptionModel.md)
         * deasilworks\API\Annotation
             * [ApiAction](deasilworks-API-Annotation-ApiAction.md)
             * [ApiController](deasilworks-API-Annotation-ApiController.md)
@@ -24,6 +25,7 @@ API Index
         * deasilworks\API\ServiceProvider
             * deasilworks\API\ServiceProvider\Silex
                 * [APIServiceProvider](deasilworks-API-ServiceProvider-Silex-APIServiceProvider.md)
+                * [APIErrorServiceProvider](deasilworks-API-ServiceProvider-Silex-APIErrorServiceProvider.md)
         * [Hydrator](deasilworks-API-Hydrator.md)
         * [ActionReader](deasilworks-API-ActionReader.md)
         * [API](deasilworks-API-API.md)

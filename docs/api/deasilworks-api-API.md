@@ -90,7 +90,7 @@ Serialize.
 
 
 
-* Visibility: **private**
+* Visibility: **public**
 
 
 #### Arguments

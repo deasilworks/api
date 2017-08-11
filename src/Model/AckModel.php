@@ -25,6 +25,7 @@
 
 namespace deasilworks\API\Model;
 
+use deasilworks\API\Traits\Serializable;
 use deasilworks\API\UUID;
 
 /**
@@ -36,6 +37,8 @@ use deasilworks\API\UUID;
  */
 class AckModel
 {
+    use Serializable;
+
     /**
      * @var int
      */
