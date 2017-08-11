@@ -31,6 +31,8 @@ use deasilworks\API\UUID;
  * Class AckModel.
  *
  * API metadata
+ *
+ * @SuppressWarnings(PHPMD.TooManyFields)
  */
 class AckModel
 {
@@ -43,6 +45,11 @@ class AckModel
      * @var string
      */
     protected $ackUuid;
+
+    /**
+     * @var string
+     */
+    protected $pkgUuid;
 
     /**
      * @var \DateTime
@@ -116,7 +123,7 @@ class AckModel
      */
     public function __construct()
     {
-        $this->ackUuid = UUID::v4();
+        $this->ackUuid = UUID::getV4();
         $this->apiLevel = 1;
         $this->dateTime = new \DateTime();
     }
@@ -135,6 +142,24 @@ class AckModel
     public function getAckUuid()
     {
         return $this->ackUuid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPkgUuid()
+    {
+        return $this->pkgUuid;
+    }
+
+    /**
+     * @param string $pkgUuid
+     * @return AckModel
+     */
+    public function setPkgUuid($pkgUuid)
+    {
+        $this->pkgUuid = $pkgUuid;
+        return $this;
     }
 
     /**

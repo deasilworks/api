@@ -46,6 +46,11 @@ class ActionResponseModel
     protected $args;
 
     /**
+     * @var string
+     */
+    protected $pkgUuid;
+
+    /**
      * @return mixed
      */
     public function getResponse()
@@ -102,6 +107,24 @@ class ActionResponseModel
     {
         $this->args = $args;
 
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPkgUuid()
+    {
+        return $this->pkgUuid;
+    }
+
+    /**
+     * @param string $pkgUuid
+     * @return ActionResponseModel
+     */
+    public function setPkgUuid($pkgUuid)
+    {
+        $this->pkgUuid = $pkgUuid;
         return $this;
     }
 }

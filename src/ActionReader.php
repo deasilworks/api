@@ -139,10 +139,13 @@ class ActionReader
             'name' => null,
         ];
 
-        preg_match('/(get|set|update|delete|remove)([A-Z].+)/', $methodName, $matches);
+        preg_match('/(get|post|is|has|set|update|delete|remove)([A-Z].+)/', $methodName, $matches);
 
         if (isset($matches[1])) {
             // a couple of aliases
+            $matches[1] == 'post' ? $matches[1] = 'POST' : false;
+            $matches[1] == 'has' ? $matches[1] = 'POST' : false;
+            $matches[1] == 'is' ? $matches[1] = 'POST' : false;
             $matches[1] == 'set' ? $matches[1] = 'POST' : false;
             $matches[1] == 'remove' ? $matches[1] = 'DELETE' : false;
 

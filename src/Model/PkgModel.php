@@ -35,6 +35,11 @@ use deasilworks\API\UUID;
 class PkgModel
 {
     /**
+     * @var int
+     */
+    protected $pkgVersion = 4;
+
+    /**
      * @var string
      */
     protected $pkgUuid;
@@ -61,8 +66,26 @@ class PkgModel
      */
     public function __construct()
     {
-        $this->pkgUuid = UUID::v4();
+        $this->pkgUuid = UUID::getV4();
         $this->pkgDateTime = new \DateTime();
+    }
+
+    /**
+     * @return int
+     */
+    public function getPkgVersion()
+    {
+        return $this->pkgVersion;
+    }
+
+    /**
+     * @param int $pkgVersion
+     * @return PkgModel
+     */
+    public function setPkgVersion($pkgVersion)
+    {
+        $this->pkgVersion = $pkgVersion;
+        return $this;
     }
 
     /**

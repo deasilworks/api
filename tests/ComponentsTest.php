@@ -95,7 +95,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
      */
     public function testUuid()
     {
-        $this->assertTrue(UUID::isValid(UUID::v4()));
+        $this->assertTrue(UUID::isValid(UUID::getV4()));
     }
 
     /**
@@ -111,7 +111,7 @@ class ComponentsTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(UUID::isValid($pkgModel->getPkgUuid()));
 
         $json = '{
-            "pkg_uuid": "'.UUID::v4().'",
+            "pkg_uuid": "'.UUID::getV4().'",
             "pkg_date_time": "'.$dateTime->format(DateTime::ATOM).'",
             "payload": "Test payload."
         }';

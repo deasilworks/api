@@ -158,8 +158,9 @@ class API
         }
 
         $ack
+            ->setPkgUuid($actionResponse->getPkgUuid())
             ->setSuccess(true)
-            ->setServerCode('200')
+            ->setServerCode(200)
             ->setLocation($apiRequest->getPath())
             ->setLocationParams($actionResponse->getParams())
             ->setRequestArgs($actionResponse->getArgs())
@@ -190,6 +191,7 @@ class API
         $class = $baseClassPath;
         $classAlias = '';
 
+
         $controllerFactory = $this->config->getControllerFactory();
 
         while ($pathComponents) {
@@ -210,6 +212,12 @@ class API
 
             if (class_exists($class)) {
                 $classObject = $controllerFactory($class);
+
+                if (!$classObject) {
+                    $classObject = new $class;
+                    break;
+                }
+
                 break;
             }
 

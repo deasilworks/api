@@ -44,6 +44,11 @@ class ActionExecutor
     protected $actionReader;
 
     /**
+     * @var string
+     */
+    protected $pkgUuid;
+
+    /**
      * Resolver constructor.
      *
      * @param ActionReader $actionReader
@@ -60,7 +65,7 @@ class ActionExecutor
      *
      * @throws \Exception
      *
-     * @return $response
+     * @return ActionResponseModel $response
      */
     public function execute(RestRequestModel $apiRequest, $action, $indexedArgs)
     {
@@ -98,7 +103,8 @@ class ActionExecutor
             $response
                 ->setArgs($this->sanitizeArgs($preparedArgs))
                 ->setParams($params)
-                ->setResponse($callResponse);
+                ->setResponse($callResponse)
+                ->setPkgUuid($this->pkgUuid);
         }
 
         return $response;
@@ -120,7 +126,10 @@ class ActionExecutor
         if (in_array($apiRequest->getContentType(), ['json', 'js'])) {
             $content = json_decode($apiRequest->getContent());
 
-            // @TODO: check for PkgModel style object to pull out payload
+            if (is_object($content) && isset($content->payload)) {
+                $this->pkgUuid = isset($content->pkg_uuid) ? $content->pkg_uuid : null;
+                $content = $content->payload;
+            }
         }
 
         return $content;

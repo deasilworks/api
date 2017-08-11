@@ -25,20 +25,24 @@
 
 namespace deasilworks\API;
 
+use deasilworks\API\Annotation\ApiController;
+use deasilworks\API\Annotation\ApiAction;
+
 /**
  * Class UUID.
+ *
+ * @ApiController()
  */
 class UUID
 {
     /**
-     * V4.
+     * Get a UUID v4.
      *
-     * @SuppressWarnings(ShortMethodName)
-     * Because it's an expressive little one.
+     * @ApiAction()
      *
      * @return string
      */
-    public static function v4()
+    public static function getV4()
     {
         return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
             mt_rand(0, 0xffff), mt_rand(0, 0xffff),
@@ -51,6 +55,9 @@ class UUID
 
     /**
      * Is Valid.
+     *
+     *
+     * @ApiAction()
      *
      * @param $uuid
      *

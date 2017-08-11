@@ -94,7 +94,13 @@ final class APIConfig
      */
     public function getAliases($route)
     {
-        return $this->routes[$route]['aliases'];
+        $aliases = [];
+
+        if (array_key_exists('aliases', $this->routes[$route])) {
+            $aliases = $this->routes[$route]['aliases'];
+        }
+
+        return $aliases;
     }
 
     /**
