@@ -22,10 +22,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
 namespace deasilworks\API\Traits;
 
-use JMS\Serializer\SerializerBuilder;
 use JMS\Serializer\SerializationContext;
+use JMS\Serializer\SerializerBuilder;
 
 /**
  * Class CEF.
@@ -35,7 +36,6 @@ use JMS\Serializer\SerializationContext;
  */
 trait Serializable
 {
-
     /**
      * @return string
      */

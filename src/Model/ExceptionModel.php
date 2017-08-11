@@ -32,7 +32,6 @@ use JMS\Serializer\Annotation\Exclude;
  * Class ExceptionModel.
  *
  * API metadata
- *
  */
 class ExceptionModel
 {
@@ -60,6 +59,7 @@ class ExceptionModel
 
     /**
      * @Exclude()
+     *
      * @var array
      */
     protected $trace;

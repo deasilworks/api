@@ -26,6 +26,7 @@
 namespace deasilworks\API\ServiceProvider\Silex;
 
 use deasilworks\API\Model\AckModel;
+use deasilworks\API\Model\ExceptionModel;
 use deasilworks\CFG\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -33,7 +34,6 @@ use Silex\Api\BootableProviderInterface;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use deasilworks\API\Model\ExceptionModel;
 
 /**
  * Class APIServiceProvider.
@@ -60,7 +60,6 @@ class APIErrorServiceProvider extends ServiceProvider implements ServiceProvider
         // error handler
         $container[$this->namespace.'api.error_handler'] = function ($container) {
             return function (\Exception $exception, Request $request, $code) use ($container) {
-
                 $matches = [];
                 preg_match('/^\/('.ApiServiceProvider::API_PATH.')\/.*/i', $request->getPathInfo(), $matches);
 
