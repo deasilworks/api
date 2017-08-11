@@ -191,7 +191,6 @@ class API
         $class = $baseClassPath;
         $classAlias = '';
 
-
         $controllerFactory = $this->config->getControllerFactory();
 
         while ($pathComponents) {
@@ -214,7 +213,7 @@ class API
                 $classObject = $controllerFactory($class);
 
                 if (!$classObject) {
-                    $classObject = new $class;
+                    $classObject = new $class();
                     break;
                 }
 

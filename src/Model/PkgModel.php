@@ -80,11 +80,13 @@ class PkgModel
 
     /**
      * @param int $pkgVersion
+     *
      * @return PkgModel
      */
     public function setPkgVersion($pkgVersion)
     {
         $this->pkgVersion = $pkgVersion;
+
         return $this;
     }
 

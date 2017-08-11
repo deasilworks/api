@@ -154,11 +154,13 @@ class AckModel
 
     /**
      * @param string $pkgUuid
+     *
      * @return AckModel
      */
     public function setPkgUuid($pkgUuid)
     {
         $this->pkgUuid = $pkgUuid;
+
         return $this;
     }
 

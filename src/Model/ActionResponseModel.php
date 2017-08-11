@@ -120,11 +120,13 @@ class ActionResponseModel
 
     /**
      * @param string $pkgUuid
+     *
      * @return ActionResponseModel
      */
     public function setPkgUuid($pkgUuid)
     {
         $this->pkgUuid = $pkgUuid;
+
         return $this;
     }
 }

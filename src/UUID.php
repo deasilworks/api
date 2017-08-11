@@ -25,8 +25,8 @@
 
 namespace deasilworks\API;
 
-use deasilworks\API\Annotation\ApiController;
 use deasilworks\API\Annotation\ApiAction;
+use deasilworks\API\Annotation\ApiController;
 
 /**
  * Class UUID.
