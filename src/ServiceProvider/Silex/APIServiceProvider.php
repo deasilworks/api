@@ -29,7 +29,7 @@ use deasilworks\API\API;
 use deasilworks\API\APIConfig;
 use deasilworks\API\Model\ApiResultModel;
 use deasilworks\API\Model\RestRequestModel;
-use deasilworks\CFG\Config;
+use deasilworks\CFG\CFG;
 use deasilworks\CFG\ServiceProvider\Silex\ServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -75,7 +75,7 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
             $cfgKey = $this->namespace.'.cfg';
 
             if (isset($container[$cfgKey])) {
-                /** @var Config $config */
+                /** @var CFG $config */
                 $config = $container[$cfgKey];
                 $this->populateConfig($container[$apiConfigKey], 'api', $config->getAll());
             }
