@@ -39,6 +39,17 @@ Properties
 * Visibility: **protected**
 
 
+### $pkgUuid
+
+    protected string $pkgUuid
+
+
+
+
+
+* Visibility: **protected**
+
+
 ### $dateTime
 
     protected \DateTime $dateTime
@@ -222,6 +233,35 @@ AckModel constructor.
 
 * Visibility: **public**
 
+
+
+
+### getPkgUuid
+
+    string deasilworks\API\Model\AckModel::getPkgUuid()
+
+
+
+
+
+* Visibility: **public**
+
+
+
+
+### setPkgUuid
+
+    \deasilworks\API\Model\AckModel deasilworks\API\Model\AckModel::setPkgUuid(string $pkgUuid)
+
+
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $pkgUuid **string**
 
 
 

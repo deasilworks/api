@@ -19,11 +19,11 @@ Methods
 -------
 
 
-### v4
+### getV4
 
-    string deasilworks\API\UUID::v4()
+    string deasilworks\API\UUID::getV4()
 
-V4.
+Get a UUID v4.
 
 
 

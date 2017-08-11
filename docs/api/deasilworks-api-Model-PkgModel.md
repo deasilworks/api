@@ -17,6 +17,17 @@ Properties
 ----------
 
 
+### $pkgVersion
+
+    protected integer $pkgVersion = 4
+
+
+
+
+
+* Visibility: **protected**
+
+
 ### $pkgUuid
 
     protected string $pkgUuid
@@ -75,6 +86,35 @@ PkgModel constructor.
 
 * Visibility: **public**
 
+
+
+
+### getPkgVersion
+
+    integer deasilworks\API\Model\PkgModel::getPkgVersion()
+
+
+
+
+
+* Visibility: **public**
+
+
+
+
+### setPkgVersion
+
+    \deasilworks\API\Model\PkgModel deasilworks\API\Model\PkgModel::setPkgVersion(integer $pkgVersion)
+
+
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $pkgVersion **integer**
 
 
 

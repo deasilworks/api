@@ -29,6 +29,17 @@ Properties
 * Visibility: **protected**
 
 
+### $pkgUuid
+
+    protected string $pkgUuid
+
+
+
+
+
+* Visibility: **protected**
+
+
 Methods
 -------
 
@@ -51,7 +62,7 @@ Resolver constructor.
 
 ### execute
 
-    \deasilworks\API\$response deasilworks\API\ActionExecutor::execute(\deasilworks\API\Model\RestRequestModel $apiRequest, $action, $indexedArgs)
+    \deasilworks\API\Model\ActionResponseModel deasilworks\API\ActionExecutor::execute(\deasilworks\API\Model\RestRequestModel $apiRequest, $action, $indexedArgs)
 
 
 

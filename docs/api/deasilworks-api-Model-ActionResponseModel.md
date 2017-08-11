@@ -50,6 +50,17 @@ Properties
 * Visibility: **protected**
 
 
+### $pkgUuid
+
+    protected string $pkgUuid
+
+
+
+
+
+* Visibility: **protected**
+
+
 Methods
 -------
 
@@ -138,6 +149,35 @@ Methods
 
 #### Arguments
 * $args **array**
+
+
+
+### getPkgUuid
+
+    string deasilworks\API\Model\ActionResponseModel::getPkgUuid()
+
+
+
+
+
+* Visibility: **public**
+
+
+
+
+### setPkgUuid
+
+    \deasilworks\API\Model\ActionResponseModel deasilworks\API\Model\ActionResponseModel::setPkgUuid(string $pkgUuid)
+
+
+
+
+
+* Visibility: **public**
+
+
+#### Arguments
+* $pkgUuid **string**
 
 
 
