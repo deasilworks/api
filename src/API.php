@@ -199,7 +199,6 @@ class API
             $routeConfig = $routes[$route]['config'];
         }
 
-
         while ($pathComponents) {
             $pathComponent = array_shift($pathComponents);
 

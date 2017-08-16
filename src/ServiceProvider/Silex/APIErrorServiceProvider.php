@@ -28,13 +28,13 @@ namespace deasilworks\API\ServiceProvider\Silex;
 use deasilworks\API\Model\AckModel;
 use deasilworks\API\Model\ExceptionModel;
 use deasilworks\CFG\ServiceProvider\Silex\ServiceProvider;
+use Doctrine\Common\Annotations\AnnotationRegistry;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Silex\Api\BootableProviderInterface;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Doctrine\Common\Annotations\AnnotationRegistry;
 
 AnnotationRegistry::registerLoader('class_exists');
 
