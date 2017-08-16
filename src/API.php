@@ -143,7 +143,7 @@ class API
      */
     private function callAction($actionReader, $apiRequest, $action, $args)
     {
-        $actionExecutor = new ActionExecutor($actionReader);
+        $actionExecutor = new ActionExecutor($actionReader, $this->config);
 
         /** @var ActionResponseModel $actionResponse */
         $actionResponse = $actionExecutor->execute($apiRequest, $action, $args);
@@ -192,6 +192,13 @@ class API
         $classAlias = '';
 
         $controllerFactory = $this->config->getControllerFactory();
+        $routeConfig = [];
+
+        $routes = $this->config->getRoutes();
+        if (is_array($routes) && isset($routes[$route]['config'])) {
+            $routeConfig = $routes[$route]['config'];
+        }
+
 
         while ($pathComponents) {
             $pathComponent = array_shift($pathComponents);
@@ -204,13 +211,13 @@ class API
                 $aliasClass = $baseClassPath.'\\'.$aliases[strtolower($classAlias)];
 
                 if (class_exists($aliasClass)) {
-                    $classObject = $controllerFactory($aliasClass);
+                    $classObject = $controllerFactory($aliasClass, $routeConfig);
                     break;
                 }
             }
 
             if (class_exists($class)) {
-                $classObject = $controllerFactory($class);
+                $classObject = $controllerFactory($class, $routeConfig);
 
                 if (!$classObject) {
                     $classObject = new $class();
