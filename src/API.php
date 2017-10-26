@@ -62,7 +62,7 @@ class API
     /**
      * @return Logger
      */
-    public function getLogger($channel = 'API')
+    public function getLogger()
     {
         return $this->config->getCfg()->getLogger(get_class($this));
     }
@@ -156,8 +156,6 @@ class API
 
         /** @var ActionResponseModel $actionResponse */
         $actionResponse = $actionExecutor->execute($apiRequest, $action, $args);
-
-        // TODO: if this is empty set header to 404
 
         $ack = new AckModel();
 
