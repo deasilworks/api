@@ -32,6 +32,7 @@ use deasilworks\API\Model\RestRequestModel;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use JMS\Serializer\SerializationContext;
 use JMS\Serializer\SerializerBuilder;
+use Monolog\Logger;
 
 AnnotationRegistry::registerLoader('class_exists');
 
@@ -56,6 +57,14 @@ class API
     public function __construct(APIConfig $config)
     {
         $this->config = $config;
+    }
+
+    /**
+     * @return Logger
+     */
+    public function getLogger($channel='API')
+    {
+        return $this->config->getCfg()->getLogger(get_class($this));
     }
 
     /**

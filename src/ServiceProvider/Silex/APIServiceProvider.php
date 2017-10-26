@@ -70,14 +70,20 @@ class APIServiceProvider extends ServiceProvider implements ServiceProviderInter
         $container[$this->namespace.'.api'] = function ($container) {
             $apiConfigKey = $this->namespace.'.api.config';
 
+            // first try to populate from cfg
+            $cfgKey = $this->namespace.'.cfg';
+
             if (!isset($container[$apiConfigKey])) {
-                $container[$apiConfigKey] = new APIConfig();
+                if (isset($container[$cfgKey])) {
+                    $container[$apiConfigKey] = new APIConfig($container[$cfgKey]);
+                }
+
+                if (!$container[$apiConfigKey]) {
+                    $container[$apiConfigKey] = new APIConfig(new CFG());
+                }
             }
 
             $api = new API($container[$apiConfigKey]);
-
-            // first try to populate from cfg
-            $cfgKey = $this->namespace.'.cfg';
 
             if (isset($container[$cfgKey])) {
                 /** @var CFG $config */

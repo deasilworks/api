@@ -24,6 +24,7 @@
  */
 
 namespace deasilworks\API;
+use deasilworks\CFG\CFG;
 
 /**
  * Class APIConfig.
@@ -44,6 +45,38 @@ final class APIConfig
      * @var callable
      */
     private $serializer;
+
+    /**
+     * @var CFG
+     */
+    private $cfg;
+
+    /**
+     * APIConfig constructor.
+     * @param CFG $cfg
+     */
+    public function __construct(CFG $cfg)
+    {
+        $this->cfg = $cfg;
+    }
+
+    /**
+     * @return CFG
+     */
+    public function getCfg()
+    {
+        return $this->cfg;
+    }
+
+    /**
+     * @param CFG $cfg
+     * @return APIConfig
+     */
+    public function setCfg($cfg)
+    {
+        $this->cfg = $cfg;
+        return $this;
+    }
 
     /**
      * @return array
@@ -96,7 +129,7 @@ final class APIConfig
     {
         $aliases = [];
 
-        if (array_key_exists('aliases', $this->routes[$route])) {
+        if (is_array($this->routes[$route]) && array_key_exists('aliases', $this->routes[$route])) {
             $aliases = $this->routes[$route]['aliases'];
         }
 

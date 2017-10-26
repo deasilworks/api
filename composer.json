@@ -37,7 +37,8 @@
     "jms/serializer-bundle": ">=0.13.0 <2.0.0",
     "symfony/serializer": "~2.8",
     "doctrine/annotations": "^1.4",
-    "symfony/http-kernel": "^3.1"
+    "symfony/http-kernel": "^3.1",
+    "monolog/monolog": "^1.23"
   },
   "autoload": {
     "psr-4": { "deasilworks\\API\\": "src/" },
