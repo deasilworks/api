@@ -62,7 +62,7 @@ class API
     /**
      * @return Logger
      */
-    public function getLogger($channel='API')
+    public function getLogger($channel = 'API')
     {
         return $this->config->getCfg()->getLogger(get_class($this));
     }
