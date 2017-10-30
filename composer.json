@@ -39,7 +39,7 @@
     "doctrine/annotations": "^1.4",
     "symfony/http-kernel": "^3.1",
     "monolog/monolog": "^1.23",
-    "deasilworks/cfg": "^2.0"
+    "deasilworks/cfg": "2.0.x-dev"
   },
   "autoload": {
     "psr-4": { "deasilworks\\API\\": "src/" },
