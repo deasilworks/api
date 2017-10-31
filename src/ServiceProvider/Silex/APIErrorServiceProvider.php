@@ -68,7 +68,7 @@ class APIErrorServiceProvider extends ServiceProvider implements ServiceProvider
 
                 // pass through if this is not a api call
                 if (!isset($matches[1])) {
-                    return false;
+                    throw new \Exception($exception->getMessage(), $exception->getCode());
                 }
 
                 $exceptionModel = new ExceptionModel($exception);
