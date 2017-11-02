@@ -24,6 +24,7 @@
  */
 
 namespace deasilworks\API;
+
 use deasilworks\CFG\CFG;
 
 /**
@@ -53,6 +54,7 @@ final class APIConfig
 
     /**
      * APIConfig constructor.
+     *
      * @param CFG $cfg
      */
     public function __construct(CFG $cfg)
@@ -70,11 +72,13 @@ final class APIConfig
 
     /**
      * @param CFG $cfg
+     *
      * @return APIConfig
      */
     public function setCfg($cfg)
     {
         $this->cfg = $cfg;
+
         return $this;
     }
 
