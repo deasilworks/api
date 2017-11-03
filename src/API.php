@@ -152,7 +152,7 @@ class API
      */
     private function callAction($actionReader, $apiRequest, $action, $args)
     {
-        $actionExecutor = new ActionExecutor($actionReader, $this->config);
+        $actionExecutor = new ActionExecutor($actionReader);
 
         /** @var ActionResponseModel $actionResponse */
         $actionResponse = $actionExecutor->execute($apiRequest, $action, $args);
