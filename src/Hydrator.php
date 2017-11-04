@@ -115,14 +115,13 @@ class Hydrator
         }
 
         $collection = [];
-        if ($valueArray && is_array($valueArray)) {
-            $class = $object->getValueClass();
-            if (class_exists($class)) {
-                foreach ($valueArray as $key => $value) {
-                    $dryItem = new $class;
-                    $item = $this->hydrateObject($dryItem, $value);
-                    $collection[$key] = $item;
-                }
+
+        $class = $object->getValueClass();
+        if (class_exists($class)) {
+            foreach ($valueArray as $key => $value) {
+                $dryItem = new $class;
+                $item = $this->hydrateObject($dryItem, $value);
+                $collection[$key] = $item;
             }
         }
 
@@ -167,6 +166,10 @@ class Hydrator
                 $targetObject->$method($hydratedObject);
 
                 return;
+            }
+
+            if ($value && is_object($value)) {
+                $value = (array) $value;
             }
 
             $targetObject->$method($value);
