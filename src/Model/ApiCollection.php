@@ -58,7 +58,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
     /**
      * @param array $collection
      *
-     * @return Collection
+     * @return ApiCollection
      */
     public function setCollection($collection)
     {

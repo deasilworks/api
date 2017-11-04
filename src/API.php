@@ -25,25 +25,24 @@
 
 namespace deasilworks\API;
 
+use deasilworks\API\Traits\Serializable;
 use deasilworks\API\Model\AckModel;
 use deasilworks\API\Model\ActionResponseModel;
 use deasilworks\API\Model\ApiResultModel;
 use deasilworks\API\Model\RestRequestModel;
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use JMS\Serializer\SerializationContext;
-use JMS\Serializer\SerializerBuilder;
 use Monolog\Logger;
 
 AnnotationRegistry::registerLoader('class_exists');
 
 /**
- * Class CEF.
+ * Class API.
  *
- * Responsible for managing configuration and
- * providing an EntityManager factory.
  */
 class API
 {
+    use Serializable;
+
     /**
      * @var APIConfig
      */
@@ -121,23 +120,6 @@ class API
             ->setPayload($actionMeta);
 
         return $ack;
-    }
-
-    /**
-     * Serialize.
-     *
-     * @param $object
-     *
-     * @return string
-     */
-    public function serialize($object)
-    {
-        $context = new SerializationContext();
-        $context->setSerializeNull(true);
-
-        $serializer = SerializerBuilder::create()->build();
-
-        return $serializer->serialize($object, 'json', $context);
     }
 
     /**

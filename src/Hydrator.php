@@ -24,6 +24,7 @@
  */
 
 namespace deasilworks\API;
+use Behat\Testwork\Call\Exception\FatalThrowableError;
 
 /**
  * Class ControllerAction.
@@ -91,6 +92,46 @@ class Hydrator
     }
 
     /**
+     * Hydrate Collection
+     *
+     * Hydrates a an array or hash with objects of a given type.
+     *
+     * This class expects $dryObject to have the following methods:
+     *
+     *   - setCollection (to pass and array of object)
+     *   - getValueClass (the type of object to create)
+     *
+     * @param $object
+     * @param $valueArray
+     *
+     * @return object $object
+     */
+    protected function hydrateCollection($object, $valueArray)
+    {
+        if (!method_exists($object, 'getValueClass') ||
+            !method_exists($object, 'setCollection')) {
+
+            return $object;
+        }
+
+        $collection = [];
+        if ($valueArray && is_array($valueArray)) {
+            $class = $object->getValueClass();
+            if (class_exists($class)) {
+                foreach ($valueArray as $key => $value) {
+                    $dryItem = new $class;
+                    $item = $this->hydrateObject($dryItem, $value);
+                    $collection[$key] = $item;
+                }
+            }
+        }
+
+        $object->setCollection($collection);
+
+        return $object;
+    }
+
+    /**
      * Hydrate Method.
      *
      * Checks the method signature for a type hint, if
@@ -110,7 +151,19 @@ class Hydrator
             $dryObject = $this->getParameterClassObject($targetObject, $method);
 
             if ($dryObject && is_object($dryObject)) {
-                $hydratedObject = $this->hydrateObject($dryObject, $value);
+
+                $hydratedObject = null;
+
+                // does the dry object have a setCollection method?
+                //
+                if (method_exists($dryObject, 'setCollection') && method_exists($dryObject, 'getValueClass')) {
+                    $hydratedObject = $this->hydrateCollection($dryObject, $value);
+                }
+
+                if (!$hydratedObject) {
+                    $hydratedObject = $this->hydrateObject($dryObject, $value);
+                }
+
                 $targetObject->$method($hydratedObject);
 
                 return;
@@ -119,6 +172,7 @@ class Hydrator
             $targetObject->$method($value);
         }
     }
+
 
     /**
      * Get Parameter Class Object.
