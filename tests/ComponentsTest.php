@@ -31,7 +31,7 @@ use deasilworks\API\UUID;
  * @SuppressWarnings(PHPMD)
  * We do bad things here and we like it.
  */
-class ComponentsTest extends \PHPUnit_Framework_TestCase
+class ComponentsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Test API Models.
