@@ -25,11 +25,11 @@
 
 namespace deasilworks\API;
 
-use deasilworks\API\Traits\Serializable;
 use deasilworks\API\Model\AckModel;
 use deasilworks\API\Model\ActionResponseModel;
 use deasilworks\API\Model\ApiResultModel;
 use deasilworks\API\Model\RestRequestModel;
+use deasilworks\API\Traits\Serializable;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use Monolog\Logger;
 
@@ -37,7 +37,6 @@ AnnotationRegistry::registerLoader('class_exists');
 
 /**
  * Class API.
- *
  */
 class API
 {

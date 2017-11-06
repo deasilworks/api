@@ -24,7 +24,6 @@
  */
 
 namespace deasilworks\API;
-use Behat\Testwork\Call\Exception\FatalThrowableError;
 
 /**
  * Class ControllerAction.
@@ -92,7 +91,7 @@ class Hydrator
     }
 
     /**
-     * Hydrate Collection
+     * Hydrate Collection.
      *
      * Hydrates a an array or hash with objects of a given type.
      *
@@ -110,7 +109,6 @@ class Hydrator
     {
         if (!method_exists($object, 'getValueClass') ||
             !method_exists($object, 'setCollection')) {
-
             return $object;
         }
 
@@ -119,7 +117,7 @@ class Hydrator
         $class = $object->getValueClass();
         if (class_exists($class)) {
             foreach ($valueArray as $key => $value) {
-                $dryItem = new $class;
+                $dryItem = new $class();
                 $item = $this->hydrateObject($dryItem, $value);
                 $collection[$key] = $item;
             }
@@ -150,7 +148,6 @@ class Hydrator
             $dryObject = $this->getParameterClassObject($targetObject, $method);
 
             if ($dryObject && is_object($dryObject)) {
-
                 $hydratedObject = null;
 
                 // does the dry object have a setCollection method?
@@ -175,7 +172,6 @@ class Hydrator
             $targetObject->$method($value);
         }
     }
-
 
     /**
      * Get Parameter Class Object.

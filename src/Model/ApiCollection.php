@@ -86,7 +86,7 @@ class ApiCollection implements \Iterator, \ArrayAccess
      */
     public function next()
     {
-        ++$this->position;
+        $this->position++;
     }
 
     /**

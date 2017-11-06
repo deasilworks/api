@@ -26,16 +26,15 @@
 namespace deasilworks\API\Traits;
 
 use JMS\Serializer\Context;
-use JMS\Serializer\Handler\HandlerRegistry;
-use JMS\Serializer\SerializationContext;
-use JMS\Serializer\SerializerBuilder;
-use JMS\Serializer\JsonSerializationVisitor;
 use JMS\Serializer\EventDispatcher\EventDispatcher;
 use JMS\Serializer\EventDispatcher\PreSerializeEvent;
+use JMS\Serializer\Handler\HandlerRegistry;
+use JMS\Serializer\JsonSerializationVisitor;
+use JMS\Serializer\SerializationContext;
+use JMS\Serializer\SerializerBuilder;
 
 /**
  * Serializable Trait.
- *
  */
 trait Serializable
 {
@@ -53,11 +52,11 @@ trait Serializable
      * @SuppressWarnings(StaticAccess)
      * Because DI does not make sense here.
      *
-     * @param Object|null $obj
+     * @param object|null $obj
      *
      * @return mixed|string
      */
-    protected function serialize($obj=null)
+    protected function serialize($obj = null)
     {
         $type = 'json';
 
@@ -71,7 +70,7 @@ trait Serializable
         $builder
             ->configureListeners(function (EventDispatcher $dispatcher) {
                 $dispatcher->addListener('serializer.pre_serialize',
-                    function(PreSerializeEvent $event) {
+                    function (PreSerializeEvent $event) {
                         $object = $event->getObject();
 
                         // check for a type of object that contains the methods
@@ -90,9 +89,7 @@ trait Serializable
                 );
             })
             ->configureHandlers(function (HandlerRegistry $registry) {
-
                 $collectionHandler = function (JsonSerializationVisitor $visitor, $obj, array $type, Context $context) {
-
                     $nav = $visitor->getNavigator();
                     if (count($obj->getCollection()) < 1) {
                         return true;
@@ -120,5 +117,4 @@ trait Serializable
 
         return $serializer->serialize($obj, $type, $context);
     }
-
 }
