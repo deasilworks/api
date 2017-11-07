@@ -73,18 +73,26 @@ class Hydrator
      */
     public function hydrateObject($targetObject, $payload)
     {
-        foreach ($payload as $param => $value) {
-            if (is_int($param)) {
-                foreach ($value as $par => $val) {
-                    $setter = $this->prefixer(self::PREFIX_ADDER, $par);
-                    $this->hydrateMethod($targetObject, $setter, $val);
+        if (!$payload) {
+            return $targetObject;
+        }
+
+        if (is_object($payload) || is_array($payload)) {
+
+            foreach ($payload as $param => $value) {
+                if (is_int($param)) {
+                    foreach ($value as $par => $val) {
+                        $setter = $this->prefixer(self::PREFIX_ADDER, $par);
+                        $this->hydrateMethod($targetObject, $setter, $val);
+                    }
+                    continue;
                 }
-                continue;
+
+                $setter = $this->prefixer(self::PREFIX_SETTER, $param);
+
+                $this->hydrateMethod($targetObject, $setter, $value);
             }
 
-            $setter = $this->prefixer(self::PREFIX_SETTER, $param);
-
-            $this->hydrateMethod($targetObject, $setter, $value);
         }
 
         return $targetObject;
