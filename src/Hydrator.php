@@ -78,7 +78,6 @@ class Hydrator
         }
 
         if (is_object($payload) || is_array($payload)) {
-
             foreach ($payload as $param => $value) {
                 if (is_int($param)) {
                     foreach ($value as $par => $val) {
@@ -92,7 +91,6 @@ class Hydrator
 
                 $this->hydrateMethod($targetObject, $setter, $value);
             }
-
         }
 
         return $targetObject;
