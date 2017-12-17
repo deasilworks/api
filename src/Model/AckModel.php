@@ -27,6 +27,8 @@ namespace deasilworks\API\Model;
 
 use deasilworks\API\Traits\Serializable;
 use deasilworks\API\UUID;
+use deasilworks\CEF\EntityCollection;
+use deasilworks\CEF\EntityDataModel;
 
 /**
  * Class AckModel.
@@ -113,6 +115,16 @@ class AckModel
      * @var string
      */
     protected $payloadClass;
+
+    /**
+     * @var Mixed
+     */
+    protected $payloadMeta;
+
+    /**
+     * @var Mixed
+     */
+    protected $payloadType = "Mixed";
 
     /**
      * @var mixed
@@ -412,6 +424,60 @@ class AckModel
     {
         $this->payload = $payload;
 
+        $this->setPayloadType(gettype($payload));
+
+        if ($payload instanceof EntityDataModel) {
+            $this->setPayloadType("EntityDataModel");
+        }
+
+        if ($payload instanceof EntityCollection) {
+            $this->setPayloadType("EntityCollection");
+            if ($payload->isPaginated()) {
+                $this->setPayloadMeta([
+                    'total' => $payload->getOriginalCount(),
+                    'returned' => $payload->getCount(),
+                    'page' => $payload->getPage(),
+                    'perPage' => $payload->getPerPage()
+                ]);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPayloadMeta()
+    {
+        return $this->payloadMeta;
+    }
+
+    /**
+     * @param mixed $payloadMeta
+     * @return AckModel
+     */
+    public function setPayloadMeta($payloadMeta)
+    {
+        $this->payloadMeta = $payloadMeta;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPayloadType()
+    {
+        return $this->payloadType;
+    }
+
+    /**
+     * @param mixed $payloadType
+     * @return AckModel
+     */
+    public function setPayloadType($payloadType)
+    {
+        $this->payloadType = $payloadType;
         return $this;
     }
 }
