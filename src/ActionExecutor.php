@@ -176,6 +176,7 @@ class ActionExecutor
                         $dryObject = new $paramClass();
 
                         $hydrator = new Hydrator();
+
                         $hydratedObj = $hydrator->hydrateObject($dryObject, $searchHashedArg->$paramName);
 
                         $preparedArgs[$paramIndex] = $hydratedObj;
@@ -187,6 +188,21 @@ class ActionExecutor
                 }
 
                 if (isset($searchHashedArg[$paramName])) {
+                    // check for string that are really json objects
+                    $obj = json_decode($searchHashedArg[$paramName]);
+                    if ($obj) {
+                        $paramClass = $param->getType();
+                        $preparedArgs[$paramIndex] = $obj;
+                        $dryObject = new $paramClass();
+
+                        $hydrator = new Hydrator();
+
+                        $hydratedObj = $hydrator->hydrateObject($dryObject, $obj);
+
+                        $preparedArgs[$paramIndex] = $hydratedObj;
+                        continue;
+                    }
+
                     $preparedArgs[$paramIndex] = $searchHashedArg[$paramName];
                 }
             }
